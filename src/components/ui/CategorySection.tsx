@@ -13,11 +13,11 @@ const categoryMap: Record<string, string> = {
 };
 
 export default function CategorySection({ categoryKey, products, tCat, tUI }: any) {
-  const [isOpen, setIsOpen] = useState(true); // Open by default makes it look richer
+  const [isOpen, setIsOpen] = useState(false); // CLOSED by default as requested
   
   // Safe translation
   const mappedKey = categoryMap[categoryKey] || categoryKey;
-  const localizedCategoryName = tCat(mappedKey) || categoryKey;
+  const localizedCategoryName = tCat.has(mappedKey) ? tCat(mappedKey) : categoryKey;
 
   return (
     <section className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden mb-6">
