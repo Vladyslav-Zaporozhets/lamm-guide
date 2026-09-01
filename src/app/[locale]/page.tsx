@@ -1,5 +1,6 @@
 "use client";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useRouter, useSearchParams, usePathname } from 'next/navigation';
 import { Link } from '@/i18n/routing';
 import Image from 'next/image';
 import productsData from '@/data/products.json';
@@ -7,15 +8,61 @@ import categoriesTree from '@/data/categories.json';
 import { Search, BookOpen, ChevronRight, Folder, FolderOpen, Image as ImageIcon, ChevronLeft } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
-export default function EncyclopediaIndex() {
-  const [searchQuery, setSearchQuery] = useState("");
+// Helper to find the path (array of nodes) to a specific category ID
+function findPathToNode(nodes: any[], targetId: string, currentPath: any[] = []): any[] | null {
+  for (const node of nodes) {
+    const newPath = [...currentPath, node];
+    if (node.id === targetId) return newPath;
+    if (node.children) {
+      const found = findPathToNode(node.children, targetId, newPath);
+      if (found) return found;
+    }
+  }
+  return null;
+}
+
+function EncyclopediaContent() {
   const t = useTranslations('Encyclopedia');
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  
+  const catParam = searchParams.get('cat');
+  const qParam = searchParams.get('q') || "";
 
-  // Breadcrumb / Navigation state for the multi-level category tree
-  const [currentLevel, setCurrentLevel] = useState<any[]>(categoriesTree); // Array of category nodes
-  const [path, setPath] = useState<any[]>([]); // Array of parent nodes
+  const [searchQuery, setSearchQuery] = useState(qParam);
+  const [currentLevel, setCurrentLevel] = useState<any[]>(categoriesTree);
+  const [path, setPath] = useState<any[]>([]);
 
-  // Find products for a specific category string
+  // Sync state from URL
+  useEffect(() => {
+    if (catParam) {
+      const newPath = findPathToNode(categoriesTree, catParam);
+      if (newPath && newPath.length > 0) {
+        setPath(newPath);
+        const currentNode = newPath[newPath.length - 1];
+        setCurrentLevel(currentNode.children || []);
+      }
+    } else {
+      setPath([]);
+      setCurrentLevel(categoriesTree);
+    }
+  }, [catParam]);
+
+  // Sync search input to URL query
+  useEffect(() => {
+    const handler = setTimeout(() => {
+      const params = new URLSearchParams(searchParams.toString());
+      if (searchQuery) {
+        params.set('q', searchQuery);
+      } else {
+        params.delete('q');
+      }
+      router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+    }, 300); // debounce
+    return () => clearTimeout(handler);
+  }, [searchQuery, pathname, router, searchParams]);
+
   const getProductsForCategory = (catName: string) => {
      return productsData.filter(p => p.category === catName || p.category.includes(catName));
   };
@@ -27,25 +74,34 @@ export default function EncyclopediaIndex() {
   });
 
   const navigateTo = (categoryNode: any) => {
-     setPath([...path, categoryNode]);
-     if (categoryNode.children && categoryNode.children.length > 0) {
-        setCurrentLevel(categoryNode.children);
-     } else {
-        setCurrentLevel([]); // Leaf node, clear current level to only show products
-     }
+    const params = new URLSearchParams(searchParams.toString());
+    params.set('cat', categoryNode.id);
+    router.push(`${pathname}?${params.toString()}`, { scroll: false });
   };
 
   const navigateUp = () => {
-     if (path.length > 0) {
-        const newPath = [...path];
-        newPath.pop();
-        setPath(newPath);
-        if (newPath.length === 0) {
-           setCurrentLevel(categoriesTree);
-        } else {
-           setCurrentLevel(newPath[newPath.length - 1].children);
-        }
-     }
+    const params = new URLSearchParams(searchParams.toString());
+    if (path.length > 1) {
+      // Go to parent category
+      const parentNode = path[path.length - 2];
+      params.set('cat', parentNode.id);
+    } else {
+      // Go to root
+      params.delete('cat');
+    }
+    router.push(`${pathname}?${params.toString()}`, { scroll: false });
+  };
+
+  const goToRoot = () => {
+    const params = new URLSearchParams(searchParams.toString());
+    params.delete('cat');
+    router.push(`${pathname}?${params.toString()}`, { scroll: false });
+  };
+
+  const goToBreadcrumb = (node: any) => {
+    const params = new URLSearchParams(searchParams.toString());
+    params.set('cat', node.id);
+    router.push(`${pathname}?${params.toString()}`, { scroll: false });
   };
 
   return (
@@ -87,18 +143,14 @@ export default function EncyclopediaIndex() {
             <div className="bg-white rounded-3xl p-6 md:p-10 shadow-xl border border-slate-200">
                {/* Breadcrumbs Navigation */}
                <div className="flex items-center space-x-2 text-sm font-semibold text-slate-500 mb-8 overflow-x-auto pb-2">
-                  <button onClick={() => { setPath([]); setCurrentLevel(categoriesTree); }} className="hover:text-blue-600 flex items-center">
+                  <button onClick={goToRoot} className="hover:text-blue-600 flex items-center">
                      <Folder className="w-4 h-4 mr-1" /> База
                   </button>
                   {path.map((node, idx) => (
                      <div key={node.id} className="flex items-center">
                         <ChevronRight className="w-4 h-4 mx-1" />
                         <button 
-                           onClick={() => {
-                              const newPath = path.slice(0, idx + 1);
-                              setPath(newPath);
-                              setCurrentLevel(node.children || []);
-                           }}
+                           onClick={() => goToBreadcrumb(node)}
                            className="hover:text-blue-600 whitespace-nowrap"
                         >
                            {node.name}
@@ -219,5 +271,14 @@ export default function EncyclopediaIndex() {
          )}
       </div>
     </div>
+  );
+}
+
+import { Suspense } from 'react';
+export default function EncyclopediaIndex() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div></div>}>
+      <EncyclopediaContent />
+    </Suspense>
   );
 }

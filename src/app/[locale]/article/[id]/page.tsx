@@ -27,6 +27,8 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   };
 }
 
+import BackButton from '@/components/ui/BackButton';
+
 export default async function ArticlePage({ params }: { params: Promise<{ id: string, locale: string }> }) {
   const resolvedParams = await params;
   const product = productsData.find(p => p.id === resolvedParams.id);
@@ -40,10 +42,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ id: st
     <div className="max-w-4xl mx-auto p-4 md:p-8">
       {/* Back Button */}
       <div className="mb-8">
-        <Link href="/" className="inline-flex items-center px-4 py-2 bg-white border border-slate-200 rounded-lg text-sm font-bold text-slate-600 hover:bg-slate-50 hover:text-blue-600 transition-colors shadow-sm">
-          <ArrowLeft className="w-4 h-4 mr-2" />
-          {t('back')}
-        </Link>
+        <BackButton label={t('back')} />
       </div>
 
       <article className="bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden">
