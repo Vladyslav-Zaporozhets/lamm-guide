@@ -212,7 +212,7 @@ function EncyclopediaContent() {
                      >
                         <div className="w-16 h-16 rounded-xl shadow-sm mr-4 overflow-hidden relative bg-slate-100 dark:bg-slate-800 flex-shrink-0">
                            {node.image ? (
-                              <Image src={node.image} alt={node.name} fill sizes="64px" className="object-cover group-hover:scale-110 transition-transform duration-500" />
+                              <Image src={node.image} alt={node.name} fill priority={i < 4} sizes="64px" className="object-cover group-hover:scale-110 transition-transform duration-500" />
                            ) : (
                               <div className="w-full h-full flex items-center justify-center text-blue-500">
                                  {node.children && node.children.length > 0 ? <FolderOpen className="w-8 h-8" /> : <Folder className="w-8 h-8 text-slate-400" />}

@@ -9,7 +9,7 @@ export default getRequestConfig(async ({requestLocale}) => {
   let messages;
   try {
     messages = (await import(`../../messages/${locale}.json`)).default;
-  } catch (error: unknown) {
+  } catch (_error: unknown) {
     messages = {};
   }
   return {

@@ -83,7 +83,7 @@ export function GlossaryClient({ glossaryData }: { glossaryData: GlossaryItem[] 
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {filteredData.map((item) => (
+            {filteredData.map((item, index) => (
               <div
                 key={item.id}
                 className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col md:flex-row group"
@@ -94,6 +94,7 @@ export function GlossaryClient({ glossaryData }: { glossaryData: GlossaryItem[] 
                       src={item.image}
                       alt={item.term_de}
                       fill
+                      priority={index < 4}
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, 192px"
                     />
