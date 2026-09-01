@@ -1,5 +1,4 @@
 import { notFound } from 'next/navigation';
-import { getTranslations } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 
 export function generateStaticParams() {
@@ -16,8 +15,7 @@ export default async function GlossaryPage({ params }: { params: Promise<{ local
     notFound();
   }
 
-  const t = await getTranslations('Encyclopedia');
-
+  
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 pb-20 transition-colors duration-300">
       <div className="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
