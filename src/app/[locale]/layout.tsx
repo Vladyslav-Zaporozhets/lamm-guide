@@ -43,7 +43,6 @@ export default async function LocaleLayout({
                 <div className="flex items-center space-x-6">
                    <div className="flex space-x-1 bg-slate-100 p-1 rounded-lg">
                       <Link href="/" locale="de" className={`px-2 py-1 text-xs font-bold rounded ${locale === 'de' ? 'bg-white shadow-sm text-slate-900' : 'text-slate-500 hover:text-slate-700'}`}>DE</Link>
-                      <Link href="/" locale="en" className={`px-2 py-1 text-xs font-bold rounded ${locale === 'en' ? 'bg-white shadow-sm text-slate-900' : 'text-slate-500 hover:text-slate-700'}`}>EN</Link>
                       <Link href="/" locale="uk" className={`px-2 py-1 text-xs font-bold rounded ${locale === 'uk' ? 'bg-white shadow-sm text-slate-900' : 'text-slate-500 hover:text-slate-700'}`}>UK</Link>
                    </div>
                 </div>

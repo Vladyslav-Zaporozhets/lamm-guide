@@ -19,59 +19,59 @@
             "id": "seilendstuecke",
             "name": "Кінцевики тросів (Seilendstücke)",
             "level": 3,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
+            "image": "https://www.lamm-seile.de/thumbnail/3b/36/06/1732231966/anschlagseil_typ_b_600x600.jpg"
           },
           {
             "id": "seilgleithaken",
             "name": "Ковзні гаки (Seilgleithaken)",
             "level": 3,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
+            "image": "https://www.lamm-seile.de/thumbnail/3b/36/06/1732231966/anschlagseil_typ_b_600x600.jpg"
           },
           {
             "id": "dyneema-zubehoer",
             "name": "Комплектуючі для синтетики (Dyneema Zubehör)",
             "level": 3,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Dyneema_rope.jpg/800px-Dyneema_rope.jpg"
+            "image": "https://www.lamm-seile.de/thumbnail/67/11/72/1751267471/liros_00146_316_600x600.jpg"
           },
           {
             "id": "seilscheren",
             "name": "Різаки для тросів (Seilscheren)",
             "level": 3,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
+            "image": "https://www.lamm-seile.de/thumbnail/96/57/3d/1732231253/baudat_drahtseilschere_scsz20_600x600.jpg"
           },
           {
             "id": "schaekel",
             "name": "Шакли (Schäkel)",
             "level": 3,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Sch%C3%A4kel.jpg/800px-Sch%C3%A4kel.jpg"
+            "image": "https://www.lamm-seile.de/thumbnail/b4/ac/bb/1732232841/benco_seilgleithaken_wk_3_8_1_2_mit-sicherung_50kn_600x600.jpg"
           },
           {
             "id": "kauschen",
             "name": "Коуші (Kauschen)",
             "level": 3,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Thimble_%28wire_rope%29.jpg/800px-Thimble_%28wire_rope%29.jpg"
+            "image": "https://www.lamm-seile.de/thumbnail/3b/36/06/1732231966/anschlagseil_typ_b_600x600.jpg"
           },
           {
             "id": "ringmuttern-spannschloesser",
             "name": "Рим-гайки та талрепи (Ringmuttern & Spannschlösser)",
             "level": 3,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
+            "image": "https://www.lamm-seile.de/thumbnail/3b/36/06/1732231966/anschlagseil_typ_b_600x600.jpg"
           },
           {
             "id": "karabinerhaken",
             "name": "Карабіни (Karabinerhaken)",
             "level": 3,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Carabiner_with_screw_gate.jpg/800px-Carabiner_with_screw_gate.jpg"
+            "image": "https://www.lamm-seile.de/thumbnail/b4/ac/bb/1732232841/benco_seilgleithaken_wk_3_8_1_2_mit-sicherung_50kn_600x600.jpg"
           }
         ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Sch%C3%A4kel.jpg/800px-Sch%C3%A4kel.jpg"
+        "image": "https://www.lamm-seile.de/thumbnail/b4/ac/bb/1732232841/benco_seilgleithaken_wk_3_8_1_2_mit-sicherung_50kn_600x600.jpg"
       },
       {
         "id": "spillwindenseile",
         "name": "Троси для кабестанових лебідок (Spillwindenseile)",
         "level": 2,
         "children": [],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
+        "image": "https://www.lamm-seile.de/thumbnail/3b/36/06/1732231966/anschlagseil_typ_b_600x600.jpg"
       },
       {
         "id": "forstwindenseile",
@@ -82,93 +82,93 @@
             "id": "hochverdichtete-forstwindenseile",
             "name": "Висококомпресовані троси (Hochverdichtete Forstwindenseile)",
             "level": 3,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
+            "image": "https://www.lamm-seile.de/thumbnail/3b/36/06/1732231966/anschlagseil_typ_b_600x600.jpg"
           },
           {
             "id": "standard-forstwindenseile",
             "name": "Стандартні троси (Standard Forstwindenseile)",
             "level": 3,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
+            "image": "https://www.lamm-seile.de/thumbnail/3b/36/06/1732231966/anschlagseil_typ_b_600x600.jpg"
           },
           {
             "id": "dyneema-forstwindenseile",
             "name": "Синтетичні троси (Dyneema Forstwindenseile)",
             "level": 3,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Dyneema_rope.jpg/800px-Dyneema_rope.jpg"
+            "image": "https://www.lamm-seile.de/thumbnail/68/98/ff/1732233037/dyneema_forstwindenseil_neu_2018_1_600x600.jpg"
           },
           {
             "id": "traktionswindenseile",
             "name": "Тягові троси (Traktionswindenseile)",
             "level": 3,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
+            "image": "https://www.lamm-seile.de/thumbnail/3b/36/06/1732231966/anschlagseil_typ_b_600x600.jpg"
           }
         ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
+        "image": "https://www.lamm-seile.de/thumbnail/3b/36/06/1732231966/anschlagseil_typ_b_600x600.jpg"
       },
       {
         "id": "greifzugseile",
         "name": "Троси для ручних лебідок (Greifzugseile)",
         "level": 2,
         "children": [],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
+        "image": "https://www.lamm-seile.de/thumbnail/3b/36/06/1732231966/anschlagseil_typ_b_600x600.jpg"
       },
       {
         "id": "chokerseile",
         "name": "Чокерні троси (Chokerseile)",
         "level": 2,
         "children": [],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
+        "image": "https://www.lamm-seile.de/thumbnail/3b/36/06/1732231966/anschlagseil_typ_b_600x600.jpg"
       },
       {
         "id": "faellhilfeseile",
         "name": "Троси-помічники для звалювання (Fällhilfeseile & Zubehör)",
         "level": 2,
         "children": [],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
+        "image": "https://www.lamm-seile.de/thumbnail/3b/36/06/1732231966/anschlagseil_typ_b_600x600.jpg"
       },
       {
         "id": "rundlitzenseile",
         "name": "Круглосталкові троси (Rundlitzenseile)",
         "level": 2,
         "children": [],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
+        "image": "https://www.lamm-seile.de/thumbnail/3b/36/06/1732231966/anschlagseil_typ_b_600x600.jpg"
       },
       {
         "id": "hubseile",
         "name": "Підйомні троси (Hubseile)",
         "level": 2,
         "children": [],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
+        "image": "https://www.lamm-seile.de/thumbnail/3b/36/06/1732231966/anschlagseil_typ_b_600x600.jpg"
       },
       {
         "id": "anschlagseile",
         "name": "Стропові троси (Anschlagseile)",
         "level": 2,
         "children": [],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
+        "image": "https://www.lamm-seile.de/thumbnail/3b/36/06/1732231966/anschlagseil_typ_b_600x600.jpg"
       },
       {
         "id": "edelstahlseile",
         "name": "Троси з нержавіючої сталі (Edelstahlseile)",
         "level": 2,
         "children": [],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Wire_Rope.jpg/800px-Wire_Rope.jpg"
+        "image": "https://www.lamm-seile.de/thumbnail/3b/36/06/1732231966/anschlagseil_typ_b_600x600.jpg"
       },
       {
         "id": "faserseile",
         "name": "Троси з волокон (Faserseile)",
         "level": 2,
         "children": [],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
+        "image": "https://www.lamm-seile.de/thumbnail/3b/36/06/1732231966/anschlagseil_typ_b_600x600.jpg"
       },
       {
         "id": "presswerkzeuge",
         "name": "Інструменти для опресування (Presswerkzeuge)",
         "level": 2,
         "children": [],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
+        "image": "https://www.lamm-seile.de/thumbnail/3b/36/06/1732231966/anschlagseil_typ_b_600x600.jpg"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
+    "image": "https://www.lamm-seile.de/thumbnail/3b/36/06/1732231966/anschlagseil_typ_b_600x600.jpg"
   }
 ]
