@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   
   return {
     title: `${product.name} | Lamm Akademie`,
-    description: product.description?.slice(0, 150) || `Технічна інформація про ${product.name}`,
+    description: product.description?.slice(0, 150) || `РўРµС…РЅС–С‡РЅР° С–РЅС„РѕСЂРјР°С†С–СЏ РїСЂРѕ ${product.name}`,
   };
 }
 
@@ -51,13 +51,13 @@ export default async function ArticlePage({
     <div className="max-w-4xl mx-auto p-4 md:p-8">
       {/* Back Button */}
       <div className="mb-8">
-        <Link href={fromCat ? `/?cat=${fromCat}` : "/"} className="inline-flex items-center px-4 py-2 bg-white border border-slate-200 rounded-lg text-sm font-bold text-slate-600 hover:bg-slate-50 hover:text-blue-600 transition-colors shadow-sm">
+        <Link href={fromCat ? `/?cat=${fromCat}` : "/"} className="inline-flex items-center px-4 py-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg text-sm font-bold text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-blue-600 transition-colors shadow-sm">
           <ArrowLeft className="w-4 h-4 mr-2" />
           {t('back')}
         </Link>
       </div>
 
-      <article className="bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden">
+      <article className="bg-white dark:bg-slate-900 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden">
          {/* Header / Hero */}
          <div className="bg-slate-900 px-8 py-12 text-center relative overflow-hidden">
             <BookOpen className="absolute -right-10 -bottom-10 w-64 h-64 text-slate-800 opacity-50 pointer-events-none" />
@@ -81,7 +81,7 @@ export default async function ArticlePage({
                   {product.images && product.images.length > 0 && (
                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         {product.images.map((img: string, idx: number) => (
-                           <div key={idx} className="bg-slate-100 rounded-2xl overflow-hidden border border-slate-200 aspect-video flex items-center justify-center relative">
+                           <div key={idx} className="bg-slate-100 dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 aspect-video flex items-center justify-center relative">
                               <Image src={img} alt={`${product.name} - Image ${idx+1}`} fill className="object-cover" />
                            </div>
                         ))}
@@ -106,7 +106,7 @@ export default async function ArticlePage({
                   )}
                </div>
             ) : (
-               <div className="w-full h-80 bg-slate-100 rounded-2xl mb-12 flex flex-col items-center justify-center border-2 border-dashed border-slate-200 text-slate-400">
+               <div className="w-full h-80 bg-slate-100 dark:bg-slate-800 rounded-2xl mb-12 flex flex-col items-center justify-center border-2 border-dashed border-slate-200 text-slate-400">
                   <ImageIcon className="w-16 h-16 mb-4 opacity-50" />
                   <p className="font-semibold tracking-widest uppercase">{t('imagePlaceholder')}: {product.name}</p>
                </div>
@@ -114,14 +114,14 @@ export default async function ArticlePage({
 
             {/* Encyclopedia Text (Rich HTML with Tables) */}
             <div className="prose prose-lg prose-slate max-w-none mb-12">
-               <h2 className="flex items-center text-2xl font-bold text-slate-900 mb-6 border-b border-slate-100 pb-4">
+               <h2 className="flex items-center text-2xl font-bold text-slate-900 dark:text-white mb-6 border-b border-slate-100 dark:border-slate-800 pb-4">
                   <FileText className="w-6 h-6 mr-3 text-blue-500" />
                   {t('technicalDesc')}
                </h2>
                {product.description_html ? (
-                  <div className="text-slate-600 leading-relaxed custom-tables" dangerouslySetInnerHTML={{ __html: product.description_html }} />
+                  <div className="text-slate-600 dark:text-slate-300 leading-relaxed custom-tables" dangerouslySetInnerHTML={{ __html: product.description_html }} />
                ) : (
-                  <p className="whitespace-pre-line text-slate-600 leading-relaxed">
+                  <p className="whitespace-pre-line text-slate-600 dark:text-slate-300 leading-relaxed">
                      {product.description}
                   </p>
                )}
@@ -156,20 +156,20 @@ export default async function ArticlePage({
             {/* Cross-Selling / Required Accessories */}
             {(product.compatibility && product.compatibility.length > 0) && (
                <div>
-                  <h3 className="flex items-center text-xl font-bold text-slate-900 mb-6 border-b border-slate-100 pb-4">
+                  <h3 className="flex items-center text-xl font-bold text-slate-900 dark:text-white mb-6 border-b border-slate-100 dark:border-slate-800 pb-4">
                      <Wrench className="w-6 h-6 mr-3 text-orange-500" />
                      {t('accessories')}
                   </h3>
-                  <p className="text-slate-600 mb-6">
+                  <p className="text-slate-600 dark:text-slate-300 mb-6">
                   {t('accessoriesDesc')}
                   </p>
                   
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                      {product.compatibility.map((comp: string, idx: number) => (
                      <div key={idx} className="bg-slate-50 border border-slate-200 rounded-xl p-5 hover:shadow-md transition-shadow">
-                        <h4 className="font-bold text-slate-900 mb-2">{comp}</h4>
-                        <p className="text-sm text-slate-500">
-                           Zwingend erforderlich für die sichere Konfektionierung.
+                        <h4 className="font-bold text-slate-900 dark:text-white mb-2">{comp}</h4>
+                        <p className="text-sm text-slate-500 dark:text-slate-400">
+                           Zwingend erforderlich fГјr die sichere Konfektionierung.
                         </p>
                      </div>
                      ))}
