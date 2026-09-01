@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import { useState } from "react";
 import { Ruler, Activity, Tag, ShoppingCart, ShieldCheck } from "lucide-react";
 
@@ -77,6 +77,22 @@ export default function ProductConfigurator({ product }: any) {
           )}
         </div>
 
+        {/* Interactive Selection Tip */}
+        {product.id === 'alu-seilpressklemme' && (
+          <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 mt-4 flex items-start">
+            <div className="bg-blue-100 p-2 rounded-full mr-3 text-blue-600">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <div>
+              <h4 className="font-bold text-blue-900 text-sm mb-1">Правила підбору (Вибрано: {selectedDiameter} мм)</h4>
+              <p className="text-xs text-blue-800 leading-tight">
+                Для канату діаметром {selectedDiameter} мм ця клема підходить ідеально.
+                {selectedDiameter > 5 ? ' Оскільки діаметр більше 5 мм, опресування необхідно виконувати виключно за допомогою гідравлічного пресу (наприклад, LUNA 414) або матриць Schlageisen. Ручний інструмент не допускається!' : ' Можна використовувати ручні кліщі для опресування.'}
+              </p>
+            </div>
+          </div>
+        )}
+
         {/* Dynamic Result Panel */}
         {activeVariant && (
           <div className="bg-slate-900 rounded-xl p-6 text-white mt-6 relative overflow-hidden">
@@ -92,7 +108,7 @@ export default function ProductConfigurator({ product }: any) {
                 </div>
                 <div>
                    <div className="text-slate-400 text-xs uppercase tracking-wider mb-1">Mind. Bruchkraft</div>
-                   <div className="font-bold text-lg text-emerald-400">{activeVariant.bruchkraft_kn} kN</div>
+                   <div className="font-bold text-lg text-emerald-400">{activeVariant.bruchkraft_kn ? `${activeVariant.bruchkraft_kn} kN` : '-'}</div>
                 </div>
                 <div className="col-span-2 border-t border-slate-700 pt-4 mt-2 flex justify-between items-end">
                    <div>
