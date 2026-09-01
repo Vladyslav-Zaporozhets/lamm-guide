@@ -37,13 +37,13 @@
             "id": "seilscheren",
             "name": "Різаки для тросів (Seilscheren)",
             "level": 3,
-            "image": "https://www.lamm-seile.de/thumbnail/96/57/3d/1732231253/baudat_drahtseilschere_scsz20_600x600.jpg"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Bolt_cutter.webp"
           },
           {
             "id": "schaekel",
             "name": "Шакли (Schäkel)",
             "level": 3,
-            "image": "https://www.lamm-seile.de/thumbnail/b4/ac/bb/1732232841/benco_seilgleithaken_wk_3_8_1_2_mit-sicherung_50kn_600x600.jpg"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Mannheim_Germany_Shackles-in-a-workshop-01.jpg"
           },
           {
             "id": "kauschen",
@@ -61,7 +61,7 @@
             "id": "karabinerhaken",
             "name": "Карабіни (Karabinerhaken)",
             "level": 3,
-            "image": "https://www.lamm-seile.de/thumbnail/b4/ac/bb/1732232841/benco_seilgleithaken_wk_3_8_1_2_mit-sicherung_50kn_600x600.jpg"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Assorted_Biners.jpg"
           }
         ],
         "image": "https://www.lamm-seile.de/thumbnail/b4/ac/bb/1732232841/benco_seilgleithaken_wk_3_8_1_2_mit-sicherung_50kn_600x600.jpg"
@@ -169,6 +169,6 @@
         "image": "https://www.lamm-seile.de/thumbnail/3b/36/06/1732231966/anschlagseil_typ_b_600x600.jpg"
       }
     ],
-    "image": "https://www.lamm-seile.de/thumbnail/3b/36/06/1732231966/anschlagseil_typ_b_600x600.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Steel_wire_rope.png"
   }
 ]

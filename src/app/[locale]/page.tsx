@@ -49,19 +49,16 @@ function EncyclopediaContent() {
     }
   }, [catParam]);
 
-  // Sync search input to URL query
-  useEffect(() => {
-    const handler = setTimeout(() => {
-      const params = new URLSearchParams(searchParams.toString());
-      if (searchQuery) {
-        params.set('q', searchQuery);
-      } else {
-        params.delete('q');
-      }
-      router.replace(`${pathname}?${params.toString()}`, { scroll: false });
-    }, 300); // debounce
-    return () => clearTimeout(handler);
-  }, [searchQuery, pathname, router, searchParams]);
+  const handleSearchChange = (val: string) => {
+    setSearchQuery(val);
+    const params = new URLSearchParams(searchParams.toString());
+    if (val) {
+      params.set('q', val);
+    } else {
+      params.delete('q');
+    }
+    router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+  };
 
   const getProductsForCategory = (catName: string) => {
      return productsData.filter(p => p.category === catName || p.category.includes(catName));
@@ -131,7 +128,7 @@ function EncyclopediaContent() {
                 placeholder={t('searchPlaceholder') || "Пошук..."} 
                 className="w-full bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl py-5 pl-14 pr-6 text-white placeholder-slate-400 shadow-2xl focus:ring-2 focus:ring-blue-500 focus:bg-white focus:text-slate-900 focus:placeholder-slate-400 outline-none text-lg transition-all"
                 value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
+                onChange={(e) => handleSearchChange(e.target.value)}
              />
           </div>
         </div>
@@ -207,7 +204,7 @@ function EncyclopediaContent() {
                               <h3 className="text-xl font-extrabold text-slate-900 mb-6">Товари у цій категорії ({products.length})</h3>
                               <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
                                  {products.map(product => (
-                                    <Link key={product.id} href={`/article/${product.id}`} className="group flex flex-col bg-slate-50 rounded-2xl border border-slate-200 hover:border-blue-400 hover:shadow-xl hover:shadow-blue-500/10 transition-all overflow-hidden h-full">
+                                    <Link key={product.id} href={`/article/${product.id}${catParam ? `?from=${catParam}` : ''}`} className="group flex flex-col bg-slate-50 rounded-2xl border border-slate-200 hover:border-blue-400 hover:shadow-xl hover:shadow-blue-500/10 transition-all overflow-hidden h-full">
                                        <div className="h-32 bg-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-blue-50 transition-colors relative overflow-hidden">
                                           {product.images && product.images.length > 0 ? (
                                              <Image src={product.images[0]} alt={product.name} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover group-hover:scale-105 transition-transform duration-500" />
@@ -239,7 +236,7 @@ function EncyclopediaContent() {
                {filteredProductsSearch.length > 0 ? (
                   <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
                      {filteredProductsSearch.map(product => (
-                        <Link key={product.id} href={`/article/${product.id}`} className="group flex flex-col bg-slate-50 rounded-2xl border border-slate-200 hover:border-blue-400 hover:shadow-xl hover:shadow-blue-500/10 transition-all overflow-hidden h-full">
+                        <Link key={product.id} href={`/article/${product.id}${catParam ? `?from=${catParam}` : ''}`} className="group flex flex-col bg-slate-50 rounded-2xl border border-slate-200 hover:border-blue-400 hover:shadow-xl hover:shadow-blue-500/10 transition-all overflow-hidden h-full">
                            <div className="h-32 bg-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-blue-50 transition-colors relative overflow-hidden">
                               {product.images && product.images.length > 0 ? (
                                  <Image src={product.images[0]} alt={product.name} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover group-hover:scale-105 transition-transform duration-500" />
