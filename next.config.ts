@@ -12,6 +12,14 @@ const nextConfig = {
       },
       {
         protocol: 'https',
+        hostname: 'www.talurit.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'encrypted-tbn1.gstatic.com',
+      },
+      {
+        protocol: 'https',
         hostname: 'upload.wikimedia.org',
       }
     ],
