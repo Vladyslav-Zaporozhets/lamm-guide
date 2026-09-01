@@ -1,14 +1,24 @@
-{
-  "Index": {
-    "title": "Каталог Lamm GmbH",
-    "description": "Посібник з лісової техніки та тросів"
-  },
-  "Categories": {
-    "SEILE": "Троси та канати (SEILE)",
-    "Forstwindenseile": "Троси для лісових лебідок (Forstwindenseile)",
-    "Hochverdichtete": "Висококомпресовані троси (Hochverdichtete Forstwindenseile)",
-    "Standard": "Стандартні троси (Standard Forstwindenseile)",
-    "Dyneema": "Синтетичні троси (Dyneema Forstwindenseile)",
-    "Traktionswindenseile": "Тягові канати (Traktionswindenseile)"
-  }
+﻿{
+    "Index":  {
+                  "title":  "РљР°С‚Р°Р»РѕРі Lamm GmbH",
+                  "description":  "РџРѕСЃС–Р±РЅРёРє Р· Р»С–СЃРѕРІРѕС— С‚РµС…РЅС–РєРё С‚Р° С‚СЂРѕСЃС–РІ"
+              },
+    "Categories":  {
+                       "SEILE":  "РўСЂРѕСЃРё С‚Р° РєР°РЅР°С‚Рё (SEILE)",
+                       "Forstwindenseile":  "РўСЂРѕСЃРё РґР»СЏ Р»С–СЃРѕРІРёС… Р»РµР±С–РґРѕРє (Forstwindenseile)",
+                       "Hochverdichtete":  "Р’РёСЃРѕРєРѕРєРѕРјРїСЂРµСЃРѕРІР°РЅС– С‚СЂРѕСЃРё (Hochverdichtete Forstwindenseile)",
+                       "Standard":  "РЎС‚Р°РЅРґР°СЂС‚РЅС– С‚СЂРѕСЃРё (Standard Forstwindenseile)",
+                       "Dyneema":  "РЎРёРЅС‚РµС‚РёС‡РЅС– С‚СЂРѕСЃРё (Dyneema Forstwindenseile)",
+                       "Traktionswindenseile":  "РўСЏРіРѕРІС– РєР°РЅР°С‚Рё (Traktionswindenseile)"
+                   },
+    "ProductCard":  {
+                        "noImage":  "Без фото",
+                        "productsCount":  "товарів",
+                        "length":  "Довжина (Länge)",
+                        "fullConfig":  "Повна конфігурація →",
+                        "diameter":  "Діаметр (Durchmesser)",
+                        "price":  "Ціна (Preis)",
+                        "sku":  "Артикул (SKU)",
+                        "compatibility":  "Сумісність (Kompatibilität)"
+                    }
 }
