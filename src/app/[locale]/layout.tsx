@@ -1,6 +1,6 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-import { Tent } from 'lucide-react';
+import { Tent, Library } from 'lucide-react';
 import { Link, routing } from '@/i18n/routing';
 import { notFound } from 'next/navigation';
 import '../globals.css';
@@ -54,7 +54,8 @@ export default async function LocaleLayout({
                   {/* Right side - Nav & Theme */}
                   <div className="flex items-center space-x-4">
                      {locale === 'uk' && (
-                       <Link href="/glossary" className="hidden md:flex items-center text-sm font-bold text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors mr-2">
+                       <Link href="/glossary" className="hidden md:flex items-center text-sm font-bold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 hover:bg-blue-100 dark:hover:bg-blue-900/40 px-3 py-1.5 rounded-lg transition-all mr-6 shadow-sm hover:shadow active:scale-95">
+                         <Library className="w-4 h-4 mr-2" />
                          Словник
                        </Link>
                      )}
