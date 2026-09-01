@@ -198,7 +198,7 @@ function EncyclopediaContent() {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ staggerChildren: 0.05 }}
-                  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-10"
+                  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 mb-12"
                >
                   {/* Render Categories */}
                   {currentLevel.map((node, i) => (
@@ -208,25 +208,25 @@ function EncyclopediaContent() {
                         transition={{ duration: 0.2, delay: i * 0.03 }}
                         key={node.id}
                         onClick={() => navigateTo(node)}
-                        className={`flex items-center p-4 rounded-2xl border transition-all text-left group bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-lg ${node.children && node.children.length === 0 ? 'opacity-90' : ''}`}
+                        className={`flex items-center p-6 rounded-3xl border transition-all text-left group bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-xl ${node.children && node.children.length === 0 ? 'opacity-90' : ''}`}
                      >
-                        <div className="w-16 h-16 rounded-xl shadow-sm mr-4 overflow-hidden relative bg-slate-100 dark:bg-slate-800 flex-shrink-0">
+                        <div className="w-24 h-24 rounded-2xl shadow-sm mr-5 overflow-hidden relative bg-slate-100 dark:bg-slate-800 flex-shrink-0">
                            {node.image ? (
-                              <Image src={node.image} alt={node.name} fill sizes="64px" className="object-cover group-hover:scale-110 transition-transform duration-500" />
+                              <Image src={node.image} alt={node.name} fill sizes="96px" className="object-cover group-hover:scale-110 transition-transform duration-500" />
                            ) : (
                               <div className="w-full h-full flex items-center justify-center text-blue-500">
-                                 {node.children && node.children.length > 0 ? <FolderOpen className="w-8 h-8" /> : <Folder className="w-8 h-8 text-slate-400" />}
+                                 {node.children && node.children.length > 0 ? <FolderOpen className="w-10 h-10" /> : <Folder className="w-10 h-10 text-slate-400" />}
                               </div>
                            )}
                         </div>
                         <div className="flex-1">
-                           <h3 className="font-bold text-slate-900 dark:text-white text-sm md:text-base leading-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 line-clamp-2">{node.name}</h3>
+                           <h3 className="font-black text-slate-900 dark:text-white text-base md:text-lg leading-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 line-clamp-2">{node.name}</h3>
                            {node.children && node.children.length > 0 && (
-                              <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 font-medium">{node.children.length} підкатегорій</p>
+                              <p className="text-sm text-slate-500 dark:text-slate-400 mt-1.5 font-medium">{node.children.length} підкатегорій</p>
                            )}
                         </div>
-                        <div className="ml-2 w-8 h-8 rounded-full bg-slate-50 dark:bg-slate-800 flex items-center justify-center group-hover:bg-blue-100 dark:group-hover:bg-blue-900/30 transition-colors">
-                           <ChevronRight className="w-4 h-4 text-slate-400 group-hover:text-blue-600 dark:group-hover:text-blue-400" />
+                        <div className="ml-3 w-10 h-10 rounded-full bg-slate-50 dark:bg-slate-800 flex items-center justify-center group-hover:bg-blue-100 dark:group-hover:bg-blue-900/30 transition-colors">
+                           <ChevronRight className="w-5 h-5 text-slate-400 group-hover:text-blue-600 dark:group-hover:text-blue-400" />
                         </div>
                      </motion.button>
                   ))}
