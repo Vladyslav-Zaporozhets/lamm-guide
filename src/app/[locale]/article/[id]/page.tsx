@@ -22,8 +22,8 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   if (!product) return {};
   
   return {
-    title: `${product.name} | Lamm Akademie`,
-    description: product.description?.slice(0, 150) || `РўРµС…РЅС–С‡РЅР° С–РЅС„РѕСЂРјР°С†С–СЏ РїСЂРѕ ${product.name}`,
+    title: `${product.name} | Forsttechnik Akademie`,
+    description: product.description || `Детальна інформація про ${product.name}`,
   };
 }
 
