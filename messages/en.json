@@ -22,17 +22,20 @@
   },
   "Encyclopedia": {
     "title": "Knowledge Base",
-    "description": "Your technical encyclopedia for forestry equipment. Find applications, expert knowledge, and detailed specifications.",
+    "description": "Your technical encyclopedia for forestry equipment. Select a category to read the articles.",
     "searchPlaceholder": "Search for rope types, terms, or products...",
     "readArticle": "Read Article",
     "noProducts": "No articles found.",
+    "categoriesTitle": "Categories",
     "back": "Back to Encyclopedia",
     "expertTip": "Expert Knowledge",
     "accessories": "Accessories & Compatibility",
     "technicalDesc": "Technical Description & Application",
-    "dyneemaDesc": "Lightweight, extremely resilient synthetic ropes. Buoyant and ergonomic.",
-    "hochverdichteteDesc": "Smooth surface, high breaking load, ideal for professional continuous use.",
-    "traktionsDesc": "Special ropes with plastic core for harvesters and steep slope machines.",
-    "standardDesc": "Classic, robust steel ropes for standard applications."
+    "accessoriesDesc": "A forestry winch rope cannot be used without the correct end connections. The following components are mandatory:",
+    "imagePlaceholder": "Technical Image",
+    "catDyneema": "Lightweight, extremely resilient synthetic ropes. Buoyant and ergonomic.",
+    "catHoch": "Smooth surface, high breaking load, ideal for professional continuous use.",
+    "catTraktion": "Special ropes with plastic core for harvesters and steep slope machines.",
+    "catStandard": "Classic, robust steel ropes for standard applications."
   }
 }

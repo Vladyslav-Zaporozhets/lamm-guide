@@ -1,24 +1,42 @@
 {
   "Index": {
-    "title": "Каталог Lamm GmbH",
-    "description": "Посібник з лісової техніки та тросів"
+    "title": "РљР°С‚Р°Р»РѕРі Lamm GmbH",
+    "description": "РџРѕСЃС–Р±РЅРёРє Р· Р»С–СЃРѕРІРѕС— С‚РµС…РЅС–РєРё С‚Р° С‚СЂРѕСЃС–РІ"
   },
   "Categories": {
-    "SEILE": "Троси та канати (SEILE)",
-    "Forstwindenseile": "Троси для лісових лебідок (Forstwindenseile)",
-    "Hochverdichtete": "Висококомпресовані троси (Hochverdichtete Forstwindenseile)",
-    "Standard": "Стандартні троси (Standard Forstwindenseile)",
-    "Dyneema": "Синтетичні троси (Dyneema Forstwindenseile)",
-    "Traktionswindenseile": "Тягові канати (Traktionswindenseile)"
+    "SEILE": "РўСЂРѕСЃРё С‚Р° РєР°РЅР°С‚Рё (SEILE)",
+    "Forstwindenseile": "РўСЂРѕСЃРё РґР»СЏ Р»С–СЃРѕРІРёС… Р»РµР±С–РґРѕРє (Forstwindenseile)",
+    "Hochverdichtete": "Р’РёСЃРѕРєРѕРєРѕРјРїСЂРµСЃРѕРІР°РЅС– С‚СЂРѕСЃРё (Hochverdichtete Forstwindenseile)",
+    "Standard": "РЎС‚Р°РЅРґР°СЂС‚РЅС– С‚СЂРѕСЃРё (Standard Forstwindenseile)",
+    "Dyneema": "РЎРёРЅС‚РµС‚РёС‡РЅС– С‚СЂРѕСЃРё (Dyneema Forstwindenseile)",
+    "Traktionswindenseile": "РўСЏРіРѕРІС– РєР°РЅР°С‚Рё (Traktionswindenseile)"
   },
   "ProductCard": {
-    "diameter": "Діаметр (Durchmesser)",
-    "length": "Довжина (Länge)",
-    "price": "Ціна (Preis)",
-    "sku": "Артикул (SKU)",
-    "compatibility": "Сумісність (Kompatibilität)",
-    "fullConfig": "Повна конфігурація →",
-    "noImage": "Без фото",
-    "productsCount": "товарів"
+    "diameter": "Р”С–Р°РјРµС‚СЂ (Durchmesser)",
+    "length": "Р”РѕРІР¶РёРЅР° (LГ¤nge)",
+    "price": "Р¦С–РЅР° (Preis)",
+    "sku": "РђСЂС‚РёРєСѓР» (SKU)",
+    "compatibility": "РЎСѓРјС–СЃРЅС–СЃС‚СЊ (KompatibilitГ¤t)",
+    "fullConfig": "РџРѕРІРЅР° РєРѕРЅС„С–РіСѓСЂР°С†С–СЏ в†’",
+    "noImage": "Р‘РµР· С„РѕС‚Рѕ",
+    "productsCount": "С‚РѕРІР°СЂС–РІ"
+  },
+  "Encyclopedia": {
+    "title": "База Знань",
+    "description": "Ваша технічна енциклопедія з лісової техніки. Виберіть категорію, щоб прочитати статті.",
+    "searchPlaceholder": "Пошук типів тросів, термінів або товарів...",
+    "readArticle": "Читати статтю",
+    "noProducts": "Статей не знайдено.",
+    "categoriesTitle": "Категорії",
+    "back": "Назад до Енциклопедії",
+    "expertTip": "Порада Експерта",
+    "accessories": "Супутні товари та сумісність",
+    "technicalDesc": "Технічний опис та застосування",
+    "accessoriesDesc": "Трос для лісової лебідки неможливо використовувати без правильних кінцевих з'єднань. Наступні компоненти є обов'язковими:",
+    "imagePlaceholder": "Технічне фото",
+    "catDyneema": "Легкі, надміцні синтетичні троси. Плавучі та ергономічні.",
+    "catHoch": "Гладка поверхня, високе розривне зусилля, ідеально для професійного використання.",
+    "catTraktion": "Спеціальні троси з пластиковою прокладкою для харвестерів та крутих схилів.",
+    "catStandard": "Класичні, надійні сталеві троси для стандартних завдань."
   }
 }

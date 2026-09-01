@@ -2,10 +2,12 @@ import { notFound } from 'next/navigation';
 import { Link } from '@/i18n/routing';
 import productsData from '@/data/products.json';
 import { ArrowLeft, FileText, Info, Wrench, ShieldAlert, Image as ImageIcon, BookOpen } from 'lucide-react';
+import { getTranslations } from 'next-intl/server';
 
 export default async function EncyclopediaArticle({ params }: { params: Promise<{ id: string, locale: string }> }) {
   const resolvedParams = await params;
   const product = productsData.find(p => p.id === resolvedParams.id);
+  const t = await getTranslations({locale: resolvedParams.locale, namespace: 'Encyclopedia'});
   
   if (!product) {
     notFound();
@@ -17,7 +19,7 @@ export default async function EncyclopediaArticle({ params }: { params: Promise<
       <div className="mb-8">
         <Link href="/encyclopedia" className="inline-flex items-center px-4 py-2 bg-white border border-slate-200 rounded-lg text-sm font-bold text-slate-600 hover:bg-slate-50 hover:text-blue-600 transition-colors shadow-sm">
           <ArrowLeft className="w-4 h-4 mr-2" />
-          Zurück zur Enzyklopädie
+          {t('back')}
         </Link>
       </div>
 
@@ -41,18 +43,22 @@ export default async function EncyclopediaArticle({ params }: { params: Promise<
             {/* Big Image Placeholder */}
             <div className="w-full h-80 bg-slate-100 rounded-2xl mb-12 flex flex-col items-center justify-center border-2 border-dashed border-slate-200 text-slate-400">
                <ImageIcon className="w-16 h-16 mb-4 opacity-50" />
-               <p className="font-semibold tracking-widest uppercase">Technisches Bild: {product.name}</p>
+               <p className="font-semibold tracking-widest uppercase">{t('imagePlaceholder')}: {product.name}</p>
             </div>
 
-            {/* Encyclopedia Text */}
+            {/* Encyclopedia Text (Rich HTML with Tables) */}
             <div className="prose prose-lg prose-slate max-w-none mb-12">
                <h2 className="flex items-center text-2xl font-bold text-slate-900 mb-6 border-b border-slate-100 pb-4">
                   <FileText className="w-6 h-6 mr-3 text-blue-500" />
-                  Technische Beschreibung & Einsatzgebiet
+                  {t('technicalDesc')}
                </h2>
-               <p className="whitespace-pre-line text-slate-600 leading-relaxed">
-                  {product.description}
-               </p>
+               {product.description_html ? (
+                  <div className="text-slate-600 leading-relaxed custom-tables" dangerouslySetInnerHTML={{ __html: product.description_html }} />
+               ) : (
+                  <p className="whitespace-pre-line text-slate-600 leading-relaxed">
+                     {product.description}
+                  </p>
+               )}
             </div>
 
             {/* Smart Expert Knowledge Block */}
@@ -61,26 +67,22 @@ export default async function EncyclopediaArticle({ params }: { params: Promise<
                   <Info className="w-32 h-32 text-blue-600" />
                </div>
                <h3 className="flex items-center text-xl font-bold text-blue-900 mb-4 relative z-10">
-                  Expertenwissen (Порада Експерта)
+                  {t('expertTip')}
                </h3>
                <div className="relative z-10 text-blue-800 leading-relaxed space-y-4">
                   {product.category.includes('Dyneema') && (
                      <>
-                        <p><strong>Materialvorteil:</strong> Dyneema (UHMWPE) ist gewichtsbezogen bis zu 15-mal stärker als Stahl. Es schwimmt auf Wasser und ist extrem widerstandsfähig gegen Chemikalien und UV-Strahlung.</p>
-                        <p className="text-red-700 font-bold flex items-center bg-red-100/50 p-3 rounded-lg border border-red-200">
-                           <ShieldAlert className="w-5 h-5 mr-2" />
-                           Achtung: Aufgrund des niedrigen Schmelzpunktes (ca. 144°C) darf dieses Seil keinesfalls auf Spillwinden verwendet werden!
-                        </p>
+                        <p><strong>Materialvorteil:</strong> {t('catDyneema')}</p>
                      </>
                   )}
                   {product.category.includes('Traktions') && (
-                     <p><strong>Traktionseinsatz:</strong> Diese Seile werden auf extrem steilen Hängen eingesetzt, um schwere Forstmaschinen (Harvester/Forwarder) abzusichern. Die spezielle Kunststoffzwischenlage (PZ) verhindert, dass die äußeren Litzen an der Stahleinlage reiben, was die Lebensdauer massiv erhöht.</p>
+                     <p><strong>Traktionseinsatz:</strong> {t('catTraktion')}</p>
                   )}
                   {product.category.includes('Hochverdichtete') && (
-                     <p><strong>Verdichtung:</strong> Durch das Verdichten (Walzen) des Seils nach dem Schlagen wird die Oberfläche extrem glatt. Das Seil bekommt mehr metallischen Querschnitt und somit eine höhere Bruchlast. Außerdem schont es die Windentrommel und nimmt weniger Schmutz auf.</p>
+                     <p><strong>Verdichtung:</strong> {t('catHoch')}</p>
                   )}
                   {product.category.includes('Standard') && (
-                     <p><strong>Klassischer Einsatz:</strong> Standardseile bieten ein hervorragendes Preis-Leistungs-Verhältnis für den gelegentlichen Einsatz. Bei intensivem Rücken von Holz auf steinigem Untergrund empfiehlt sich jedoch der Wechsel zu hochverdichteten Seilen.</p>
+                     <p><strong>Klassischer Einsatz:</strong> {t('catStandard')}</p>
                   )}
                </div>
             </div>
@@ -89,10 +91,10 @@ export default async function EncyclopediaArticle({ params }: { params: Promise<
             <div>
                <h3 className="flex items-center text-xl font-bold text-slate-900 mb-6 border-b border-slate-100 pb-4">
                   <Wrench className="w-6 h-6 mr-3 text-orange-500" />
-                  Zubehör & Kompatibilität (Необхідні комплектуючі)
+                  {t('accessories')}
                </h3>
                <p className="text-slate-600 mb-6">
-                 Ein Forstwindenseil ist ohne die richtigen Endverbindungen nicht einsatzbereit. Folgende Komponenten sind für dieses Produkt zwingend erforderlich oder hochgradig empfohlen:
+                 {t('accessoriesDesc')}
                </p>
                
                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

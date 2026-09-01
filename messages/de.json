@@ -13,12 +13,30 @@
   },
   "ProductCard": {
     "diameter": "Durchmesser",
-    "length": "Länge",
+    "length": "LГ¤nge",
     "price": "Preis",
     "sku": "SKU",
-    "compatibility": "Zubehör / Kompatibilität",
-    "fullConfig": "Vollständige Konfiguration",
+    "compatibility": "ZubehГ¶r / KompatibilitГ¤t",
+    "fullConfig": "VollstГ¤ndige Konfiguration",
     "noImage": "Kein Bild",
     "productsCount": "Artikel"
+  },
+  "Encyclopedia": {
+    "title": "Wissensdatenbank",
+    "description": "Ihre technische Enzyklopädie für Forsttechnik. Wählen Sie eine Kategorie, um die Artikel zu lesen.",
+    "searchPlaceholder": "Suchen Sie nach Seil-Typen, Begriffen oder Produkten...",
+    "readArticle": "Artikel lesen",
+    "noProducts": "Keine Artikel gefunden.",
+    "categoriesTitle": "Kategorien",
+    "back": "Zurück zur Enzyklopädie",
+    "expertTip": "Expertenwissen",
+    "accessories": "Zubehör & Kompatibilität",
+    "technicalDesc": "Technische Beschreibung & Einsatzgebiet",
+    "accessoriesDesc": "Ein Forstwindenseil ist ohne die richtigen Endverbindungen nicht einsatzbereit. Folgende Komponenten sind zwingend erforderlich:",
+    "imagePlaceholder": "Technisches Bild",
+    "catDyneema": "Leichte, extrem belastbare Kunststoffseile. Schwimmfähig und ergonomisch.",
+    "catHoch": "Glatte Oberfläche, hohe Bruchlast, ideal für professionellen Dauereinsatz.",
+    "catTraktion": "Spezialseile mit Kunststoffzwischenlage für Harvester und Steilhang-Maschinen.",
+    "catStandard": "Klassische, robuste Stahlseile für Standardanwendungen."
   }
 }
