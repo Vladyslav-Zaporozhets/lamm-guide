@@ -51,8 +51,13 @@ export default async function LocaleLayout({
                      </div>
                   </Link>
 
-                  {/* Right side - Lang & Theme */}
+                  {/* Right side - Nav & Theme */}
                   <div className="flex items-center space-x-4">
+                     {locale === 'uk' && (
+                       <Link href="/glossary" className="hidden md:flex items-center text-sm font-bold text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors mr-2">
+                         Словник
+                       </Link>
+                     )}
                      <CommandPalette />
                      <ThemeToggle />
                      <div className="flex space-x-1 bg-slate-100 dark:bg-slate-800 p-1 rounded-lg">
