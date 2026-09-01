@@ -1,0 +1,14 @@
+﻿{
+  "Index": {
+    "title": "Каталог Lamm GmbH",
+    "description": "Посібник з лісової техніки та тросів"
+  },
+  "Categories": {
+    "SEILE": "Троси та канати (SEILE)",
+    "Forstwindenseile": "Троси для лісових лебідок (Forstwindenseile)",
+    "Hochverdichtete": "Висококомпресовані троси (Hochverdichtete Forstwindenseile)",
+    "Standard": "Стандартні троси (Standard Forstwindenseile)",
+    "Dyneema": "Синтетичні троси (Dyneema Forstwindenseile)",
+    "Traktionswindenseile": "Тягові канати (Traktionswindenseile)"
+  }
+}

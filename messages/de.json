@@ -1,0 +1,14 @@
+﻿{
+  "Index": {
+    "title": "Lamm GmbH Katalog",
+    "description": "Forsttechnik & Seile"
+  },
+  "Categories": {
+    "SEILE": "SEILE",
+    "Forstwindenseile": "Forstwindenseile",
+    "Hochverdichtete": "Hochverdichtete Forstwindenseile",
+    "Standard": "Standard Forstwindenseile",
+    "Dyneema": "Dyneema Forstwindenseile",
+    "Traktionswindenseile": "Traktionswindenseile"
+  }
+}
