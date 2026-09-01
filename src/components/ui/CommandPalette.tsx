@@ -15,6 +15,7 @@ export function CommandPalette() {
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
     const down = (e: KeyboardEvent) => {
       if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
@@ -33,6 +34,7 @@ export function CommandPalette() {
     if (isOpen) {
       setTimeout(() => inputRef.current?.focus(), 100);
     } else {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setQuery("");
     }
   }, [isOpen]);
@@ -82,7 +84,7 @@ export function CommandPalette() {
             <div className="max-h-[60vh] overflow-y-auto">
               {query && filtered.length === 0 ? (
                 <div className="p-8 text-center text-slate-500 dark:text-slate-400">
-                  Нічого не знайдено за запитом "{query}"
+                  Нічого не знайдено за запитом &quot;{query}&quot;
                 </div>
               ) : (
                 <div className="py-2">

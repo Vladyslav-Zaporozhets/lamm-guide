@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from 'react';
 import { useRouter, useSearchParams, usePathname } from 'next/navigation';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Link } from '@/i18n/routing';
 import Image from 'next/image';
 import productsData from '@/data/products.json';
@@ -9,8 +9,16 @@ import categoriesTree from '@/data/categories.json';
 import { Search, BookOpen, ChevronRight, Folder, FolderOpen, Image as ImageIcon, ChevronLeft } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
+// Define types for category nodes
+interface CategoryNode {
+  id: string;
+  name: string;
+  image?: string;
+  children?: CategoryNode[];
+}
+
 // Helper to find the path (array of nodes) to a specific category ID
-function findPathToNode(nodes: any[], targetId: string, currentPath: any[] = []): any[] | null {
+function findPathToNode(nodes: CategoryNode[], targetId: string, currentPath: CategoryNode[] = []): CategoryNode[] | null {
   for (const node of nodes) {
     const newPath = [...currentPath, node];
     if (node.id === targetId) return newPath;
@@ -32,21 +40,25 @@ function EncyclopediaContent() {
   const qParam = searchParams.get('q') || "";
 
   const [searchQuery, setSearchQuery] = useState(qParam);
-  const [currentLevel, setCurrentLevel] = useState<any[]>(categoriesTree);
-  const [path, setPath] = useState<any[]>([]);
+  const [currentLevel, setCurrentLevel] = useState<CategoryNode[]>(categoriesTree as CategoryNode[]);
+  const [path, setPath] = useState<CategoryNode[]>([]);
 
   // Sync state from URL
   useEffect(() => {
     if (catParam) {
-      const newPath = findPathToNode(categoriesTree, catParam);
+      const newPath = findPathToNode(categoriesTree as CategoryNode[], catParam);
       if (newPath && newPath.length > 0) {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setPath(newPath);
         const currentNode = newPath[newPath.length - 1];
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setCurrentLevel(currentNode.children || []);
       }
     } else {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setPath([]);
-      setCurrentLevel(categoriesTree);
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setCurrentLevel(categoriesTree as CategoryNode[]);
     }
   }, [catParam]);
 
@@ -71,7 +83,7 @@ function EncyclopediaContent() {
      return p.name.toLowerCase().includes(q) || (p.description && p.description.toLowerCase().includes(q)) || p.category.toLowerCase().includes(q);
   });
 
-  const navigateTo = (categoryNode: any) => {
+  const navigateTo = (categoryNode: CategoryNode) => {
     const params = new URLSearchParams(searchParams.toString());
     params.set('cat', categoryNode.id);
     router.push(`${pathname}?${params.toString()}`, { scroll: false });
@@ -96,14 +108,14 @@ function EncyclopediaContent() {
     router.push(`${pathname}?${params.toString()}`, { scroll: false });
   };
 
-  const goToBreadcrumb = (node: any) => {
+  const goToBreadcrumb = (node: CategoryNode) => {
     const params = new URLSearchParams(searchParams.toString());
     params.set('cat', node.id);
     router.push(`${pathname}?${params.toString()}`, { scroll: false });
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 pb-20">
+    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 pb-20 transition-colors duration-300">
       {/* Hero Section */}
       <div className="relative bg-slate-900 overflow-hidden border-b border-slate-800">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-blue-600/20 blur-[120px] rounded-full pointer-events-none"></div>
@@ -159,7 +171,7 @@ function EncyclopediaContent() {
                            {siblings && siblings.length > 1 && (
                               <div className="absolute top-full left-4 mt-0 w-64 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50 transform origin-top -translate-y-2 group-hover:translate-y-0">
                                  <div className="py-2 max-h-64 overflow-y-auto">
-                                    {siblings.map((sibling: any) => (
+                                    {siblings.map((sibling: CategoryNode) => (
                                        <button
                                           key={sibling.id}
                                           onClick={() => goToBreadcrumb(sibling)}
