@@ -26,9 +26,11 @@ export default function EncyclopediaIndex() {
   });
 
   const navigateTo = (categoryNode: any) => {
+     setPath([...path, categoryNode]);
      if (categoryNode.children && categoryNode.children.length > 0) {
-        setPath([...path, categoryNode]);
         setCurrentLevel(categoryNode.children);
+     } else {
+        setCurrentLevel([]); // Leaf node, clear current level to only show products
      }
   };
 
