@@ -750,7 +750,7 @@
     "variants": [
       {
         "sku": "596500B2010-10-50",
-        "diameter_mm": 10,
+        "diameter_mm": 20,
         "length_m": 50,
         "bruchkraft_kn": 120,
         "price": 355.45
@@ -1315,51 +1315,51 @@
     "description": "Kurzbeschreibung: Forst-Extrem® Revolution Traktionswindenseil kreuzschlag linksgängig (zS) verzinkt Spezialkonstruktion mit 8-Litzen - sehr flexibel & biegsam verdichtete Litzen sorgen für eine sehr hohe Bruchkraft verbesserte innere Auflageverhältnisse - dadurch mehr Druckstabilität Kunststoffzwischenlage vermindert zusätzlich die innere Reibung - dadurch höhere Standzeiten höchste Biegewechseleigenschaft - besonders gut geeignet für Traktionswinden von HSM Forstmaschinen Datentabelle Nenn-Ømm Gewichtkg/m Mind. Bruchkraft2060 N/mm² Mind. Bruchkraftin Tonnen 14 0,93 203,00 kN 20,70 Ausführung: Erhältlich in verschiedenen Längen (siehe Tabelle) - andere Längen auf Anfrage lieferbar Seil wird auf stabiler Holz-Haspel geliefert eine Seite Kauschenpressung innenliegend andere Seite angespitzt Verfügbare Längen Art.Nr. Beschreibung Länge Gewicht 58962160014-240 Forst-Extrem® Revolution Traktionswindenseil - Ø14mm 240m 224kg 58962160014-250 Forst-Extrem® Revolution Traktionswindenseil - Ø14mm 250m 233kg 58962160014-325 Forst-Extrem® Revolution Traktionswindenseil - Ø14mm 325m 303kg 58962160014-370 Forst-Extrem® Revolution Traktionswindenseil - Ø14mm 370m 345kg 58962160014-400 Forst-Extrem® Revolution Traktionswindenseil - Ø14mm 400m 372kg 58962160014-425 Forst-Extrem® Revolution Traktionswindenseil - Ø14mm 425m 396kg 58962160014-500 Forst-Extrem® Revolution Traktionswindenseil - Ø14mm 500m 465kg Andere Längen & Ausführungen auf Anfage lieferbar!!!",
     "variants": [
       {
-        "sku": "58962160014-240-240-50",
-        "diameter_mm": 240,
-        "length_m": 50,
+        "sku": "58962160014-240-240",
+        "diameter_mm": 14,
+        "length_m": 240,
         "bruchkraft_kn": 2880,
         "price": 387.47
       },
       {
-        "sku": "58962160014-240-250-50",
-        "diameter_mm": 250,
-        "length_m": 50,
+        "sku": "58962160014-240-250",
+        "diameter_mm": 14,
+        "length_m": 250,
         "bruchkraft_kn": 3000,
         "price": 402.47
       },
       {
-        "sku": "58962160014-240-325-50",
-        "diameter_mm": 325,
-        "length_m": 50,
+        "sku": "58962160014-240-325",
+        "diameter_mm": 14,
+        "length_m": 325,
         "bruchkraft_kn": 3900,
         "price": 514.97
       },
       {
-        "sku": "58962160014-240-370-50",
-        "diameter_mm": 370,
-        "length_m": 50,
+        "sku": "58962160014-240-370",
+        "diameter_mm": 14,
+        "length_m": 370,
         "bruchkraft_kn": 4440,
         "price": 582.47
       },
       {
-        "sku": "58962160014-240-400-50",
-        "diameter_mm": 400,
-        "length_m": 50,
+        "sku": "58962160014-240-400",
+        "diameter_mm": 14,
+        "length_m": 400,
         "bruchkraft_kn": 4800,
         "price": 627.47
       },
       {
-        "sku": "58962160014-240-425-50",
-        "diameter_mm": 425,
-        "length_m": 50,
+        "sku": "58962160014-240-425",
+        "diameter_mm": 14,
+        "length_m": 425,
         "bruchkraft_kn": 5100,
         "price": 664.97
       },
       {
-        "sku": "58962160014-240-500-50",
-        "diameter_mm": 500,
-        "length_m": 50,
+        "sku": "58962160014-240-500",
+        "diameter_mm": 14,
+        "length_m": 500,
         "bruchkraft_kn": 6000,
         "price": 777.47
       }
@@ -1377,8 +1377,8 @@
     "variants": [
       {
         "sku": "58962160016-450-10-50",
-        "diameter_mm": 10,
-        "length_m": 50,
+        "diameter_mm": 16,
+        "length_m": 16,
         "bruchkraft_kn": 120,
         "price": 45.74
       }
@@ -2263,30 +2263,30 @@
     "description": "Kurzbeschreibung: Forst-Extrem® V186 Traktionswindenseil kreuzschlag rechtsgängig hochverdichtet blank 6x31 Mehrdrahtkonstruktion - dadurch enorm flexibel & biegsam höchste Biegewechseleigenschaft - besonders geeignet für Traktionsseilwinden von Komatsu Forstmaschinen Datentabelle Nenn-Ømm Gewichtkg/m Mind. Bruchkraft2060 N/mm² Mind. Bruchkraftin Tonnen 14 0,99 187,00 kN 19,06 Ausführung: Erhältlich in verschiedenen Längen (siehe Tabelle) - andere Längen auf Anfrage lieferbar Seil wird auf stabiler Holz-Haspel geliefert eine Seite Kauschenpressung innenliegend andere Seite angespitzt Verfügbare Längen Art.Nr. Beschreibung Länge Gewicht 58930014000-280 Forst-Extrem® V186 Traktionswindenseil - Ø14mm 280m 280kg 58930014000-300 Forst-Extrem® V186 Traktionswindenseil - Ø14mm 300m 300kg 58930014000-350 Forst-Extrem® V186 Traktionswindenseil - Ø14mm 350m 350kg 58930014000-400 Forst-Extrem® V186 Traktionswindenseil - Ø14mm 400m 400kg Andere Längen & Ausführungen auf Anfage lieferbar!!!",
     "variants": [
       {
-        "sku": "58930014000-280-280-50",
-        "diameter_mm": 280,
-        "length_m": 50,
+        "sku": "58930014000-280-280",
+        "diameter_mm": 14,
+        "length_m": 280,
         "bruchkraft_kn": 3360,
         "price": 446.96
       },
       {
-        "sku": "58930014000-280-300-50",
-        "diameter_mm": 300,
-        "length_m": 50,
+        "sku": "58930014000-280-300",
+        "diameter_mm": 14,
+        "length_m": 300,
         "bruchkraft_kn": 3600,
         "price": 476.96
       },
       {
-        "sku": "58930014000-280-350-50",
-        "diameter_mm": 350,
-        "length_m": 50,
+        "sku": "58930014000-280-350",
+        "diameter_mm": 14,
+        "length_m": 350,
         "bruchkraft_kn": 4200,
         "price": 551.96
       },
       {
-        "sku": "58930014000-280-400-50",
-        "diameter_mm": 400,
-        "length_m": 50,
+        "sku": "58930014000-280-400",
+        "diameter_mm": 14,
+        "length_m": 400,
         "bruchkraft_kn": 4800,
         "price": 626.96
       }

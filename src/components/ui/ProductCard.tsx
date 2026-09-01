@@ -36,7 +36,7 @@ export default function ProductCard({ product, tCat, tUI }: any) {
   };
   
   const mappedKey = categoryMap[product.category] || product.category;
-  const localizedCategoryName = tCat(mappedKey) || product.category;
+  const localizedCategoryName = tCat.has(mappedKey) ? tCat(mappedKey) : product.category;
 
   return (
     <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col h-full relative group">
@@ -58,29 +58,41 @@ export default function ProductCard({ product, tCat, tUI }: any) {
           <div className="grid grid-cols-2 gap-3">
             <div>
               <label className="block text-[10px] font-bold text-slate-500 mb-1 uppercase">{tUI('diameter')}</label>
-              <select 
-                className="w-full bg-white border border-slate-300 rounded py-1.5 px-2 text-sm focus:ring-1 focus:ring-orange-500 outline-none"
-                value={selectedDiameter}
-                onChange={(e) => handleDiameterChange(Number(e.target.value))}
-              >
-                {uniqueDiameters.map((dia: any) => (
-                  <option key={dia} value={dia}>Ø {dia} mm</option>
-                ))}
-              </select>
+              {uniqueDiameters.length > 1 ? (
+                  <select 
+                    className="w-full bg-white border border-slate-300 rounded py-1.5 px-2 text-sm focus:ring-1 focus:ring-orange-500 outline-none"
+                    value={selectedDiameter}
+                    onChange={(e) => handleDiameterChange(Number(e.target.value))}
+                  >
+                    {uniqueDiameters.map((dia: any) => (
+                      <option key={dia} value={dia}>Ø {dia} mm</option>
+                    ))}
+                  </select>
+              ) : (
+                  <div className="w-full bg-slate-200/50 border border-transparent rounded py-1.5 px-2 text-sm text-slate-600 font-medium">
+                     Ø {uniqueDiameters[0]} mm
+                  </div>
+              )}
             </div>
             
             {hasLengths && uniqueLengths.length > 0 && (
               <div>
                 <label className="block text-[10px] font-bold text-slate-500 mb-1 uppercase">{tUI('length')}</label>
-                <select 
-                  className="w-full bg-white border border-slate-300 rounded py-1.5 px-2 text-sm focus:ring-1 focus:ring-orange-500 outline-none"
-                  value={selectedLength || ""}
-                  onChange={(e) => setSelectedLength(Number(e.target.value))}
-                >
-                  {uniqueLengths.map(len => (
-                    <option key={len} value={len}>{len} m</option>
-                  ))}
-                </select>
+                {uniqueLengths.length > 1 ? (
+                    <select 
+                      className="w-full bg-white border border-slate-300 rounded py-1.5 px-2 text-sm focus:ring-1 focus:ring-orange-500 outline-none"
+                      value={selectedLength || ""}
+                      onChange={(e) => setSelectedLength(Number(e.target.value))}
+                    >
+                      {uniqueLengths.map(len => (
+                        <option key={len} value={len}>{len} m</option>
+                      ))}
+                    </select>
+                ) : (
+                    <div className="w-full bg-slate-200/50 border border-transparent rounded py-1.5 px-2 text-sm text-slate-600 font-medium">
+                       {uniqueLengths[0]} m
+                    </div>
+                )}
               </div>
             )}
           </div>
