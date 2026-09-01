@@ -28,10 +28,6 @@ export default function HomePage() {
           <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">{t('title')}</h1>
           <p className="text-slate-500 mt-2 text-lg">{t('description')}</p>
         </div>
-        <div className="flex gap-2 bg-white rounded-lg p-1 border shadow-sm">
-          <Link href="/" locale="de" className="px-4 py-2 text-sm font-semibold rounded hover:bg-slate-100 transition-colors text-slate-700">Deutsch</Link>
-          <Link href="/" locale="uk" className="px-4 py-2 text-sm font-semibold rounded hover:bg-slate-100 transition-colors text-slate-700">Українська</Link>
-        </div>
       </div>
       
       {/* Smart Search Bar */}

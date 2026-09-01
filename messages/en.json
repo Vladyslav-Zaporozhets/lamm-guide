@@ -1,0 +1,38 @@
+{
+  "Index": {
+    "title": "Lamm GmbH Configurator",
+    "description": "Forestry technology & Ropes"
+  },
+  "Categories": {
+    "SEILE": "ROPES",
+    "Forstwindenseile": "Forestry Winch Ropes",
+    "Hochverdichtete": "Compacted Winch Ropes",
+    "Standard": "Standard Winch Ropes",
+    "Dyneema": "Dyneema Winch Ropes",
+    "Traktionswindenseile": "Traction Winch Ropes"
+  },
+  "ProductCard": {
+    "productsCount": "Products",
+    "diameter": "Diameter",
+    "length": "Length",
+    "sku": "SKU",
+    "price": "Price",
+    "fullConfig": "Full Configuration",
+    "noImage": "No Image"
+  },
+  "Encyclopedia": {
+    "title": "Knowledge Base",
+    "description": "Your technical encyclopedia for forestry equipment. Find applications, expert knowledge, and detailed specifications.",
+    "searchPlaceholder": "Search for rope types, terms, or products...",
+    "readArticle": "Read Article",
+    "noProducts": "No articles found.",
+    "back": "Back to Encyclopedia",
+    "expertTip": "Expert Knowledge",
+    "accessories": "Accessories & Compatibility",
+    "technicalDesc": "Technical Description & Application",
+    "dyneemaDesc": "Lightweight, extremely resilient synthetic ropes. Buoyant and ergonomic.",
+    "hochverdichteteDesc": "Smooth surface, high breaking load, ideal for professional continuous use.",
+    "traktionsDesc": "Special ropes with plastic core for harvesters and steep slope machines.",
+    "standardDesc": "Classic, robust steel ropes for standard applications."
+  }
+}

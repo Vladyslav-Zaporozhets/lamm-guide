@@ -3,7 +3,7 @@ import {getMessages, getTranslations} from 'next-intl/server';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import {Link} from '@/i18n/routing';
-import { BookOpen, ShoppingBag } from 'lucide-react';
+import { BookOpen, ShoppingBag, Globe } from 'lucide-react';
 import './globals.css';
 
 export async function generateMetadata({ params }: any) {
@@ -32,16 +32,27 @@ export default async function LocaleLayout({ children, params }: any) {
                    <span className="bg-orange-500 text-white px-2 py-1 rounded mr-2">Lamm</span>
                    Guide
                 </div>
-                <nav className="flex space-x-1">
-                   <Link href="/" className="flex items-center px-4 py-2 rounded-lg text-sm font-bold text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition-colors">
-                      <ShoppingBag className="w-4 h-4 mr-2" />
-                      Katalog
-                   </Link>
-                   <Link href="/encyclopedia" className="flex items-center px-4 py-2 rounded-lg text-sm font-bold text-slate-600 hover:bg-orange-50 hover:text-orange-600 transition-colors">
-                      <BookOpen className="w-4 h-4 mr-2" />
-                      Enzyklopädie
-                   </Link>
-                </nav>
+                
+                <div className="flex items-center space-x-2 md:space-x-6">
+                   <nav className="flex space-x-1">
+                      <Link href="/" className="flex items-center px-2 md:px-4 py-2 rounded-lg text-sm font-bold text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition-colors">
+                         <ShoppingBag className="w-4 h-4 mr-2" />
+                         <span className="hidden md:inline">Konfigurator</span>
+                      </Link>
+                      <Link href="/encyclopedia" className="flex items-center px-2 md:px-4 py-2 rounded-lg text-sm font-bold text-slate-600 hover:bg-orange-50 hover:text-orange-600 transition-colors">
+                         <BookOpen className="w-4 h-4 mr-2" />
+                         <span className="hidden md:inline">Enzyklopädie</span>
+                      </Link>
+                   </nav>
+                   
+                   <div className="hidden md:block h-6 w-px bg-slate-200"></div>
+                   
+                   <div className="flex space-x-1 bg-slate-100 p-1 rounded-lg">
+                      <Link href="/" locale="de" className={`px-2 py-1 text-xs font-bold rounded ${locale === 'de' ? 'bg-white shadow-sm text-slate-900' : 'text-slate-500 hover:text-slate-700'}`}>DE</Link>
+                      <Link href="/" locale="en" className={`px-2 py-1 text-xs font-bold rounded ${locale === 'en' ? 'bg-white shadow-sm text-slate-900' : 'text-slate-500 hover:text-slate-700'}`}>EN</Link>
+                      <Link href="/" locale="uk" className={`px-2 py-1 text-xs font-bold rounded ${locale === 'uk' ? 'bg-white shadow-sm text-slate-900' : 'text-slate-500 hover:text-slate-700'}`}>UK</Link>
+                   </div>
+                </div>
              </div>
           </header>
 
