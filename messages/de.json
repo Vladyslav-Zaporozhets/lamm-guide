@@ -1,24 +1,24 @@
-﻿{
-    "Index":  {
-                  "title":  "Lamm GmbH Katalog",
-                  "description":  "Forsttechnik \u0026 Seile"
-              },
-    "Categories":  {
-                       "SEILE":  "SEILE",
-                       "Forstwindenseile":  "Forstwindenseile",
-                       "Hochverdichtete":  "Hochverdichtete Forstwindenseile",
-                       "Standard":  "Standard Forstwindenseile",
-                       "Dyneema":  "Dyneema Forstwindenseile",
-                       "Traktionswindenseile":  "Traktionswindenseile"
-                   },
-    "ProductCard":  {
-                        "noImage":  "Kein Bild",
-                        "productsCount":  "Artikel",
-                        "length":  "Länge",
-                        "fullConfig":  "Vollständige Konfiguration",
-                        "diameter":  "Durchmesser",
-                        "price":  "Preis",
-                        "sku":  "SKU",
-                        "compatibility":  "Zubehör / Kompatibilität"
-                    }
+{
+  "Index": {
+    "title": "Lamm GmbH Katalog",
+    "description": "Forsttechnik & Seile"
+  },
+  "Categories": {
+    "SEILE": "SEILE",
+    "Forstwindenseile": "Forstwindenseile",
+    "Hochverdichtete": "Hochverdichtete Forstwindenseile",
+    "Standard": "Standard Forstwindenseile",
+    "Dyneema": "Dyneema Forstwindenseile",
+    "Traktionswindenseile": "Traktionswindenseile"
+  },
+  "ProductCard": {
+    "diameter": "Durchmesser",
+    "length": "Länge",
+    "price": "Preis",
+    "sku": "SKU",
+    "compatibility": "Zubehör / Kompatibilität",
+    "fullConfig": "Vollständige Konfiguration",
+    "noImage": "Kein Bild",
+    "productsCount": "Artikel"
+  }
 }
