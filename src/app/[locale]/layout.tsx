@@ -37,15 +37,19 @@ export default async function LocaleLayout({
             <header className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 sticky top-0 z-50 transition-colors duration-300">
                <div className="max-w-7xl mx-auto px-4 md:px-8 h-16 flex items-center justify-between">
                   {/* Logo / Brand */}
-                  <div className="flex items-center space-x-3">
-                     <div className="bg-orange-500 text-white p-1.5 rounded-lg">
-                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2zm0 3.8l7.2 14.2H4.8L12 5.8z"/></svg>
+                  <Link href="/" className="flex items-center group">
+                     <div className="bg-orange-500 text-white p-2 rounded-xl mr-3 group-hover:bg-orange-600 transition-colors shadow-sm">
+                        <Tent className="w-6 h-6" />
                      </div>
                      <div>
-                        <h1 className="text-xl font-black tracking-tight text-slate-900 dark:text-white leading-none">Lamm GmbH</h1>
-                        <p className="text-[10px] font-bold tracking-widest text-slate-400 uppercase">Akademie</p>
+                        <span className="text-xl font-black tracking-tight text-slate-900 dark:text-white block leading-none">
+                          Lamm GmbH
+                        </span>
+                        <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block mt-1">
+                          Akademie
+                        </span>
                      </div>
-                  </div>
+                  </Link>
 
                   {/* Right side - Lang & Theme */}
                   <div className="flex items-center space-x-4">

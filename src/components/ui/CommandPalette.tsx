@@ -17,6 +17,9 @@ export function CommandPalette() {
         e.preventDefault();
         setIsOpen((open) => !open);
       }
+      if (e.key === "Escape") {
+        setIsOpen(false);
+      }
     };
     document.addEventListener("keydown", down);
     return () => document.removeEventListener("keydown", down);
@@ -50,13 +53,15 @@ export function CommandPalette() {
 
       <AnimatePresence>
         {isOpen && (
-          <div className="fixed inset-0 z-[100] flex items-start justify-center pt-20 px-4">
+          <div 
+            className="fixed inset-0 z-[100] flex items-start justify-center pt-20 px-4"
+            onClick={() => setIsOpen(false)}
+          >
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               className="fixed inset-0 bg-slate-900/40 backdrop-blur-sm"
-              onClick={() => setIsOpen(false)}
             />
             <motion.div
               initial={{ opacity: 0, scale: 0.95, y: -20 }}
@@ -64,6 +69,7 @@ export function CommandPalette() {
               exit={{ opacity: 0, scale: 0.95, y: -20 }}
               transition={{ type: "spring", bounce: 0, duration: 0.3 }}
               className="relative w-full max-w-2xl bg-white dark:bg-slate-900 rounded-2xl shadow-2xl overflow-hidden border border-slate-200 dark:border-slate-800"
+              onClick={(e) => e.stopPropagation()}
             >
               <div className="flex items-center px-4 py-3 border-b border-slate-100 dark:border-slate-800">
                 <Search className="w-5 h-5 text-slate-400 mr-3" />
