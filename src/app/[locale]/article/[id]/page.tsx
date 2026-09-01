@@ -75,7 +75,7 @@ export default async function ArticlePage({
          <div className="p-8 md:p-12">
             
             {/* Image & Video Gallery */}
-            {(product.images?.length > 0 || product.videos?.length > 0) ? (
+            {((product.images && product.images.length > 0) || (product.videos && product.videos.length > 0)) ? (
                <div className="mb-12 space-y-6">
                   {/* Main Images */}
                   {product.images && product.images.length > 0 && (
@@ -154,7 +154,7 @@ export default async function ArticlePage({
             ) : null}
 
             {/* Cross-Selling / Required Accessories */}
-            {product.compatibility && product.compatibility.length > 0 && (
+            {(product.compatibility && product.compatibility.length > 0) && (
                <div>
                   <h3 className="flex items-center text-xl font-bold text-slate-900 mb-6 border-b border-slate-100 pb-4">
                      <Wrench className="w-6 h-6 mr-3 text-orange-500" />
