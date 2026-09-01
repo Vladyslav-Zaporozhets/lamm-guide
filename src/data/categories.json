@@ -1,46 +1,46 @@
 ﻿[
   {
     "id": "seile",
-    "name": "Seile",
+    "name": "Троси та канати (Seile)",
     "level": 1,
     "children": [
       {
         "id": "seilzubehoer",
-        "name": "Seilzubehör",
+        "name": "Комплектуючі для тросів (Seilzubehör)",
         "level": 2,
         "children": [
-          { "id": "seilklemmen", "name": "Seilklemmen", "level": 3 },
-          { "id": "seilendstuecke", "name": "Seilendstücke", "level": 3 },
-          { "id": "seilgleithaken", "name": "Seilgleithaken", "level": 3 },
-          { "id": "dyneema-zubehoer", "name": "Dyneema Zubehör", "level": 3 },
-          { "id": "seilscheren", "name": "Seilscheren", "level": 3 },
-          { "id": "schaekel", "name": "Schäkel", "level": 3 },
-          { "id": "kauschen", "name": "Kauschen", "level": 3 },
-          { "id": "ringmuttern-spannschloesser", "name": "Ringmuttern & Spannschlösser", "level": 3 },
-          { "id": "karabinerhaken", "name": "Karabinerhaken", "level": 3 }
+          { "id": "seilklemmen", "name": "Затискачі для тросів (Seilklemmen)", "level": 3 },
+          { "id": "seilendstuecke", "name": "Кінцевики тросів (Seilendstücke)", "level": 3 },
+          { "id": "seilgleithaken", "name": "Ковзні гаки (Seilgleithaken)", "level": 3 },
+          { "id": "dyneema-zubehoer", "name": "Комплектуючі для синтетики (Dyneema Zubehör)", "level": 3 },
+          { "id": "seilscheren", "name": "Різаки для тросів (Seilscheren)", "level": 3 },
+          { "id": "schaekel", "name": "Шакли (Schäkel)", "level": 3 },
+          { "id": "kauschen", "name": "Коуші (Kauschen)", "level": 3 },
+          { "id": "ringmuttern-spannschloesser", "name": "Рим-гайки та талрепи (Ringmuttern & Spannschlösser)", "level": 3 },
+          { "id": "karabinerhaken", "name": "Карабіни (Karabinerhaken)", "level": 3 }
         ]
       },
-      { "id": "spillwindenseile", "name": "Spillwindenseile", "level": 2, "children": [] },
+      { "id": "spillwindenseile", "name": "Троси для кабестанових лебідок (Spillwindenseile)", "level": 2, "children": [] },
       {
         "id": "forstwindenseile",
-        "name": "Forstwindenseile",
+        "name": "Троси для лісових лебідок (Forstwindenseile)",
         "level": 2,
         "children": [
-          { "id": "hochverdichtete-forstwindenseile", "name": "Hochverdichtete Forstwindenseile", "level": 3 },
-          { "id": "standard-forstwindenseile", "name": "Standard Forstwindenseile", "level": 3 },
-          { "id": "dyneema-forstwindenseile", "name": "Dyneema Forstwindenseile", "level": 3 },
-          { "id": "traktionswindenseile", "name": "Traktionswindenseile", "level": 3 }
+          { "id": "hochverdichtete-forstwindenseile", "name": "Висококомпресовані троси (Hochverdichtete Forstwindenseile)", "level": 3 },
+          { "id": "standard-forstwindenseile", "name": "Стандартні троси (Standard Forstwindenseile)", "level": 3 },
+          { "id": "dyneema-forstwindenseile", "name": "Синтетичні троси (Dyneema Forstwindenseile)", "level": 3 },
+          { "id": "traktionswindenseile", "name": "Тягові троси (Traktionswindenseile)", "level": 3 }
         ]
       },
-      { "id": "greifzugseile", "name": "Greifzugseile", "level": 2, "children": [] },
-      { "id": "chokerseile", "name": "Chokerseile", "level": 2, "children": [] },
-      { "id": "faellhilfeseile", "name": "Fällhilfeseile & Zubehör", "level": 2, "children": [] },
-      { "id": "rundlitzenseile", "name": "Rundlitzenseile", "level": 2, "children": [] },
-      { "id": "hubseile", "name": "Hubseile", "level": 2, "children": [] },
-      { "id": "anschlagseile", "name": "Anschlagseile", "level": 2, "children": [] },
-      { "id": "edelstahlseile", "name": "Edelstahlseile", "level": 2, "children": [] },
-      { "id": "faserseile", "name": "Faserseile", "level": 2, "children": [] },
-      { "id": "presswerkzeuge", "name": "Presswerkzeuge", "level": 2, "children": [] }
+      { "id": "greifzugseile", "name": "Троси для ручних лебідок (Greifzugseile)", "level": 2, "children": [] },
+      { "id": "chokerseile", "name": "Чокерні троси (Chokerseile)", "level": 2, "children": [] },
+      { "id": "faellhilfeseile", "name": "Троси-помічники для звалювання (Fällhilfeseile & Zubehör)", "level": 2, "children": [] },
+      { "id": "rundlitzenseile", "name": "Круглосталкові троси (Rundlitzenseile)", "level": 2, "children": [] },
+      { "id": "hubseile", "name": "Підйомні троси (Hubseile)", "level": 2, "children": [] },
+      { "id": "anschlagseile", "name": "Стропові троси (Anschlagseile)", "level": 2, "children": [] },
+      { "id": "edelstahlseile", "name": "Троси з нержавіючої сталі (Edelstahlseile)", "level": 2, "children": [] },
+      { "id": "faserseile", "name": "Троси з волокон (Faserseile)", "level": 2, "children": [] },
+      { "id": "presswerkzeuge", "name": "Інструменти для опресування (Presswerkzeuge)", "level": 2, "children": [] }
     ]
   }
 ]
