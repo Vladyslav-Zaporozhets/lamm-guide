@@ -119,20 +119,26 @@ export default function EncyclopediaIndex() {
                      <button 
                         key={node.id}
                         onClick={() => navigateTo(node)}
-                        className={`flex items-center p-5 rounded-2xl border transition-all text-left group bg-slate-50 border-slate-200 hover:border-blue-400 hover:bg-blue-50 hover:shadow-md ${node.children && node.children.length === 0 ? 'opacity-80' : ''}`}
+                        className={`flex items-center p-4 rounded-2xl border transition-all text-left group bg-white border-slate-200 hover:border-blue-400 hover:shadow-lg ${node.children && node.children.length === 0 ? 'opacity-90' : ''}`}
                      >
-                        <div className="p-3 bg-white rounded-xl shadow-sm mr-4 text-blue-500 group-hover:scale-110 transition-transform">
-                           {node.children && node.children.length > 0 ? <FolderOpen className="w-6 h-6" /> : <Folder className="w-6 h-6 text-slate-400" />}
-                        </div>
-                        <div className="flex-1">
-                           <h3 className="font-bold text-slate-900 text-sm md:text-base leading-tight group-hover:text-blue-800">{node.name}</h3>
-                           {node.children && node.children.length > 0 && (
-                              <p className="text-xs text-slate-500 mt-1">{node.children.length} підкатегорій</p>
+                        <div className="w-16 h-16 rounded-xl shadow-sm mr-4 overflow-hidden relative bg-slate-100 flex-shrink-0">
+                           {node.image ? (
+                              <img src={node.image} alt={node.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                           ) : (
+                              <div className="w-full h-full flex items-center justify-center text-blue-500">
+                                 {node.children && node.children.length > 0 ? <FolderOpen className="w-8 h-8" /> : <Folder className="w-8 h-8 text-slate-400" />}
+                              </div>
                            )}
                         </div>
-                        {node.children && node.children.length > 0 && (
-                           <ChevronRight className="w-5 h-5 text-slate-400 group-hover:text-blue-500" />
-                        )}
+                        <div className="flex-1">
+                           <h3 className="font-bold text-slate-900 text-sm md:text-base leading-tight group-hover:text-blue-600 line-clamp-2">{node.name}</h3>
+                           {node.children && node.children.length > 0 && (
+                              <p className="text-xs text-slate-500 mt-1 font-medium">{node.children.length} підкатегорій</p>
+                           )}
+                        </div>
+                        <div className="ml-2 w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-blue-100 transition-colors">
+                           <ChevronRight className="w-4 h-4 text-slate-400 group-hover:text-blue-600" />
+                        </div>
                      </button>
                   ))}
                </div>

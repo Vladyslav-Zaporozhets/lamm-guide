@@ -12,55 +12,66 @@
           {
             "id": "seilklemmen",
             "name": "Затискачі для тросів (Seilklemmen)",
-            "level": 3
+            "level": 3,
+            "image": "https://www.lamm-seile.de/thumbnail/69/3c/28/1732231337/alu_seilpressklemme_600x600.jpg"
           },
           {
             "id": "seilendstuecke",
             "name": "Кінцевики тросів (Seilendstücke)",
-            "level": 3
+            "level": 3,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
           },
           {
             "id": "seilgleithaken",
             "name": "Ковзні гаки (Seilgleithaken)",
-            "level": 3
+            "level": 3,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
           },
           {
             "id": "dyneema-zubehoer",
             "name": "Комплектуючі для синтетики (Dyneema Zubehör)",
-            "level": 3
+            "level": 3,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Dyneema_rope.jpg/800px-Dyneema_rope.jpg"
           },
           {
             "id": "seilscheren",
             "name": "Різаки для тросів (Seilscheren)",
-            "level": 3
+            "level": 3,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
           },
           {
             "id": "schaekel",
             "name": "Шакли (Schäkel)",
-            "level": 3
+            "level": 3,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Sch%C3%A4kel.jpg/800px-Sch%C3%A4kel.jpg"
           },
           {
             "id": "kauschen",
             "name": "Коуші (Kauschen)",
-            "level": 3
+            "level": 3,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Thimble_%28wire_rope%29.jpg/800px-Thimble_%28wire_rope%29.jpg"
           },
           {
             "id": "ringmuttern-spannschloesser",
             "name": "Рим-гайки та талрепи (Ringmuttern & Spannschlösser)",
-            "level": 3
+            "level": 3,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
           },
           {
             "id": "karabinerhaken",
             "name": "Карабіни (Karabinerhaken)",
-            "level": 3
+            "level": 3,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Carabiner_with_screw_gate.jpg/800px-Carabiner_with_screw_gate.jpg"
           }
-        ]
+        ],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Sch%C3%A4kel.jpg/800px-Sch%C3%A4kel.jpg"
       },
       {
         "id": "spillwindenseile",
         "name": "Троси для кабестанових лебідок (Spillwindenseile)",
         "level": 2,
-        "children": []
+        "children": [],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
       },
       {
         "id": "forstwindenseile",
@@ -70,79 +81,94 @@
           {
             "id": "hochverdichtete-forstwindenseile",
             "name": "Висококомпресовані троси (Hochverdichtete Forstwindenseile)",
-            "level": 3
+            "level": 3,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
           },
           {
             "id": "standard-forstwindenseile",
             "name": "Стандартні троси (Standard Forstwindenseile)",
-            "level": 3
+            "level": 3,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
           },
           {
             "id": "dyneema-forstwindenseile",
             "name": "Синтетичні троси (Dyneema Forstwindenseile)",
-            "level": 3
+            "level": 3,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Dyneema_rope.jpg/800px-Dyneema_rope.jpg"
           },
           {
             "id": "traktionswindenseile",
             "name": "Тягові троси (Traktionswindenseile)",
-            "level": 3
+            "level": 3,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
           }
-        ]
+        ],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
       },
       {
         "id": "greifzugseile",
         "name": "Троси для ручних лебідок (Greifzugseile)",
         "level": 2,
-        "children": []
+        "children": [],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
       },
       {
         "id": "chokerseile",
         "name": "Чокерні троси (Chokerseile)",
         "level": 2,
-        "children": []
+        "children": [],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
       },
       {
         "id": "faellhilfeseile",
         "name": "Троси-помічники для звалювання (Fällhilfeseile & Zubehör)",
         "level": 2,
-        "children": []
+        "children": [],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
       },
       {
         "id": "rundlitzenseile",
         "name": "Круглосталкові троси (Rundlitzenseile)",
         "level": 2,
-        "children": []
+        "children": [],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
       },
       {
         "id": "hubseile",
         "name": "Підйомні троси (Hubseile)",
         "level": 2,
-        "children": []
+        "children": [],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
       },
       {
         "id": "anschlagseile",
         "name": "Стропові троси (Anschlagseile)",
         "level": 2,
-        "children": []
+        "children": [],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
       },
       {
         "id": "edelstahlseile",
         "name": "Троси з нержавіючої сталі (Edelstahlseile)",
         "level": 2,
-        "children": []
+        "children": [],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Wire_Rope.jpg/800px-Wire_Rope.jpg"
       },
       {
         "id": "faserseile",
         "name": "Троси з волокон (Faserseile)",
         "level": 2,
-        "children": []
+        "children": [],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
       },
       {
         "id": "presswerkzeuge",
         "name": "Інструменти для опресування (Presswerkzeuge)",
         "level": 2,
-        "children": []
+        "children": [],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
       }
-    ]
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Drahtseil_P1060954.jpg/800px-Drahtseil_P1060954.jpg"
   }
 ]
