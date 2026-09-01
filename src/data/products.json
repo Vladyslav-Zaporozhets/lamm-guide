@@ -1,55 +1,139 @@
 [
   {
-    "id": "forst-extrem-w25-v",
-    "name": "Forst-Extrem® W25-V",
-    "category": "Hochverdichtete Forstwindenseile",
-    "sku": "W25V-10-0050-GG-B",
-    "description": "Hochverdichtetes Forstwindenseil für maximale Bruchkraft und Langlebigkeit.",
-    "url": "https://www.lamm-seile.de/forst-extrem-w25-v-forstwindenseil-hochverdichtet/W25V-10-0050-GG-B",
-    "features": [
-      "Extrem hohe Bruchkraft",
-      "Geringe Dehnung",
-      "Verschleißfest"
-    ],
-    "compatibility": ["Seilklemmen 10mm", "Lasthaken Grad 100"]
-  },
-  {
-    "id": "forst-extrem-v156",
-    "name": "Forst-Extrem® V156",
-    "category": "Hochverdichtete Forstwindenseile",
-    "sku": "V156-08-0140-GG-B",
-    "description": "Hochverdichtetes Seil mit optimaler Flexibilität.",
-    "url": "https://www.lamm-seile.de/forst-extrem-v156-forstwindenseil-hochverdichtet/58941960008",
-    "features": [
-      "Hohe Flexibilität",
-      "Gute Wickeleigenschaften"
-    ],
-    "compatibility": ["Seilklemmen 8mm"]
-  },
-  {
     "id": "dyneema-xtr",
     "name": "Dyneema Forstwindenseil XTR",
     "category": "Dyneema Forstwindenseile",
-    "sku": "DYN-XTR-12",
-    "description": "Leichtes und extrem starkes Kunststoffseil aus Dyneema.",
-    "url": "https://www.lamm-seile.de/seile/forstwindenseile/dyneema-forstwindenseile/442/dyneema-forstwindenseil-xtr",
-    "features": [
-      "Extrem leicht (Gewichtsersparnis)",
-      "Keine Verletzungsgefahr durch abstehende Drähte",
-      "Hohe Bruchkraft"
+    "description": "Premium Dyneema Seil mit maximaler Bruchkraft und minimalem Gewicht.",
+    "variants": [
+      { "sku": "DYN-XTR-10-50", "diameter_mm": 10, "length_m": 50, "bruchkraft_kn": 110, "price": 450.00 },
+      { "sku": "DYN-XTR-10-70", "diameter_mm": 10, "length_m": 70, "bruchkraft_kn": 110, "price": 630.00 },
+      { "sku": "DYN-XTR-12-50", "diameter_mm": 12, "length_m": 50, "bruchkraft_kn": 135, "price": 540.00 },
+      { "sku": "DYN-XTR-14-50", "diameter_mm": 14, "length_m": 50, "bruchkraft_kn": 170, "price": 650.00 }
     ],
-    "compatibility": ["Spezial-Seilrollen", "Softschäkel"]
+    "compatibility": ["Softschäkel XTR", "Umlenkrolle bis 14mm"]
   },
   {
-    "id": "standard-6x19",
+    "id": "dyneema-soft-schaekel-xtr",
+    "name": "Dyneema Soft Schäkel XTR",
+    "category": "Dyneema Forstwindenseile",
+    "description": "Flexibler und sicherer Schäkel aus Dyneema, ideal für Kunststoffseile.",
+    "variants": [
+      { "sku": "DYN-SCH-10", "diameter_mm": 10, "length_m": null, "bruchkraft_kn": 120, "price": 45.00 },
+      { "sku": "DYN-SCH-12", "diameter_mm": 12, "length_m": null, "bruchkraft_kn": 145, "price": 55.00 }
+    ],
+    "compatibility": ["Dyneema Forstwindenseil XTR"]
+  },
+  {
+    "id": "dyneema-zugseil-kausche",
+    "name": "Dyneema Zugseil mit Kausche & Kausche",
+    "category": "Dyneema Forstwindenseile",
+    "description": "Vorkonfektioniertes Zugseil beidseitig mit Kausche.",
+    "variants": [
+      { "sku": "DYN-ZUG-K-10-10", "diameter_mm": 10, "length_m": 10, "bruchkraft_kn": 100, "price": 120.00 },
+      { "sku": "DYN-ZUG-K-12-10", "diameter_mm": 12, "length_m": 10, "bruchkraft_kn": 125, "price": 145.00 }
+    ],
+    "compatibility": ["Lasthaken", "Umlenkrolle"]
+  },
+  {
+    "id": "faellhilfeseil-racer",
+    "name": "Fällhilfeseil Dyneema Racer XTR",
+    "category": "Dyneema Forstwindenseile",
+    "description": "Spezielles Fällhilfeseil für den sicheren Holzeinschlag.",
+    "variants": [
+      { "sku": "FHS-RAC-10-30", "diameter_mm": 10, "length_m": 30, "bruchkraft_kn": 90, "price": 280.00 },
+      { "sku": "FHS-RAC-12-30", "diameter_mm": 12, "length_m": 30, "bruchkraft_kn": 120, "price": 340.00 }
+    ],
+    "compatibility": ["Poller", "Rundschlinge"]
+  },
+  {
+    "id": "forst-extrem-w25-v",
+    "name": "Forst-Extrem® W25-V Forstwindenseil hochverdichtet",
+    "category": "Hochverdichtete Forstwindenseile",
+    "description": "Hochverdichtetes Stahlseil für extreme Beanspruchung.",
+    "variants": [
+      { "sku": "W25V-10-0050-GG-B", "diameter_mm": 10, "length_m": 50, "bruchkraft_kn": 115, "price": 320.00 },
+      { "sku": "W25V-10-0070-GG-B", "diameter_mm": 10, "length_m": 70, "bruchkraft_kn": 115, "price": 448.00 },
+      { "sku": "W25V-12-0050-GG-B", "diameter_mm": 12, "length_m": 50, "bruchkraft_kn": 145, "price": 380.00 },
+      { "sku": "W25V-14-0050-GG-B", "diameter_mm": 14, "length_m": 50, "bruchkraft_kn": 180, "price": 450.00 }
+    ],
+    "compatibility": ["Seilklemmen", "Stahl-Umlenkrolle"]
+  },
+  {
+    "id": "forst-extrem-v114",
+    "name": "Forst-Extrem® V114 Forstwindenseil hochverdichtet",
+    "category": "Hochverdichtete Forstwindenseile",
+    "description": "V114 Serie - flexibel und hochfest.",
+    "variants": [
+      { "sku": "V114-08-0050", "diameter_mm": 8, "length_m": 50, "bruchkraft_kn": 85, "price": 250.00 },
+      { "sku": "V114-10-0050", "diameter_mm": 10, "length_m": 50, "bruchkraft_kn": 110, "price": 300.00 }
+    ],
+    "compatibility": ["Seilklemmen"]
+  },
+  {
+    "id": "forst-extrem-v156",
+    "name": "Forst-Extrem® V156 Forstwindenseil hochverdichtet",
+    "category": "Hochverdichtete Forstwindenseile",
+    "description": "V156 Serie - sehr hohe Verschleißfestigkeit.",
+    "variants": [
+      { "sku": "V156-08-0050", "diameter_mm": 8, "length_m": 50, "bruchkraft_kn": 90, "price": 270.00 },
+      { "sku": "V156-10-0050", "diameter_mm": 10, "length_m": 50, "bruchkraft_kn": 120, "price": 330.00 },
+      { "sku": "V156-12-0050", "diameter_mm": 12, "length_m": 50, "bruchkraft_kn": 150, "price": 390.00 }
+    ],
+    "compatibility": ["Seilklemmen"]
+  },
+  {
+    "id": "forst-extrem-v186",
+    "name": "Forst-Extrem® V186 Forstwindenseil hochverdichtet",
+    "category": "Hochverdichtete Forstwindenseile",
+    "description": "V186 Serie - für den professionellen Dauereinsatz.",
+    "variants": [
+      { "sku": "V186-10-0050", "diameter_mm": 10, "length_m": 50, "bruchkraft_kn": 125, "price": 350.00 },
+      { "sku": "V186-12-0050", "diameter_mm": 12, "length_m": 50, "bruchkraft_kn": 155, "price": 410.00 },
+      { "sku": "V186-14-0050", "diameter_mm": 14, "length_m": 50, "bruchkraft_kn": 190, "price": 480.00 }
+    ],
+    "compatibility": ["Seilklemmen"]
+  },
+  {
+    "id": "forst-extrem-revolution-14",
+    "name": "Forst-Extrem® Revolution Traktionswindenseil - Ø14mm",
+    "category": "Traktionswindenseile",
+    "description": "Spezielles Traktionsseil für Forstmaschinen.",
+    "variants": [
+      { "sku": "TRAK-REV-14-100", "diameter_mm": 14, "length_m": 100, "bruchkraft_kn": 210, "price": 1200.00 },
+      { "sku": "TRAK-REV-14-150", "diameter_mm": 14, "length_m": 150, "bruchkraft_kn": 210, "price": 1800.00 }
+    ],
+    "compatibility": ["Harvester", "Forwarder"]
+  },
+  {
+    "id": "standard-6x19-seale",
     "name": "Standard Forstwindenseil 6x19 Seale",
     "category": "Standard Forstwindenseile",
-    "sku": "STD-619-S",
-    "description": "Klassisches Forstwindenseil für Standardanwendungen.",
-    "url": "https://www.lamm-seile.de/seile/forstwindenseile/standard-forstwindenseile/439/standard-forstwindenseil-6x19-seale",
-    "features": [
-      "Gutes Preis-Leistungs-Verhältnis",
-      "Zuverlässig im Alltag"
+    "description": "Klassisches 6-litziges Stahlseil.",
+    "variants": [
+      { "sku": "STD-619-10-50", "diameter_mm": 10, "length_m": 50, "bruchkraft_kn": 75, "price": 150.00 },
+      { "sku": "STD-619-12-50", "diameter_mm": 12, "length_m": 50, "bruchkraft_kn": 95, "price": 190.00 }
+    ],
+    "compatibility": ["Standard Seilrollen"]
+  },
+  {
+    "id": "standard-6x36-warrington",
+    "name": "Standard Forstwindenseil 6x36 Warrington-Seale",
+    "category": "Standard Forstwindenseile",
+    "description": "Flexibles 6-litziges Stahlseil.",
+    "variants": [
+      { "sku": "STD-636-12-50", "diameter_mm": 12, "length_m": 50, "bruchkraft_kn": 90, "price": 210.00 },
+      { "sku": "STD-636-14-50", "diameter_mm": 14, "length_m": 50, "bruchkraft_kn": 115, "price": 250.00 }
+    ],
+    "compatibility": ["Standard Seilrollen"]
+  },
+  {
+    "id": "standard-8x19-seale",
+    "name": "Standard Forstwindenseil 8x19 Seale",
+    "category": "Standard Forstwindenseile",
+    "description": "8-litziges Seil mit Stahlkern, sehr flexibel.",
+    "variants": [
+      { "sku": "STD-819-10-50", "diameter_mm": 10, "length_m": 50, "bruchkraft_kn": 80, "price": 220.00 },
+      { "sku": "STD-819-12-50", "diameter_mm": 12, "length_m": 50, "bruchkraft_kn": 100, "price": 270.00 }
     ],
     "compatibility": ["Standard Seilrollen"]
   }
