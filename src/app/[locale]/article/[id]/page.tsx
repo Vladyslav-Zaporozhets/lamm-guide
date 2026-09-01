@@ -1,8 +1,31 @@
 import { notFound } from 'next/navigation';
+import Image from 'next/image';
 import { Link } from '@/i18n/routing';
 import productsData from '@/data/products.json';
 import { ArrowLeft, FileText, Info, Wrench, Image as ImageIcon, BookOpen } from 'lucide-react';
 import { getTranslations } from 'next-intl/server';
+import { routing } from '@/i18n/routing';
+
+export async function generateStaticParams() {
+  const params: { id: string, locale: string }[] = [];
+  for (const locale of routing.locales) {
+    for (const product of productsData) {
+      params.push({ id: product.id, locale });
+    }
+  }
+  return params;
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ id: string, locale: string }> }) {
+  const resolvedParams = await params;
+  const product = productsData.find(p => p.id === resolvedParams.id);
+  if (!product) return {};
+  
+  return {
+    title: `${product.name} | Lamm Akademie`,
+    description: product.description?.slice(0, 150) || `Технічна інформація про ${product.name}`,
+  };
+}
 
 export default async function ArticlePage({ params }: { params: Promise<{ id: string, locale: string }> }) {
   const resolvedParams = await params;
@@ -47,8 +70,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ id: st
                   {product.images && product.images.length > 0 && (
                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         {product.images.map((img: string, idx: number) => (
-                           <div key={idx} className="bg-slate-100 rounded-2xl overflow-hidden border border-slate-200 aspect-video flex items-center justify-center">
-                              <img src={img} alt={`${product.name} - Image ${idx+1}`} className="w-full h-full object-cover" />
+                           <div key={idx} className="bg-slate-100 rounded-2xl overflow-hidden border border-slate-200 aspect-video flex items-center justify-center relative">
+                              <Image src={img} alt={`${product.name} - Image ${idx+1}`} fill className="object-cover" />
                            </div>
                         ))}
                      </div>

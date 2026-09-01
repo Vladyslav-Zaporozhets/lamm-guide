@@ -1,6 +1,7 @@
 "use client";
 import { useState } from 'react';
 import { Link } from '@/i18n/routing';
+import Image from 'next/image';
 import productsData from '@/data/products.json';
 import categoriesTree from '@/data/categories.json';
 import { Search, BookOpen, ChevronRight, Folder, FolderOpen, Image as ImageIcon, ChevronLeft } from 'lucide-react';
@@ -123,7 +124,7 @@ export default function EncyclopediaIndex() {
                      >
                         <div className="w-16 h-16 rounded-xl shadow-sm mr-4 overflow-hidden relative bg-slate-100 flex-shrink-0">
                            {node.image ? (
-                              <img src={node.image} alt={node.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                              <Image src={node.image} alt={node.name} fill sizes="64px" className="object-cover group-hover:scale-110 transition-transform duration-500" />
                            ) : (
                               <div className="w-full h-full flex items-center justify-center text-blue-500">
                                  {node.children && node.children.length > 0 ? <FolderOpen className="w-8 h-8" /> : <Folder className="w-8 h-8 text-slate-400" />}
@@ -157,7 +158,7 @@ export default function EncyclopediaIndex() {
                                     <Link key={product.id} href={`/article/${product.id}`} className="group flex flex-col bg-slate-50 rounded-2xl border border-slate-200 hover:border-blue-400 hover:shadow-xl hover:shadow-blue-500/10 transition-all overflow-hidden h-full">
                                        <div className="h-32 bg-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-blue-50 transition-colors relative overflow-hidden">
                                           {product.images && product.images.length > 0 ? (
-                                             <img src={product.images[0]} alt={product.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                             <Image src={product.images[0]} alt={product.name} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover group-hover:scale-105 transition-transform duration-500" />
                                           ) : (
                                              <ImageIcon className="w-8 h-8 opacity-40 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 group-hover:text-blue-500" />
                                           )}
@@ -189,7 +190,7 @@ export default function EncyclopediaIndex() {
                         <Link key={product.id} href={`/article/${product.id}`} className="group flex flex-col bg-slate-50 rounded-2xl border border-slate-200 hover:border-blue-400 hover:shadow-xl hover:shadow-blue-500/10 transition-all overflow-hidden h-full">
                            <div className="h-32 bg-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-blue-50 transition-colors relative overflow-hidden">
                               {product.images && product.images.length > 0 ? (
-                                 <img src={product.images[0]} alt={product.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                 <Image src={product.images[0]} alt={product.name} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover group-hover:scale-105 transition-transform duration-500" />
                               ) : (
                                  <ImageIcon className="w-8 h-8 opacity-40 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 group-hover:text-blue-500" />
                               )}
