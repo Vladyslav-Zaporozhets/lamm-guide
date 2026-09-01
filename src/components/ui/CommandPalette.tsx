@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter } from "@/i18n/routing";
 import { Search, X, ChevronRight, ImageIcon } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import productsData from "@/data/products.json";
@@ -92,7 +92,7 @@ export function CommandPalette() {
                     <button
                       key={product.id}
                       onClick={() => {
-                        router.push(`/uk/article/${product.id}`);
+                        router.push(`/article/${product.id}`);
                         setIsOpen(false);
                       }}
                       className="w-full flex items-center px-4 py-3 hover:bg-slate-50 dark:hover:bg-slate-800/50 text-left transition-colors group"
