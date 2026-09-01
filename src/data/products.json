@@ -1,0 +1,56 @@
+[
+  {
+    "id": "forst-extrem-w25-v",
+    "name": "Forst-Extrem® W25-V",
+    "category": "Hochverdichtete Forstwindenseile",
+    "sku": "W25V-10-0050-GG-B",
+    "description": "Hochverdichtetes Forstwindenseil für maximale Bruchkraft und Langlebigkeit.",
+    "url": "https://www.lamm-seile.de/forst-extrem-w25-v-forstwindenseil-hochverdichtet/W25V-10-0050-GG-B",
+    "features": [
+      "Extrem hohe Bruchkraft",
+      "Geringe Dehnung",
+      "Verschleißfest"
+    ],
+    "compatibility": ["Seilklemmen 10mm", "Lasthaken Grad 100"]
+  },
+  {
+    "id": "forst-extrem-v156",
+    "name": "Forst-Extrem® V156",
+    "category": "Hochverdichtete Forstwindenseile",
+    "sku": "V156-08-0140-GG-B",
+    "description": "Hochverdichtetes Seil mit optimaler Flexibilität.",
+    "url": "https://www.lamm-seile.de/forst-extrem-v156-forstwindenseil-hochverdichtet/58941960008",
+    "features": [
+      "Hohe Flexibilität",
+      "Gute Wickeleigenschaften"
+    ],
+    "compatibility": ["Seilklemmen 8mm"]
+  },
+  {
+    "id": "dyneema-xtr",
+    "name": "Dyneema Forstwindenseil XTR",
+    "category": "Dyneema Forstwindenseile",
+    "sku": "DYN-XTR-12",
+    "description": "Leichtes und extrem starkes Kunststoffseil aus Dyneema.",
+    "url": "https://www.lamm-seile.de/seile/forstwindenseile/dyneema-forstwindenseile/442/dyneema-forstwindenseil-xtr",
+    "features": [
+      "Extrem leicht (Gewichtsersparnis)",
+      "Keine Verletzungsgefahr durch abstehende Drähte",
+      "Hohe Bruchkraft"
+    ],
+    "compatibility": ["Spezial-Seilrollen", "Softschäkel"]
+  },
+  {
+    "id": "standard-6x19",
+    "name": "Standard Forstwindenseil 6x19 Seale",
+    "category": "Standard Forstwindenseile",
+    "sku": "STD-619-S",
+    "description": "Klassisches Forstwindenseil für Standardanwendungen.",
+    "url": "https://www.lamm-seile.de/seile/forstwindenseile/standard-forstwindenseile/439/standard-forstwindenseil-6x19-seale",
+    "features": [
+      "Gutes Preis-Leistungs-Verhältnis",
+      "Zuverlässig im Alltag"
+    ],
+    "compatibility": ["Standard Seilrollen"]
+  }
+]
