@@ -1,140 +1,2709 @@
 [
   {
-    "id": "dyneema-xtr",
+    "id": "1",
     "name": "Dyneema Forstwindenseil XTR",
     "category": "Dyneema Forstwindenseile",
-    "description": "Premium Dyneema Seil mit maximaler Bruchkraft und minimalem Gewicht.",
+    "description": "Dyneema XTR Forstwindenseil Kunststoff-Forstwindenseil extrem leicht unempfindlich gegenüber Nässe, Ölen & Fetten sehr hohe Bruchfestigkeit bei geringem Gewicht leicht zu spleißen geringer Kraftaufwand gutes Spulverhalten einfache Anwendung witterungsbeständig sehr flexibel Spezialimprägnierungnicht für Spillwinden geeignetDatentabelle Nenn-Ømm Gewichtkg / 100m BruchlastdaN Dehnung 5 1,26 2.600 < 1,50% 6 2,30 4.300 < 1,50% 8 4,80 8.000 < 1,50% 10 7,40 11.000 < 1,50% 12 10,20 14.500 < 1,50% 14 12,50 18.000 < 1,50% 16 15,00 22.000 < 1,50% 18 17,50 26.000 < 1,50% 20 20,90 32.000 < 1,50% 22 23,20 38.000 < 1,50% 24 31,00 44.000 < 1,50% 26 36,00 50.000 < 1,50% Passende Endverbindungen finden Sie unter Zubehör. (Kauschenspleiß mit VK-Haken, Seilrollenspleiß, Rundkauschenspleiß, Kauschenspleiß, Schlaufenspleiß)",
     "variants": [
-      { "sku": "DYN-XTR-10-50", "diameter_mm": 10, "length_m": 50, "bruchkraft_kn": 110, "price": 450.00 },
-      { "sku": "DYN-XTR-10-70", "diameter_mm": 10, "length_m": 70, "bruchkraft_kn": 110, "price": 630.00 },
-      { "sku": "DYN-XTR-12-50", "diameter_mm": 12, "length_m": 50, "bruchkraft_kn": 135, "price": 540.00 },
-      { "sku": "DYN-XTR-14-50", "diameter_mm": 14, "length_m": 50, "bruchkraft_kn": 170, "price": 650.00 }
+      {
+        "sku": "596-014810500-5-10",
+        "diameter_mm": 5,
+        "length_m": 10,
+        "bruchkraft_kn": 60,
+        "price": 16
+      },
+      {
+        "sku": "596-014810500-5-12",
+        "diameter_mm": 5,
+        "length_m": 12,
+        "bruchkraft_kn": 60,
+        "price": 17
+      },
+      {
+        "sku": "596-014810500-5-14",
+        "diameter_mm": 5,
+        "length_m": 14,
+        "bruchkraft_kn": 60,
+        "price": 18
+      },
+      {
+        "sku": "596-014810500-5-16",
+        "diameter_mm": 5,
+        "length_m": 16,
+        "bruchkraft_kn": 60,
+        "price": 19
+      },
+      {
+        "sku": "596-014810500-6-10",
+        "diameter_mm": 6,
+        "length_m": 10,
+        "bruchkraft_kn": 72,
+        "price": 17.5
+      },
+      {
+        "sku": "596-014810500-6-12",
+        "diameter_mm": 6,
+        "length_m": 12,
+        "bruchkraft_kn": 72,
+        "price": 18.5
+      },
+      {
+        "sku": "596-014810500-6-14",
+        "diameter_mm": 6,
+        "length_m": 14,
+        "bruchkraft_kn": 72,
+        "price": 19.5
+      },
+      {
+        "sku": "596-014810500-6-16",
+        "diameter_mm": 6,
+        "length_m": 16,
+        "bruchkraft_kn": 72,
+        "price": 20.5
+      },
+      {
+        "sku": "596-014810500-8-10",
+        "diameter_mm": 8,
+        "length_m": 10,
+        "bruchkraft_kn": 96,
+        "price": 20.5
+      },
+      {
+        "sku": "596-014810500-8-12",
+        "diameter_mm": 8,
+        "length_m": 12,
+        "bruchkraft_kn": 96,
+        "price": 21.5
+      },
+      {
+        "sku": "596-014810500-8-14",
+        "diameter_mm": 8,
+        "length_m": 14,
+        "bruchkraft_kn": 96,
+        "price": 22.5
+      },
+      {
+        "sku": "596-014810500-8-16",
+        "diameter_mm": 8,
+        "length_m": 16,
+        "bruchkraft_kn": 96,
+        "price": 23.5
+      },
+      {
+        "sku": "596-014810500-10-10",
+        "diameter_mm": 10,
+        "length_m": 10,
+        "bruchkraft_kn": 120,
+        "price": 23.5
+      },
+      {
+        "sku": "596-014810500-10-12",
+        "diameter_mm": 10,
+        "length_m": 12,
+        "bruchkraft_kn": 120,
+        "price": 24.5
+      },
+      {
+        "sku": "596-014810500-10-14",
+        "diameter_mm": 10,
+        "length_m": 14,
+        "bruchkraft_kn": 120,
+        "price": 25.5
+      },
+      {
+        "sku": "596-014810500-10-16",
+        "diameter_mm": 10,
+        "length_m": 16,
+        "bruchkraft_kn": 120,
+        "price": 26.5
+      },
+      {
+        "sku": "596-014810500-12-10",
+        "diameter_mm": 12,
+        "length_m": 10,
+        "bruchkraft_kn": 144,
+        "price": 26.5
+      },
+      {
+        "sku": "596-014810500-12-12",
+        "diameter_mm": 12,
+        "length_m": 12,
+        "bruchkraft_kn": 144,
+        "price": 27.5
+      },
+      {
+        "sku": "596-014810500-12-14",
+        "diameter_mm": 12,
+        "length_m": 14,
+        "bruchkraft_kn": 144,
+        "price": 28.5
+      },
+      {
+        "sku": "596-014810500-12-16",
+        "diameter_mm": 12,
+        "length_m": 16,
+        "bruchkraft_kn": 144,
+        "price": 29.5
+      },
+      {
+        "sku": "596-014810500-14-10",
+        "diameter_mm": 14,
+        "length_m": 10,
+        "bruchkraft_kn": 168,
+        "price": 29.5
+      },
+      {
+        "sku": "596-014810500-14-12",
+        "diameter_mm": 14,
+        "length_m": 12,
+        "bruchkraft_kn": 168,
+        "price": 30.5
+      },
+      {
+        "sku": "596-014810500-14-14",
+        "diameter_mm": 14,
+        "length_m": 14,
+        "bruchkraft_kn": 168,
+        "price": 31.5
+      },
+      {
+        "sku": "596-014810500-14-16",
+        "diameter_mm": 14,
+        "length_m": 16,
+        "bruchkraft_kn": 168,
+        "price": 32.5
+      },
+      {
+        "sku": "596-014810500-16-10",
+        "diameter_mm": 16,
+        "length_m": 10,
+        "bruchkraft_kn": 192,
+        "price": 32.5
+      },
+      {
+        "sku": "596-014810500-16-12",
+        "diameter_mm": 16,
+        "length_m": 12,
+        "bruchkraft_kn": 192,
+        "price": 33.5
+      },
+      {
+        "sku": "596-014810500-16-14",
+        "diameter_mm": 16,
+        "length_m": 14,
+        "bruchkraft_kn": 192,
+        "price": 34.5
+      },
+      {
+        "sku": "596-014810500-16-16",
+        "diameter_mm": 16,
+        "length_m": 16,
+        "bruchkraft_kn": 192,
+        "price": 35.5
+      },
+      {
+        "sku": "596-014810500-18-10",
+        "diameter_mm": 18,
+        "length_m": 10,
+        "bruchkraft_kn": 216,
+        "price": 35.5
+      },
+      {
+        "sku": "596-014810500-18-12",
+        "diameter_mm": 18,
+        "length_m": 12,
+        "bruchkraft_kn": 216,
+        "price": 36.5
+      },
+      {
+        "sku": "596-014810500-18-14",
+        "diameter_mm": 18,
+        "length_m": 14,
+        "bruchkraft_kn": 216,
+        "price": 37.5
+      },
+      {
+        "sku": "596-014810500-18-16",
+        "diameter_mm": 18,
+        "length_m": 16,
+        "bruchkraft_kn": 216,
+        "price": 38.5
+      },
+      {
+        "sku": "596-014810500-20-10",
+        "diameter_mm": 20,
+        "length_m": 10,
+        "bruchkraft_kn": 240,
+        "price": 38.5
+      },
+      {
+        "sku": "596-014810500-20-12",
+        "diameter_mm": 20,
+        "length_m": 12,
+        "bruchkraft_kn": 240,
+        "price": 39.5
+      },
+      {
+        "sku": "596-014810500-20-14",
+        "diameter_mm": 20,
+        "length_m": 14,
+        "bruchkraft_kn": 240,
+        "price": 40.5
+      },
+      {
+        "sku": "596-014810500-20-16",
+        "diameter_mm": 20,
+        "length_m": 16,
+        "bruchkraft_kn": 240,
+        "price": 41.5
+      },
+      {
+        "sku": "596-014810500-24-10",
+        "diameter_mm": 24,
+        "length_m": 10,
+        "bruchkraft_kn": 288,
+        "price": 44.5
+      },
+      {
+        "sku": "596-014810500-24-12",
+        "diameter_mm": 24,
+        "length_m": 12,
+        "bruchkraft_kn": 288,
+        "price": 45.5
+      },
+      {
+        "sku": "596-014810500-24-14",
+        "diameter_mm": 24,
+        "length_m": 14,
+        "bruchkraft_kn": 288,
+        "price": 46.5
+      },
+      {
+        "sku": "596-014810500-24-16",
+        "diameter_mm": 24,
+        "length_m": 16,
+        "bruchkraft_kn": 288,
+        "price": 47.5
+      },
+      {
+        "sku": "596-014810500-22-10",
+        "diameter_mm": 22,
+        "length_m": 10,
+        "bruchkraft_kn": 264,
+        "price": 41.5
+      },
+      {
+        "sku": "596-014810500-22-12",
+        "diameter_mm": 22,
+        "length_m": 12,
+        "bruchkraft_kn": 264,
+        "price": 42.5
+      },
+      {
+        "sku": "596-014810500-22-14",
+        "diameter_mm": 22,
+        "length_m": 14,
+        "bruchkraft_kn": 264,
+        "price": 43.5
+      },
+      {
+        "sku": "596-014810500-22-16",
+        "diameter_mm": 22,
+        "length_m": 16,
+        "bruchkraft_kn": 264,
+        "price": 44.5
+      },
+      {
+        "sku": "596-014810500-26-10",
+        "diameter_mm": 26,
+        "length_m": 10,
+        "bruchkraft_kn": 312,
+        "price": 47.5
+      },
+      {
+        "sku": "596-014810500-26-12",
+        "diameter_mm": 26,
+        "length_m": 12,
+        "bruchkraft_kn": 312,
+        "price": 48.5
+      },
+      {
+        "sku": "596-014810500-26-14",
+        "diameter_mm": 26,
+        "length_m": 14,
+        "bruchkraft_kn": 312,
+        "price": 49.5
+      },
+      {
+        "sku": "596-014810500-26-16",
+        "diameter_mm": 26,
+        "length_m": 16,
+        "bruchkraft_kn": 312,
+        "price": 50.5
+      }
     ],
-    "compatibility": ["Softschäkel XTR", "Umlenkrolle bis 14mm"]
+    "compatibility": [
+      "Seilgleitbügel",
+      "Kausche"
+    ]
   },
   {
-    "id": "dyneema-soft-schaekel-xtr",
+    "id": "2",
     "name": "Dyneema Soft Schäkel XTR",
     "category": "Dyneema Forstwindenseile",
-    "description": "Flexibler und sicherer Schäkel aus Dyneema, ideal für Kunststoffseile.",
+    "description": "Schoten anschlagen, Fallen einschäkeln, Blöcke fixieren - der Dyneema Soft Schäkel XTR ist die Lösung. Er ist zu 100% aus der Hochfestfaser Dyneema® SK78 gefertigt und ersetzt an Deck schwere Metallschäkel. 10x leichter als Stahlschäkel bei gleicher Bruchlast Selbstsichernde Konstruktion unter Last geringeres Verletzungsrisiko auch nach extremer Belastung leicht zu öffnen sehr angenehm zu bedienen ersetzt schwere Metallschäkel Schäkel kann sich unter last nicht ungewollt öffnen *nicht für Hebezwecke zugelassen. Datentabelle Durchmesser mm Zugkraft daN Bruchlast daN 6 500 1000 8 750 1500 12 1000 2000 16 2000 4000 18 3000 6000 20 4000 8000 24 5000 10000",
     "variants": [
-      { "sku": "DYN-SCH-10", "diameter_mm": 10, "length_m": null, "bruchkraft_kn": 120, "price": 45.00 },
-      { "sku": "DYN-SCH-12", "diameter_mm": 12, "length_m": null, "bruchkraft_kn": 145, "price": 55.00 }
+      {
+        "sku": "5961460200-2000-5",
+        "diameter_mm": 2000,
+        "length_m": 5,
+        "bruchkraft_kn": 24000,
+        "price": 3022.8
+      },
+      {
+        "sku": "5961460200-2000-6",
+        "diameter_mm": 2000,
+        "length_m": 6,
+        "bruchkraft_kn": 24000,
+        "price": 3023.3
+      },
+      {
+        "sku": "5961460200-2000-8",
+        "diameter_mm": 2000,
+        "length_m": 8,
+        "bruchkraft_kn": 24000,
+        "price": 3024.3
+      },
+      {
+        "sku": "5961460200-2000-10",
+        "diameter_mm": 2000,
+        "length_m": 10,
+        "bruchkraft_kn": 24000,
+        "price": 3025.3
+      },
+      {
+        "sku": "5961460200-4000-5",
+        "diameter_mm": 4000,
+        "length_m": 5,
+        "bruchkraft_kn": 48000,
+        "price": 6022.8
+      },
+      {
+        "sku": "5961460200-4000-6",
+        "diameter_mm": 4000,
+        "length_m": 6,
+        "bruchkraft_kn": 48000,
+        "price": 6023.3
+      },
+      {
+        "sku": "5961460200-4000-8",
+        "diameter_mm": 4000,
+        "length_m": 8,
+        "bruchkraft_kn": 48000,
+        "price": 6024.3
+      },
+      {
+        "sku": "5961460200-4000-10",
+        "diameter_mm": 4000,
+        "length_m": 10,
+        "bruchkraft_kn": 48000,
+        "price": 6025.3
+      },
+      {
+        "sku": "5961460200-500-5",
+        "diameter_mm": 500,
+        "length_m": 5,
+        "bruchkraft_kn": 6000,
+        "price": 772.8
+      },
+      {
+        "sku": "5961460200-500-6",
+        "diameter_mm": 500,
+        "length_m": 6,
+        "bruchkraft_kn": 6000,
+        "price": 773.3
+      },
+      {
+        "sku": "5961460200-500-8",
+        "diameter_mm": 500,
+        "length_m": 8,
+        "bruchkraft_kn": 6000,
+        "price": 774.3
+      },
+      {
+        "sku": "5961460200-500-10",
+        "diameter_mm": 500,
+        "length_m": 10,
+        "bruchkraft_kn": 6000,
+        "price": 775.3
+      },
+      {
+        "sku": "5961460200-750-5",
+        "diameter_mm": 750,
+        "length_m": 5,
+        "bruchkraft_kn": 9000,
+        "price": 1147.8
+      },
+      {
+        "sku": "5961460200-750-6",
+        "diameter_mm": 750,
+        "length_m": 6,
+        "bruchkraft_kn": 9000,
+        "price": 1148.3
+      },
+      {
+        "sku": "5961460200-750-8",
+        "diameter_mm": 750,
+        "length_m": 8,
+        "bruchkraft_kn": 9000,
+        "price": 1149.3
+      },
+      {
+        "sku": "5961460200-750-10",
+        "diameter_mm": 750,
+        "length_m": 10,
+        "bruchkraft_kn": 9000,
+        "price": 1150.3
+      },
+      {
+        "sku": "5961460200-1000-5",
+        "diameter_mm": 1000,
+        "length_m": 5,
+        "bruchkraft_kn": 12000,
+        "price": 1522.8
+      },
+      {
+        "sku": "5961460200-1000-6",
+        "diameter_mm": 1000,
+        "length_m": 6,
+        "bruchkraft_kn": 12000,
+        "price": 1523.3
+      },
+      {
+        "sku": "5961460200-1000-8",
+        "diameter_mm": 1000,
+        "length_m": 8,
+        "bruchkraft_kn": 12000,
+        "price": 1524.3
+      },
+      {
+        "sku": "5961460200-1000-10",
+        "diameter_mm": 1000,
+        "length_m": 10,
+        "bruchkraft_kn": 12000,
+        "price": 1525.3
+      },
+      {
+        "sku": "5961460200-3000-5",
+        "diameter_mm": 3000,
+        "length_m": 5,
+        "bruchkraft_kn": 36000,
+        "price": 4522.8
+      },
+      {
+        "sku": "5961460200-3000-6",
+        "diameter_mm": 3000,
+        "length_m": 6,
+        "bruchkraft_kn": 36000,
+        "price": 4523.3
+      },
+      {
+        "sku": "5961460200-3000-8",
+        "diameter_mm": 3000,
+        "length_m": 8,
+        "bruchkraft_kn": 36000,
+        "price": 4524.3
+      },
+      {
+        "sku": "5961460200-3000-10",
+        "diameter_mm": 3000,
+        "length_m": 10,
+        "bruchkraft_kn": 36000,
+        "price": 4525.3
+      },
+      {
+        "sku": "5961460200-5000-5",
+        "diameter_mm": 5000,
+        "length_m": 5,
+        "bruchkraft_kn": 60000,
+        "price": 7522.8
+      },
+      {
+        "sku": "5961460200-5000-6",
+        "diameter_mm": 5000,
+        "length_m": 6,
+        "bruchkraft_kn": 60000,
+        "price": 7523.3
+      },
+      {
+        "sku": "5961460200-5000-8",
+        "diameter_mm": 5000,
+        "length_m": 8,
+        "bruchkraft_kn": 60000,
+        "price": 7524.3
+      },
+      {
+        "sku": "5961460200-5000-10",
+        "diameter_mm": 5000,
+        "length_m": 10,
+        "bruchkraft_kn": 60000,
+        "price": 7525.3
+      }
     ],
-    "compatibility": ["Dyneema Forstwindenseil XTR"]
+    "compatibility": [
+      "Seilgleitbügel",
+      "Kausche"
+    ]
   },
   {
-    "id": "dyneema-zugseil-kausche",
+    "id": "3",
     "name": "Dyneema Zugseil mit Kausche & Kausche",
     "category": "Dyneema Forstwindenseile",
-    "description": "Vorkonfektioniertes Zugseil beidseitig mit Kausche.",
+    "description": "Zug- / Abschleppseil aus hochwertiger Dyneema Kunststofffaser auf beiden Seiten Kauschenspleiß Datentabelle Nenn-Ømm Gewichtkg / 100m BruchlastdaN Bruchlast im Spleiß Dehnung 5 1,26 2.600 2.250 < 1,50% 6 2,30 4.300 3.700 < 1,50% 8 4,80 8.600 7.560 < 1,50% 10 7,40 11.000 10.300 < 1,50% 12 10,20 15.000 13.500 < 1,50% 14 12,50 18.500 17.500 < 1,50% 16 15,00 22.000 20.500 < 1,50% 18 17,50 26.000 23.400 < 1,50% 20 20,90 32.000 25.600 < 1,50%",
     "variants": [
-      { "sku": "DYN-ZUG-K-10-10", "diameter_mm": 10, "length_m": 10, "bruchkraft_kn": 100, "price": 120.00 },
-      { "sku": "DYN-ZUG-K-12-10", "diameter_mm": 12, "length_m": 10, "bruchkraft_kn": 125, "price": 145.00 }
+      {
+        "sku": "596500A0803-8-3",
+        "diameter_mm": 8,
+        "length_m": 3,
+        "bruchkraft_kn": 96,
+        "price": 56.06
+      },
+      {
+        "sku": "596500A0803-8-5",
+        "diameter_mm": 8,
+        "length_m": 5,
+        "bruchkraft_kn": 96,
+        "price": 57.06
+      },
+      {
+        "sku": "596500A0803-8-10",
+        "diameter_mm": 8,
+        "length_m": 10,
+        "bruchkraft_kn": 96,
+        "price": 59.56
+      },
+      {
+        "sku": "596500A0803-8-15",
+        "diameter_mm": 8,
+        "length_m": 15,
+        "bruchkraft_kn": 96,
+        "price": 62.06
+      },
+      {
+        "sku": "596500A0803-8-20",
+        "diameter_mm": 8,
+        "length_m": 20,
+        "bruchkraft_kn": 96,
+        "price": 64.56
+      },
+      {
+        "sku": "596500A0803-10-3",
+        "diameter_mm": 10,
+        "length_m": 3,
+        "bruchkraft_kn": 120,
+        "price": 59.06
+      },
+      {
+        "sku": "596500A0803-10-5",
+        "diameter_mm": 10,
+        "length_m": 5,
+        "bruchkraft_kn": 120,
+        "price": 60.06
+      },
+      {
+        "sku": "596500A0803-10-10",
+        "diameter_mm": 10,
+        "length_m": 10,
+        "bruchkraft_kn": 120,
+        "price": 62.56
+      },
+      {
+        "sku": "596500A0803-10-15",
+        "diameter_mm": 10,
+        "length_m": 15,
+        "bruchkraft_kn": 120,
+        "price": 65.06
+      },
+      {
+        "sku": "596500A0803-10-20",
+        "diameter_mm": 10,
+        "length_m": 20,
+        "bruchkraft_kn": 120,
+        "price": 67.56
+      },
+      {
+        "sku": "596500A0803-12-3",
+        "diameter_mm": 12,
+        "length_m": 3,
+        "bruchkraft_kn": 144,
+        "price": 62.06
+      },
+      {
+        "sku": "596500A0803-12-5",
+        "diameter_mm": 12,
+        "length_m": 5,
+        "bruchkraft_kn": 144,
+        "price": 63.06
+      },
+      {
+        "sku": "596500A0803-12-10",
+        "diameter_mm": 12,
+        "length_m": 10,
+        "bruchkraft_kn": 144,
+        "price": 65.56
+      },
+      {
+        "sku": "596500A0803-12-15",
+        "diameter_mm": 12,
+        "length_m": 15,
+        "bruchkraft_kn": 144,
+        "price": 68.06
+      },
+      {
+        "sku": "596500A0803-12-20",
+        "diameter_mm": 12,
+        "length_m": 20,
+        "bruchkraft_kn": 144,
+        "price": 70.56
+      },
+      {
+        "sku": "596500A0803-14-3",
+        "diameter_mm": 14,
+        "length_m": 3,
+        "bruchkraft_kn": 168,
+        "price": 65.06
+      },
+      {
+        "sku": "596500A0803-14-5",
+        "diameter_mm": 14,
+        "length_m": 5,
+        "bruchkraft_kn": 168,
+        "price": 66.06
+      },
+      {
+        "sku": "596500A0803-14-10",
+        "diameter_mm": 14,
+        "length_m": 10,
+        "bruchkraft_kn": 168,
+        "price": 68.56
+      },
+      {
+        "sku": "596500A0803-14-15",
+        "diameter_mm": 14,
+        "length_m": 15,
+        "bruchkraft_kn": 168,
+        "price": 71.06
+      },
+      {
+        "sku": "596500A0803-14-20",
+        "diameter_mm": 14,
+        "length_m": 20,
+        "bruchkraft_kn": 168,
+        "price": 73.56
+      },
+      {
+        "sku": "596500A0803-16-3",
+        "diameter_mm": 16,
+        "length_m": 3,
+        "bruchkraft_kn": 192,
+        "price": 68.06
+      },
+      {
+        "sku": "596500A0803-16-5",
+        "diameter_mm": 16,
+        "length_m": 5,
+        "bruchkraft_kn": 192,
+        "price": 69.06
+      },
+      {
+        "sku": "596500A0803-16-10",
+        "diameter_mm": 16,
+        "length_m": 10,
+        "bruchkraft_kn": 192,
+        "price": 71.56
+      },
+      {
+        "sku": "596500A0803-16-15",
+        "diameter_mm": 16,
+        "length_m": 15,
+        "bruchkraft_kn": 192,
+        "price": 74.06
+      },
+      {
+        "sku": "596500A0803-16-20",
+        "diameter_mm": 16,
+        "length_m": 20,
+        "bruchkraft_kn": 192,
+        "price": 76.56
+      }
     ],
-    "compatibility": ["Lasthaken", "Umlenkrolle"]
+    "compatibility": [
+      "Seilgleitbügel",
+      "Kausche"
+    ]
   },
   {
-    "id": "faellhilfeseil-racer",
+    "id": "4",
+    "name": "Dyneema Zugseil, Typ B, Ø 20mm, beiderseits Schlaufenspleiß, Länge: 10,00m",
+    "category": "Dyneema Forstwindenseile",
+    "description": "Zugseil aus hochwertiger Dyneema Kunststofffaser auf beiden Seiten Schlaufenspleiß",
+    "variants": [
+      {
+        "sku": "596500B2010-10-50",
+        "diameter_mm": 10,
+        "length_m": 50,
+        "bruchkraft_kn": 120,
+        "price": 355.45
+      }
+    ],
+    "compatibility": [
+      "Seilgleitbügel",
+      "Kausche"
+    ]
+  },
+  {
+    "id": "5",
     "name": "Fällhilfeseil Dyneema Racer XTR",
     "category": "Dyneema Forstwindenseile",
-    "description": "Spezielles Fällhilfeseil für den sicheren Holzeinschlag.",
+    "description": "Gefertigt aus Dyneema Racer XTR ForstwindenseilAbriebfester Schutzmantel aus Polyester-Vectran Gemisch schützt das Dyneema Seil vor Abrieb & Verschleiß Extrem leicht Hohe Bruchlast Beiderseits Schlaufenspleiß (200mm lang)Farbabbildung kann abweichenFTF: 8,5tBruchlast im Spleiß: 17200daN",
     "variants": [
-      { "sku": "FHS-RAC-10-30", "diameter_mm": 10, "length_m": 30, "bruchkraft_kn": 90, "price": 280.00 },
-      { "sku": "FHS-RAC-12-30", "diameter_mm": 12, "length_m": 30, "bruchkraft_kn": 120, "price": 340.00 }
+      {
+        "sku": "596-020081812-14-10",
+        "diameter_mm": 14,
+        "length_m": 10,
+        "bruchkraft_kn": 168,
+        "price": 326.81
+      },
+      {
+        "sku": "596-020081812-14-16",
+        "diameter_mm": 14,
+        "length_m": 16,
+        "bruchkraft_kn": 168,
+        "price": 329.81
+      },
+      {
+        "sku": "596-020081812-14-12",
+        "diameter_mm": 14,
+        "length_m": 12,
+        "bruchkraft_kn": 168,
+        "price": 327.81
+      },
+      {
+        "sku": "596-020081812-14-25",
+        "diameter_mm": 14,
+        "length_m": 25,
+        "bruchkraft_kn": 168,
+        "price": 334.31
+      },
+      {
+        "sku": "596-020081812-14-15",
+        "diameter_mm": 14,
+        "length_m": 15,
+        "bruchkraft_kn": 168,
+        "price": 329.31
+      },
+      {
+        "sku": "596-020081812-14-20",
+        "diameter_mm": 14,
+        "length_m": 20,
+        "bruchkraft_kn": 168,
+        "price": 331.81
+      },
+      {
+        "sku": "596-020081812-14-30",
+        "diameter_mm": 14,
+        "length_m": 30,
+        "bruchkraft_kn": 168,
+        "price": 336.81
+      },
+      {
+        "sku": "596-020081812-14-50",
+        "diameter_mm": 14,
+        "length_m": 50,
+        "bruchkraft_kn": 168,
+        "price": 346.81
+      },
+      {
+        "sku": "596-020081812-14-40",
+        "diameter_mm": 14,
+        "length_m": 40,
+        "bruchkraft_kn": 168,
+        "price": 341.81
+      },
+      {
+        "sku": "596-020081812-16-10",
+        "diameter_mm": 16,
+        "length_m": 10,
+        "bruchkraft_kn": 192,
+        "price": 329.81
+      },
+      {
+        "sku": "596-020081812-16-16",
+        "diameter_mm": 16,
+        "length_m": 16,
+        "bruchkraft_kn": 192,
+        "price": 332.81
+      },
+      {
+        "sku": "596-020081812-16-12",
+        "diameter_mm": 16,
+        "length_m": 12,
+        "bruchkraft_kn": 192,
+        "price": 330.81
+      },
+      {
+        "sku": "596-020081812-16-25",
+        "diameter_mm": 16,
+        "length_m": 25,
+        "bruchkraft_kn": 192,
+        "price": 337.31
+      },
+      {
+        "sku": "596-020081812-16-15",
+        "diameter_mm": 16,
+        "length_m": 15,
+        "bruchkraft_kn": 192,
+        "price": 332.31
+      },
+      {
+        "sku": "596-020081812-16-20",
+        "diameter_mm": 16,
+        "length_m": 20,
+        "bruchkraft_kn": 192,
+        "price": 334.81
+      },
+      {
+        "sku": "596-020081812-16-30",
+        "diameter_mm": 16,
+        "length_m": 30,
+        "bruchkraft_kn": 192,
+        "price": 339.81
+      },
+      {
+        "sku": "596-020081812-16-50",
+        "diameter_mm": 16,
+        "length_m": 50,
+        "bruchkraft_kn": 192,
+        "price": 349.81
+      },
+      {
+        "sku": "596-020081812-16-40",
+        "diameter_mm": 16,
+        "length_m": 40,
+        "bruchkraft_kn": 192,
+        "price": 344.81
+      },
+      {
+        "sku": "596-020081812-18-10",
+        "diameter_mm": 18,
+        "length_m": 10,
+        "bruchkraft_kn": 216,
+        "price": 332.81
+      },
+      {
+        "sku": "596-020081812-18-16",
+        "diameter_mm": 18,
+        "length_m": 16,
+        "bruchkraft_kn": 216,
+        "price": 335.81
+      },
+      {
+        "sku": "596-020081812-18-12",
+        "diameter_mm": 18,
+        "length_m": 12,
+        "bruchkraft_kn": 216,
+        "price": 333.81
+      },
+      {
+        "sku": "596-020081812-18-25",
+        "diameter_mm": 18,
+        "length_m": 25,
+        "bruchkraft_kn": 216,
+        "price": 340.31
+      },
+      {
+        "sku": "596-020081812-18-15",
+        "diameter_mm": 18,
+        "length_m": 15,
+        "bruchkraft_kn": 216,
+        "price": 335.31
+      },
+      {
+        "sku": "596-020081812-18-20",
+        "diameter_mm": 18,
+        "length_m": 20,
+        "bruchkraft_kn": 216,
+        "price": 337.81
+      },
+      {
+        "sku": "596-020081812-18-30",
+        "diameter_mm": 18,
+        "length_m": 30,
+        "bruchkraft_kn": 216,
+        "price": 342.81
+      },
+      {
+        "sku": "596-020081812-18-50",
+        "diameter_mm": 18,
+        "length_m": 50,
+        "bruchkraft_kn": 216,
+        "price": 352.81
+      },
+      {
+        "sku": "596-020081812-18-40",
+        "diameter_mm": 18,
+        "length_m": 40,
+        "bruchkraft_kn": 216,
+        "price": 347.81
+      },
+      {
+        "sku": "596-020081812-20-10",
+        "diameter_mm": 20,
+        "length_m": 10,
+        "bruchkraft_kn": 240,
+        "price": 335.81
+      },
+      {
+        "sku": "596-020081812-20-16",
+        "diameter_mm": 20,
+        "length_m": 16,
+        "bruchkraft_kn": 240,
+        "price": 338.81
+      },
+      {
+        "sku": "596-020081812-20-12",
+        "diameter_mm": 20,
+        "length_m": 12,
+        "bruchkraft_kn": 240,
+        "price": 336.81
+      },
+      {
+        "sku": "596-020081812-20-25",
+        "diameter_mm": 20,
+        "length_m": 25,
+        "bruchkraft_kn": 240,
+        "price": 343.31
+      },
+      {
+        "sku": "596-020081812-20-15",
+        "diameter_mm": 20,
+        "length_m": 15,
+        "bruchkraft_kn": 240,
+        "price": 338.31
+      },
+      {
+        "sku": "596-020081812-20-20",
+        "diameter_mm": 20,
+        "length_m": 20,
+        "bruchkraft_kn": 240,
+        "price": 340.81
+      },
+      {
+        "sku": "596-020081812-20-30",
+        "diameter_mm": 20,
+        "length_m": 30,
+        "bruchkraft_kn": 240,
+        "price": 345.81
+      },
+      {
+        "sku": "596-020081812-20-50",
+        "diameter_mm": 20,
+        "length_m": 50,
+        "bruchkraft_kn": 240,
+        "price": 355.81
+      },
+      {
+        "sku": "596-020081812-20-40",
+        "diameter_mm": 20,
+        "length_m": 40,
+        "bruchkraft_kn": 240,
+        "price": 350.81
+      },
+      {
+        "sku": "596-020081812-24-10",
+        "diameter_mm": 24,
+        "length_m": 10,
+        "bruchkraft_kn": 288,
+        "price": 341.81
+      },
+      {
+        "sku": "596-020081812-24-16",
+        "diameter_mm": 24,
+        "length_m": 16,
+        "bruchkraft_kn": 288,
+        "price": 344.81
+      },
+      {
+        "sku": "596-020081812-24-12",
+        "diameter_mm": 24,
+        "length_m": 12,
+        "bruchkraft_kn": 288,
+        "price": 342.81
+      },
+      {
+        "sku": "596-020081812-24-25",
+        "diameter_mm": 24,
+        "length_m": 25,
+        "bruchkraft_kn": 288,
+        "price": 349.31
+      },
+      {
+        "sku": "596-020081812-24-15",
+        "diameter_mm": 24,
+        "length_m": 15,
+        "bruchkraft_kn": 288,
+        "price": 344.31
+      },
+      {
+        "sku": "596-020081812-24-20",
+        "diameter_mm": 24,
+        "length_m": 20,
+        "bruchkraft_kn": 288,
+        "price": 346.81
+      },
+      {
+        "sku": "596-020081812-24-30",
+        "diameter_mm": 24,
+        "length_m": 30,
+        "bruchkraft_kn": 288,
+        "price": 351.81
+      },
+      {
+        "sku": "596-020081812-24-50",
+        "diameter_mm": 24,
+        "length_m": 50,
+        "bruchkraft_kn": 288,
+        "price": 361.81
+      },
+      {
+        "sku": "596-020081812-24-40",
+        "diameter_mm": 24,
+        "length_m": 40,
+        "bruchkraft_kn": 288,
+        "price": 356.81
+      }
     ],
-    "compatibility": ["Poller", "Rundschlinge"]
+    "compatibility": [
+      "Seilgleitbügel",
+      "Kausche"
+    ]
   },
   {
-    "id": "forst-extrem-w25-v",
+    "id": "6",
+    "name": "Fällhilfeseil Dyneema Runner Vectran XTR",
+    "category": "Dyneema Forstwindenseile",
+    "description": "Gefertigt aus Dyneema Runner Vectran XTR Forstwindenseil Extrem leicht Hohe Bruchlast Spezial-Schutzmantel aus Vectran - extrem abriebfest Schutzmantel schützt das Dyneema Seil vor Abrieb & Verschleiß Beiderseits Schlaufenspleiß (200mm lang) Datentabelle Nenn-Ømm Bruchlast im Spleiß 18 17.000 daN",
+    "variants": [
+      {
+        "sku": "596-024931812-12-2",
+        "diameter_mm": 12,
+        "length_m": 2,
+        "bruchkraft_kn": 144,
+        "price": 411.63
+      },
+      {
+        "sku": "596-024931812-12-3",
+        "diameter_mm": 12,
+        "length_m": 3,
+        "bruchkraft_kn": 144,
+        "price": 412.13
+      },
+      {
+        "sku": "596-024931812-12-4",
+        "diameter_mm": 12,
+        "length_m": 4,
+        "bruchkraft_kn": 144,
+        "price": 412.63
+      },
+      {
+        "sku": "596-024931812-12-5",
+        "diameter_mm": 12,
+        "length_m": 5,
+        "bruchkraft_kn": 144,
+        "price": 413.13
+      },
+      {
+        "sku": "596-024931812-25-2",
+        "diameter_mm": 25,
+        "length_m": 2,
+        "bruchkraft_kn": 300,
+        "price": 431.13
+      },
+      {
+        "sku": "596-024931812-25-3",
+        "diameter_mm": 25,
+        "length_m": 3,
+        "bruchkraft_kn": 300,
+        "price": 431.63
+      },
+      {
+        "sku": "596-024931812-25-4",
+        "diameter_mm": 25,
+        "length_m": 4,
+        "bruchkraft_kn": 300,
+        "price": 432.13
+      },
+      {
+        "sku": "596-024931812-25-5",
+        "diameter_mm": 25,
+        "length_m": 5,
+        "bruchkraft_kn": 300,
+        "price": 432.63
+      },
+      {
+        "sku": "596-024931812-15-2",
+        "diameter_mm": 15,
+        "length_m": 2,
+        "bruchkraft_kn": 180,
+        "price": 416.13
+      },
+      {
+        "sku": "596-024931812-15-3",
+        "diameter_mm": 15,
+        "length_m": 3,
+        "bruchkraft_kn": 180,
+        "price": 416.63
+      },
+      {
+        "sku": "596-024931812-15-4",
+        "diameter_mm": 15,
+        "length_m": 4,
+        "bruchkraft_kn": 180,
+        "price": 417.13
+      },
+      {
+        "sku": "596-024931812-15-5",
+        "diameter_mm": 15,
+        "length_m": 5,
+        "bruchkraft_kn": 180,
+        "price": 417.63
+      },
+      {
+        "sku": "596-024931812-20-2",
+        "diameter_mm": 20,
+        "length_m": 2,
+        "bruchkraft_kn": 240,
+        "price": 423.63
+      },
+      {
+        "sku": "596-024931812-20-3",
+        "diameter_mm": 20,
+        "length_m": 3,
+        "bruchkraft_kn": 240,
+        "price": 424.13
+      },
+      {
+        "sku": "596-024931812-20-4",
+        "diameter_mm": 20,
+        "length_m": 4,
+        "bruchkraft_kn": 240,
+        "price": 424.63
+      },
+      {
+        "sku": "596-024931812-20-5",
+        "diameter_mm": 20,
+        "length_m": 5,
+        "bruchkraft_kn": 240,
+        "price": 425.13
+      },
+      {
+        "sku": "596-024931812-30-2",
+        "diameter_mm": 30,
+        "length_m": 2,
+        "bruchkraft_kn": 360,
+        "price": 438.63
+      },
+      {
+        "sku": "596-024931812-30-3",
+        "diameter_mm": 30,
+        "length_m": 3,
+        "bruchkraft_kn": 360,
+        "price": 439.13
+      },
+      {
+        "sku": "596-024931812-30-4",
+        "diameter_mm": 30,
+        "length_m": 4,
+        "bruchkraft_kn": 360,
+        "price": 439.63
+      },
+      {
+        "sku": "596-024931812-30-5",
+        "diameter_mm": 30,
+        "length_m": 5,
+        "bruchkraft_kn": 360,
+        "price": 440.13
+      },
+      {
+        "sku": "596-024931812-40-2",
+        "diameter_mm": 40,
+        "length_m": 2,
+        "bruchkraft_kn": 480,
+        "price": 453.63
+      },
+      {
+        "sku": "596-024931812-40-3",
+        "diameter_mm": 40,
+        "length_m": 3,
+        "bruchkraft_kn": 480,
+        "price": 454.13
+      },
+      {
+        "sku": "596-024931812-40-4",
+        "diameter_mm": 40,
+        "length_m": 4,
+        "bruchkraft_kn": 480,
+        "price": 454.63
+      },
+      {
+        "sku": "596-024931812-40-5",
+        "diameter_mm": 40,
+        "length_m": 5,
+        "bruchkraft_kn": 480,
+        "price": 455.13
+      }
+    ],
+    "compatibility": [
+      "Seilgleitbügel",
+      "Kausche"
+    ]
+  },
+  {
+    "id": "7",
     "name": "Forst-Extrem® W25-V Forstwindenseil hochverdichtet",
-    "category": "Hochverdichtete Forstwindenseile",
-    "description": "Hochverdichtetes Stahlseil für extreme Beanspruchung.",
+    "category": "Forstwindenseile",
+    "description": "Das W25-V ist ein hochverdichtetes Forstwindenseil für Anwender, die Wert auf eine solide Konstruktion, zuverlässige Qualität und ein gutes Preis-Leistungs-Verhältnis legen. Durch seine kompakte Oberfläche bietet es ein gutes Spul- und Wickelverhalten auf der Windentrommel und nimmt weniger Schmutz mit in die Winde als ein klassisches Standardseil.Die Konstruktion verfügt über starke Außendrähte und ist dadurch widerstandsfähig gegenüber Abrieb. Das W25-V eignet sich besonders für Hobbyanwender und gelegentliche Forstarbeiten, bei denen keine maximale Flexibilität oder besonders hohe Biegewechselfestigkeit erforderlich ist.Das Seil wird im gewählten Durchmesser und in der gewünschten Länge fertig abgelängt geliefert. Beide Seilenden sind glatt abgeschnitten. Optional erfolgt die Lieferung auf einer Einweghaspel. Diese erleichtert den Transport, die Lagerung und das kontrollierte Abrollen bei der Montage.Produkteigenschaften Hochverdichtetes Forstwindenseil W25-V Konstruktion: 6x19 Filler (25 Drähte pro Litze) Blanke Ausführung Konstruktion mit starken Außendrähten Gute AbriebsfestigkeitFür gelegentlich Forstarbeiten und HobbyanwenderSeil wird fertig abgelängt geliefertBeide Seilenden glatt abgeschnittenOptional auf Einweghaspel lieferbarAchtung! Es handelt sich um eine kundenindividuelle Anfertigung, welche vom Umtausch ausgeschlossen ist. Nenn-Ømm Gewichtkg/m Mind. Bruchkraft2060 N/mm² Mind. Bruchkraftin Tonnen FTF 10 0,57 103,00 kN 10,50 51,50 kN 11 0,67 121,00 kN 12,33 60,50 kN 12 0,77 142,00 kN 14,48 71,00 kN 13 0,91 164,00 kN 16,7282,00 kN",
     "variants": [
-      { "sku": "W25V-10-0050-GG-B", "diameter_mm": 10, "length_m": 50, "bruchkraft_kn": 115, "price": 320.00 },
-      { "sku": "W25V-10-0070-GG-B", "diameter_mm": 10, "length_m": 70, "bruchkraft_kn": 115, "price": 448.00 },
-      { "sku": "W25V-12-0050-GG-B", "diameter_mm": 12, "length_m": 50, "bruchkraft_kn": 145, "price": 380.00 },
-      { "sku": "W25V-14-0050-GG-B", "diameter_mm": 14, "length_m": 50, "bruchkraft_kn": 180, "price": 450.00 }
+      {
+        "sku": "W25V-10-0050-GG-B-10-10",
+        "diameter_mm": 10,
+        "length_m": 10,
+        "bruchkraft_kn": 120,
+        "price": 226.76
+      },
+      {
+        "sku": "W25V-10-0050-GG-B-10-11",
+        "diameter_mm": 10,
+        "length_m": 11,
+        "bruchkraft_kn": 120,
+        "price": 227.26
+      },
+      {
+        "sku": "W25V-10-0050-GG-B-10-12",
+        "diameter_mm": 10,
+        "length_m": 12,
+        "bruchkraft_kn": 120,
+        "price": 227.76
+      },
+      {
+        "sku": "W25V-10-0050-GG-B-10-13",
+        "diameter_mm": 10,
+        "length_m": 13,
+        "bruchkraft_kn": 120,
+        "price": 228.26
+      }
     ],
-    "compatibility": ["Seilklemmen", "Stahl-Umlenkrolle"]
+    "compatibility": [
+      "Seilgleitbügel",
+      "Kausche"
+    ]
   },
   {
-    "id": "forst-extrem-v114",
-    "name": "Forst-Extrem® V114 Forstwindenseil hochverdichtet",
-    "category": "Hochverdichtete Forstwindenseile",
-    "description": "V114 Serie - flexibel und hochfest.",
-    "variants": [
-      { "sku": "V114-08-0050", "diameter_mm": 8, "length_m": 50, "bruchkraft_kn": 85, "price": 250.00 },
-      { "sku": "V114-10-0050", "diameter_mm": 10, "length_m": 50, "bruchkraft_kn": 110, "price": 300.00 }
-    ],
-    "compatibility": ["Seilklemmen"]
-  },
-  {
-    "id": "forst-extrem-v156",
-    "name": "Forst-Extrem® V156 Forstwindenseil hochverdichtet",
-    "category": "Hochverdichtete Forstwindenseile",
-    "description": "V156 Serie - sehr hohe Verschleißfestigkeit.",
-    "variants": [
-      { "sku": "V156-08-0050", "diameter_mm": 8, "length_m": 50, "bruchkraft_kn": 90, "price": 270.00 },
-      { "sku": "V156-10-0050", "diameter_mm": 10, "length_m": 50, "bruchkraft_kn": 120, "price": 330.00 },
-      { "sku": "V156-12-0050", "diameter_mm": 12, "length_m": 50, "bruchkraft_kn": 150, "price": 390.00 }
-    ],
-    "compatibility": ["Seilklemmen"]
-  },
-  {
-    "id": "forst-extrem-v186",
-    "name": "Forst-Extrem® V186 Forstwindenseil hochverdichtet",
-    "category": "Hochverdichtete Forstwindenseile",
-    "description": "V186 Serie - für den professionellen Dauereinsatz.",
-    "variants": [
-      { "sku": "V186-10-0050", "diameter_mm": 10, "length_m": 50, "bruchkraft_kn": 125, "price": 350.00 },
-      { "sku": "V186-12-0050", "diameter_mm": 12, "length_m": 50, "bruchkraft_kn": 155, "price": 410.00 },
-      { "sku": "V186-14-0050", "diameter_mm": 14, "length_m": 50, "bruchkraft_kn": 190, "price": 480.00 }
-    ],
-    "compatibility": ["Seilklemmen"]
-  },
-  {
-    "id": "forst-extrem-revolution-14",
+    "id": "8",
     "name": "Forst-Extrem® Revolution Traktionswindenseil - Ø14mm",
     "category": "Traktionswindenseile",
-    "description": "Spezielles Traktionsseil für Forstmaschinen.",
+    "description": "Kurzbeschreibung: Forst-Extrem® Revolution Traktionswindenseil kreuzschlag linksgängig (zS) verzinkt Spezialkonstruktion mit 8-Litzen - sehr flexibel & biegsam verdichtete Litzen sorgen für eine sehr hohe Bruchkraft verbesserte innere Auflageverhältnisse - dadurch mehr Druckstabilität Kunststoffzwischenlage vermindert zusätzlich die innere Reibung - dadurch höhere Standzeiten höchste Biegewechseleigenschaft - besonders gut geeignet für Traktionswinden von HSM Forstmaschinen Datentabelle Nenn-Ømm Gewichtkg/m Mind. Bruchkraft2060 N/mm² Mind. Bruchkraftin Tonnen 14 0,93 203,00 kN 20,70 Ausführung: Erhältlich in verschiedenen Längen (siehe Tabelle) - andere Längen auf Anfrage lieferbar Seil wird auf stabiler Holz-Haspel geliefert eine Seite Kauschenpressung innenliegend andere Seite angespitzt Verfügbare Längen Art.Nr. Beschreibung Länge Gewicht 58962160014-240 Forst-Extrem® Revolution Traktionswindenseil - Ø14mm 240m 224kg 58962160014-250 Forst-Extrem® Revolution Traktionswindenseil - Ø14mm 250m 233kg 58962160014-325 Forst-Extrem® Revolution Traktionswindenseil - Ø14mm 325m 303kg 58962160014-370 Forst-Extrem® Revolution Traktionswindenseil - Ø14mm 370m 345kg 58962160014-400 Forst-Extrem® Revolution Traktionswindenseil - Ø14mm 400m 372kg 58962160014-425 Forst-Extrem® Revolution Traktionswindenseil - Ø14mm 425m 396kg 58962160014-500 Forst-Extrem® Revolution Traktionswindenseil - Ø14mm 500m 465kg Andere Längen & Ausführungen auf Anfage lieferbar!!!",
     "variants": [
-      { "sku": "TRAK-REV-14-100", "diameter_mm": 14, "length_m": 100, "bruchkraft_kn": 210, "price": 1200.00 },
-      { "sku": "TRAK-REV-14-150", "diameter_mm": 14, "length_m": 150, "bruchkraft_kn": 210, "price": 1800.00 }
+      {
+        "sku": "58962160014-240-240-50",
+        "diameter_mm": 240,
+        "length_m": 50,
+        "bruchkraft_kn": 2880,
+        "price": 387.47
+      },
+      {
+        "sku": "58962160014-240-250-50",
+        "diameter_mm": 250,
+        "length_m": 50,
+        "bruchkraft_kn": 3000,
+        "price": 402.47
+      },
+      {
+        "sku": "58962160014-240-325-50",
+        "diameter_mm": 325,
+        "length_m": 50,
+        "bruchkraft_kn": 3900,
+        "price": 514.97
+      },
+      {
+        "sku": "58962160014-240-370-50",
+        "diameter_mm": 370,
+        "length_m": 50,
+        "bruchkraft_kn": 4440,
+        "price": 582.47
+      },
+      {
+        "sku": "58962160014-240-400-50",
+        "diameter_mm": 400,
+        "length_m": 50,
+        "bruchkraft_kn": 4800,
+        "price": 627.47
+      },
+      {
+        "sku": "58962160014-240-425-50",
+        "diameter_mm": 425,
+        "length_m": 50,
+        "bruchkraft_kn": 5100,
+        "price": 664.97
+      },
+      {
+        "sku": "58962160014-240-500-50",
+        "diameter_mm": 500,
+        "length_m": 50,
+        "bruchkraft_kn": 6000,
+        "price": 777.47
+      }
     ],
-    "compatibility": ["Harvester", "Forwarder"]
+    "compatibility": [
+      "Seilgleitbügel",
+      "Kausche"
+    ]
   },
   {
-    "id": "standard-6x19-seale",
+    "id": "9",
+    "name": "Forst-Extrem® Revolution Traktionswindenseil - Ø16mm",
+    "category": "Traktionswindenseile",
+    "description": "Kurzbeschreibung: Forst-Extrem® Revolution Traktionswindenseil kreuzschlag linksgängig (zS) verzinkt Spezialkonstruktion mit 8-Litzen - sehr flexibel & biegsam verdichtete Litzen sorgen für eine sehr hohe Bruchkraft verbesserte innere Auflageverhältnisse - dadurch mehr Druckstabilität Kunststoffzwischenlage vermindert zusätzlich die innere Reibung - dadurch höhere Standzeiten höchste Biegewechseleigenschaft - besonders gut geeignet für Traktionswinden von HSM Forstmaschinen Datentabelle Nenn-Ømm Gewichtkg/m Mind. Bruchkraft2060 N/mm² Mind. Bruchkraftin Tonnen 16 1,22 264,00 kN 26,93 Ausführung: Erhältlich in verschiedenen Längen (siehe Tabelle) - andere Längen auf Anfrage lieferbar Seil wird auf stabiler Holz-Haspel geliefert eine Seite Kauschenpressung innenliegend andere Seite angespitzt Verfügbare Längen Art.Nr. Beschreibung Länge Gewicht 58962160016-450 Forst-Extrem® Revolution Traktionswindenseil - Ø16mm 450m 550kg Andere Längen & Ausführungen auf Anfage lieferbar!!!",
+    "variants": [
+      {
+        "sku": "58962160016-450-10-50",
+        "diameter_mm": 10,
+        "length_m": 50,
+        "bruchkraft_kn": 120,
+        "price": 45.74
+      }
+    ],
+    "compatibility": [
+      "Seilgleitbügel",
+      "Kausche"
+    ]
+  },
+  {
+    "id": "10",
+    "name": "Forst-Extrem® V114 Forstwindenseil hochverdichtet",
+    "category": "Hochverdichtete Forstwindenseile",
+    "description": "Forst-Extrem® V114 Forstwindenseil hochverdichtet 6x19 Konstruktion blank (Ø 5mm) & blank (Ø 6mm) starker Außendraht - robust & widerstandsfähig abriebbeständig Datentabelle Nenn-Ømm Gewichtkg/m Mind. Bruchkraft2060 N/mm² Mind. Bruchkraftin Tonnen 5 0,16 23,50 kN 2,40 6 0,21 37,70 kN 3,77 Schlaufenpressungen oder Kauschenpressungen finden Sie unter Zubehör.",
+    "variants": [
+      {
+        "sku": "58910005000-5-2",
+        "diameter_mm": 5,
+        "length_m": 2,
+        "bruchkraft_kn": 60,
+        "price": 11.45
+      },
+      {
+        "sku": "58910005000-5-3",
+        "diameter_mm": 5,
+        "length_m": 3,
+        "bruchkraft_kn": 60,
+        "price": 11.95
+      },
+      {
+        "sku": "58910005000-5-4",
+        "diameter_mm": 5,
+        "length_m": 4,
+        "bruchkraft_kn": 60,
+        "price": 12.45
+      },
+      {
+        "sku": "58910005000-5-5",
+        "diameter_mm": 5,
+        "length_m": 5,
+        "bruchkraft_kn": 60,
+        "price": 12.95
+      },
+      {
+        "sku": "58910005000-6-2",
+        "diameter_mm": 6,
+        "length_m": 2,
+        "bruchkraft_kn": 72,
+        "price": 12.95
+      },
+      {
+        "sku": "58910005000-6-3",
+        "diameter_mm": 6,
+        "length_m": 3,
+        "bruchkraft_kn": 72,
+        "price": 13.45
+      },
+      {
+        "sku": "58910005000-6-4",
+        "diameter_mm": 6,
+        "length_m": 4,
+        "bruchkraft_kn": 72,
+        "price": 13.95
+      },
+      {
+        "sku": "58910005000-6-5",
+        "diameter_mm": 6,
+        "length_m": 5,
+        "bruchkraft_kn": 72,
+        "price": 14.45
+      }
+    ],
+    "compatibility": [
+      "Seilgleitbügel",
+      "Kausche"
+    ]
+  },
+  {
+    "id": "11",
+    "name": "Forst-Extrem® V156 Forstwindenseil hochverdichtet",
+    "category": "Forstwindenseile",
+    "description": "Forst-Extrem® V156 Forstwindenseil hochverdichtet 6x26 Konstruktion blank starker Außendraht - durch Spezialkonstruktion dennoch flexibel hohe Biegewechseleigenschaft abriebbeständig Datentabelle Nenn-Ømm Gewichtkg/m Mind. Bruchkraft2060 N/mm² Mind. Bruchkraftin Tonnen 8 0,37 70,80 kN 7,14 9 0,46 86,70 kN 8,84 10 0,57 104,10 kN 10,62 11 0,67 123,30 kN 12,58 12 0,77 144,20 kN 14,71 13 0,91 164,90 kN 16,82 14 1,04 188,60 kN 19,23 15 1,22 212,90 kN 21,72 16 1,35 240,60 kN 24,54 18 1,61 296,00 kN 30,19 20 2,02 346,00 kN 35,29 22 2,24 422,00 kN 43,04 Schlaufenpressungen oder Kauschenpressungen finden Sie unter Zubehör.",
+    "variants": [
+      {
+        "sku": "58941960008-8-2",
+        "diameter_mm": 8,
+        "length_m": 2,
+        "bruchkraft_kn": 96,
+        "price": 17
+      },
+      {
+        "sku": "58941960008-8-3",
+        "diameter_mm": 8,
+        "length_m": 3,
+        "bruchkraft_kn": 96,
+        "price": 17.5
+      },
+      {
+        "sku": "58941960008-8-4",
+        "diameter_mm": 8,
+        "length_m": 4,
+        "bruchkraft_kn": 96,
+        "price": 18
+      },
+      {
+        "sku": "58941960008-8-5",
+        "diameter_mm": 8,
+        "length_m": 5,
+        "bruchkraft_kn": 96,
+        "price": 18.5
+      },
+      {
+        "sku": "58941960008-9-2",
+        "diameter_mm": 9,
+        "length_m": 2,
+        "bruchkraft_kn": 108,
+        "price": 18.5
+      },
+      {
+        "sku": "58941960008-9-3",
+        "diameter_mm": 9,
+        "length_m": 3,
+        "bruchkraft_kn": 108,
+        "price": 19
+      },
+      {
+        "sku": "58941960008-9-4",
+        "diameter_mm": 9,
+        "length_m": 4,
+        "bruchkraft_kn": 108,
+        "price": 19.5
+      },
+      {
+        "sku": "58941960008-9-5",
+        "diameter_mm": 9,
+        "length_m": 5,
+        "bruchkraft_kn": 108,
+        "price": 20
+      },
+      {
+        "sku": "58941960008-10-2",
+        "diameter_mm": 10,
+        "length_m": 2,
+        "bruchkraft_kn": 120,
+        "price": 20
+      },
+      {
+        "sku": "58941960008-10-3",
+        "diameter_mm": 10,
+        "length_m": 3,
+        "bruchkraft_kn": 120,
+        "price": 20.5
+      },
+      {
+        "sku": "58941960008-10-4",
+        "diameter_mm": 10,
+        "length_m": 4,
+        "bruchkraft_kn": 120,
+        "price": 21
+      },
+      {
+        "sku": "58941960008-10-5",
+        "diameter_mm": 10,
+        "length_m": 5,
+        "bruchkraft_kn": 120,
+        "price": 21.5
+      },
+      {
+        "sku": "58941960008-11-2",
+        "diameter_mm": 11,
+        "length_m": 2,
+        "bruchkraft_kn": 132,
+        "price": 21.5
+      },
+      {
+        "sku": "58941960008-11-3",
+        "diameter_mm": 11,
+        "length_m": 3,
+        "bruchkraft_kn": 132,
+        "price": 22
+      },
+      {
+        "sku": "58941960008-11-4",
+        "diameter_mm": 11,
+        "length_m": 4,
+        "bruchkraft_kn": 132,
+        "price": 22.5
+      },
+      {
+        "sku": "58941960008-11-5",
+        "diameter_mm": 11,
+        "length_m": 5,
+        "bruchkraft_kn": 132,
+        "price": 23
+      },
+      {
+        "sku": "58941960008-12-2",
+        "diameter_mm": 12,
+        "length_m": 2,
+        "bruchkraft_kn": 144,
+        "price": 23
+      },
+      {
+        "sku": "58941960008-12-3",
+        "diameter_mm": 12,
+        "length_m": 3,
+        "bruchkraft_kn": 144,
+        "price": 23.5
+      },
+      {
+        "sku": "58941960008-12-4",
+        "diameter_mm": 12,
+        "length_m": 4,
+        "bruchkraft_kn": 144,
+        "price": 24
+      },
+      {
+        "sku": "58941960008-12-5",
+        "diameter_mm": 12,
+        "length_m": 5,
+        "bruchkraft_kn": 144,
+        "price": 24.5
+      },
+      {
+        "sku": "58941960008-13-2",
+        "diameter_mm": 13,
+        "length_m": 2,
+        "bruchkraft_kn": 156,
+        "price": 24.5
+      },
+      {
+        "sku": "58941960008-13-3",
+        "diameter_mm": 13,
+        "length_m": 3,
+        "bruchkraft_kn": 156,
+        "price": 25
+      },
+      {
+        "sku": "58941960008-13-4",
+        "diameter_mm": 13,
+        "length_m": 4,
+        "bruchkraft_kn": 156,
+        "price": 25.5
+      },
+      {
+        "sku": "58941960008-13-5",
+        "diameter_mm": 13,
+        "length_m": 5,
+        "bruchkraft_kn": 156,
+        "price": 26
+      },
+      {
+        "sku": "58941960008-14-2",
+        "diameter_mm": 14,
+        "length_m": 2,
+        "bruchkraft_kn": 168,
+        "price": 26
+      },
+      {
+        "sku": "58941960008-14-3",
+        "diameter_mm": 14,
+        "length_m": 3,
+        "bruchkraft_kn": 168,
+        "price": 26.5
+      },
+      {
+        "sku": "58941960008-14-4",
+        "diameter_mm": 14,
+        "length_m": 4,
+        "bruchkraft_kn": 168,
+        "price": 27
+      },
+      {
+        "sku": "58941960008-14-5",
+        "diameter_mm": 14,
+        "length_m": 5,
+        "bruchkraft_kn": 168,
+        "price": 27.5
+      },
+      {
+        "sku": "58941960008-15-2",
+        "diameter_mm": 15,
+        "length_m": 2,
+        "bruchkraft_kn": 180,
+        "price": 27.5
+      },
+      {
+        "sku": "58941960008-15-3",
+        "diameter_mm": 15,
+        "length_m": 3,
+        "bruchkraft_kn": 180,
+        "price": 28
+      },
+      {
+        "sku": "58941960008-15-4",
+        "diameter_mm": 15,
+        "length_m": 4,
+        "bruchkraft_kn": 180,
+        "price": 28.5
+      },
+      {
+        "sku": "58941960008-15-5",
+        "diameter_mm": 15,
+        "length_m": 5,
+        "bruchkraft_kn": 180,
+        "price": 29
+      },
+      {
+        "sku": "58941960008-16-2",
+        "diameter_mm": 16,
+        "length_m": 2,
+        "bruchkraft_kn": 192,
+        "price": 29
+      },
+      {
+        "sku": "58941960008-16-3",
+        "diameter_mm": 16,
+        "length_m": 3,
+        "bruchkraft_kn": 192,
+        "price": 29.5
+      },
+      {
+        "sku": "58941960008-16-4",
+        "diameter_mm": 16,
+        "length_m": 4,
+        "bruchkraft_kn": 192,
+        "price": 30
+      },
+      {
+        "sku": "58941960008-16-5",
+        "diameter_mm": 16,
+        "length_m": 5,
+        "bruchkraft_kn": 192,
+        "price": 30.5
+      },
+      {
+        "sku": "58941960008-18-2",
+        "diameter_mm": 18,
+        "length_m": 2,
+        "bruchkraft_kn": 216,
+        "price": 32
+      },
+      {
+        "sku": "58941960008-18-3",
+        "diameter_mm": 18,
+        "length_m": 3,
+        "bruchkraft_kn": 216,
+        "price": 32.5
+      },
+      {
+        "sku": "58941960008-18-4",
+        "diameter_mm": 18,
+        "length_m": 4,
+        "bruchkraft_kn": 216,
+        "price": 33
+      },
+      {
+        "sku": "58941960008-18-5",
+        "diameter_mm": 18,
+        "length_m": 5,
+        "bruchkraft_kn": 216,
+        "price": 33.5
+      },
+      {
+        "sku": "58941960008-20-2",
+        "diameter_mm": 20,
+        "length_m": 2,
+        "bruchkraft_kn": 240,
+        "price": 35
+      },
+      {
+        "sku": "58941960008-20-3",
+        "diameter_mm": 20,
+        "length_m": 3,
+        "bruchkraft_kn": 240,
+        "price": 35.5
+      },
+      {
+        "sku": "58941960008-20-4",
+        "diameter_mm": 20,
+        "length_m": 4,
+        "bruchkraft_kn": 240,
+        "price": 36
+      },
+      {
+        "sku": "58941960008-20-5",
+        "diameter_mm": 20,
+        "length_m": 5,
+        "bruchkraft_kn": 240,
+        "price": 36.5
+      },
+      {
+        "sku": "58941960008-22-2",
+        "diameter_mm": 22,
+        "length_m": 2,
+        "bruchkraft_kn": 264,
+        "price": 38
+      },
+      {
+        "sku": "58941960008-22-3",
+        "diameter_mm": 22,
+        "length_m": 3,
+        "bruchkraft_kn": 264,
+        "price": 38.5
+      },
+      {
+        "sku": "58941960008-22-4",
+        "diameter_mm": 22,
+        "length_m": 4,
+        "bruchkraft_kn": 264,
+        "price": 39
+      },
+      {
+        "sku": "58941960008-22-5",
+        "diameter_mm": 22,
+        "length_m": 5,
+        "bruchkraft_kn": 264,
+        "price": 39.5
+      }
+    ],
+    "compatibility": [
+      "Seilgleitbügel",
+      "Kausche"
+    ]
+  },
+  {
+    "id": "12",
+    "name": "Forst-Extrem® V156 Forstwindenseil hochverdichtet",
+    "category": "Forstwindenseile",
+    "description": "Das Forst-Extrem® V156 ist ein hochverdichtetes Forstwindenseil für Anwender, die Wert auf eine robuste Konstruktion, hohe Abriebbeständigkeit und zuverlässige Leistung im Forsteinsatz legen. Durch seine kompakte Oberfläche bietet es ein gutes Spul- und Wickelverhalten auf der Windentrommel und nimmt weniger Schmutz mit in die Winde als ein klassisches Standardseil.Die 6x26 Spezialkonstruktion verfügt über starke Außendrähte und ist dadurch besonders widerstandsfähig gegenüber Abrieb. Gleichzeitig bleibt das Seil flexibel und überzeugt mit einer hohen Biegewechseleigenschaft. Das V156 eignet sich damit für anspruchsvolle Forstarbeiten, bei denen ein widerstandsfähiges und dennoch gut handhabbares Windenseil gefragt ist.Das Seil wird im gewählten Durchmesser und in der gewünschten Länge fertig abgelängt geliefert. Beide Seilenden sind glatt abgeschnitten. Optional erfolgt die Lieferung auf einer Einweghaspel. Diese erleichtert Transport, Lagerung und kontrolliertes Abrollen bei der Montage.Produkteigenschaften Hochverdichtetes Forstwindenseil V156 6x26 Warrington-Seale Konstruktion (26 Drähte pro Litze)Blanke AusführungKonstruktion mit starken AusßendrähtenDurch Spezialkonstruktion dennoch flexibelHohe BiegewechseleigenschaftGute AbriebsfestigkeitGuttes Spul- und Wickelverhalten auf der WindentrommelFür anspruchsvolle ForstarbeitenSeil wird fertig abgelängt geliefertBeide Seilenden glatt abgeschnittenOptional auf Einweghaspel lieferbar Achtung! Es handelt sich um eine kundenindividuelle Anfertigung, welche vom Umtausch ausgeschlossen ist. Datentabelle Nenn-Ømm Gewichtkg/m Mind. Bruchkraft2060 N/mm² Mind. Bruchkraftin Tonnen FTF80,3770,80kN 7,14 35,4090,4686,70kN 8,84 43,35100,57104,10kN 10,62 52,05110,67 123,30 kN 12,58 61,65120,77 144,20 kN 14,7172,10130,91 164,90 kN 16,8282,45141,04 188,60 kN 19,2394,30151,22 212,90 kN 21,72106,45161,35 240,60 kN 24,54120,30",
+    "variants": [
+      {
+        "sku": "V156-08-0140-GG-B-10-14",
+        "diameter_mm": 10,
+        "length_m": 14,
+        "bruchkraft_kn": 120,
+        "price": 581.58
+      },
+      {
+        "sku": "V156-08-0140-GG-B-10-16",
+        "diameter_mm": 10,
+        "length_m": 16,
+        "bruchkraft_kn": 120,
+        "price": 582.58
+      },
+      {
+        "sku": "V156-08-0140-GG-B-10-8",
+        "diameter_mm": 10,
+        "length_m": 8,
+        "bruchkraft_kn": 120,
+        "price": 578.58
+      },
+      {
+        "sku": "V156-08-0140-GG-B-10-9",
+        "diameter_mm": 10,
+        "length_m": 9,
+        "bruchkraft_kn": 120,
+        "price": 579.08
+      },
+      {
+        "sku": "V156-08-0140-GG-B-10-10",
+        "diameter_mm": 10,
+        "length_m": 10,
+        "bruchkraft_kn": 120,
+        "price": 579.58
+      },
+      {
+        "sku": "V156-08-0140-GG-B-10-11",
+        "diameter_mm": 10,
+        "length_m": 11,
+        "bruchkraft_kn": 120,
+        "price": 580.08
+      },
+      {
+        "sku": "V156-08-0140-GG-B-10-12",
+        "diameter_mm": 10,
+        "length_m": 12,
+        "bruchkraft_kn": 120,
+        "price": 580.58
+      },
+      {
+        "sku": "V156-08-0140-GG-B-10-13",
+        "diameter_mm": 10,
+        "length_m": 13,
+        "bruchkraft_kn": 120,
+        "price": 581.08
+      },
+      {
+        "sku": "V156-08-0140-GG-B-10-15",
+        "diameter_mm": 10,
+        "length_m": 15,
+        "bruchkraft_kn": 120,
+        "price": 582.08
+      }
+    ],
+    "compatibility": [
+      "Seilgleitbügel",
+      "Kausche"
+    ]
+  },
+  {
+    "id": "13",
+    "name": "Forst-Extrem® V156 Forstwindenseil hochverdichtet",
+    "category": "Forstwindenseile",
+    "description": "Das Forst-Extrem® V156 ist ein hochverdichtetes Forstwindenseil für Anwender, die Wert auf eine robuste Konstruktion, hohe Abriebbeständigkeit und zuverlässige Leistung im Forsteinsatz legen. Durch seine kompakte Oberfläche bietet es ein gutes Spul- und Wickelverhalten auf der Windentrommel und nimmt weniger Schmutz mit in die Winde als ein klassisches Standardseil.Die 6x26 Spezialkonstruktion verfügt über starke Außendrähte und ist dadurch besonders widerstandsfähig gegenüber Abrieb. Gleichzeitig bleibt das Seil flexibel und überzeugt mit einer hohen Biegewechseleigenschaft. Das V156 eignet sich damit für anspruchsvolle Forstarbeiten, bei denen ein widerstandsfähiges und dennoch gut handhabbares Windenseil gefragt ist.Das Seil wird im gewählten Durchmesser und in der gewünschten Länge fertig abgelängt geliefert. Ein Seilende ist mit einer Schlaufe versehen. Für das andere Seilende kann zur Montage an der Seilwinde zwischen einer glatt abgeschnittenen und einer angespitzten Ausführung gewählt werden. Optional erfolgt die Lieferung auf einer Einweghaspel. Diese erleichtert Transport, Lagerung und kontrolliertes Abrollen bei der Montage.ProdukteigenschaftenHochverdichtetes Forstwindenseil V1566x26 Warrington-Seale Konstruktion (26 Drähte pro Litze)Blanke AusführungKonstruktion mit starken AusßendrähtenDurch Spezialkonstruktion dennoch flexibelHohe BiegewechseleigenschaftGute AbriebsfestigkeitGuttes Spul- und Wickelverhalten auf der WindentrommelFür anspruchsvolle ForstarbeitenSeil wird fertig abgelängt geliefert Ein Seilende mit Schlaufe Optional auf Einweghaspel lieferbarAchtung! Es handelt sich um eine kundenindividuelle Anfertigung, welche vom Umtausch ausgeschlossen ist. DatentabelleNenn-ØmmGewichtkg/mMind. Bruchkraft2060 N/mm²Mind. Bruchkraftin TonnenFTF80,3770,80kN7,1435,4090,4686,70kN8,8443,35100,57104,10kN10,6252,05110,67123,30 kN12,5861,65120,77144,20 kN14,7172,10130,91164,90 kN16,8282,45141,04188,60 kN19,2394,30151,22212,90 kN21,72106,45161,35240,60 kN24,54120,30",
+    "variants": [
+      {
+        "sku": "V156-08-0050-SG-EH-10-14",
+        "diameter_mm": 10,
+        "length_m": 14,
+        "bruchkraft_kn": 120,
+        "price": 239.07
+      },
+      {
+        "sku": "V156-08-0050-SG-EH-10-16",
+        "diameter_mm": 10,
+        "length_m": 16,
+        "bruchkraft_kn": 120,
+        "price": 240.07
+      },
+      {
+        "sku": "V156-08-0050-SG-EH-10-8",
+        "diameter_mm": 10,
+        "length_m": 8,
+        "bruchkraft_kn": 120,
+        "price": 236.07
+      },
+      {
+        "sku": "V156-08-0050-SG-EH-10-9",
+        "diameter_mm": 10,
+        "length_m": 9,
+        "bruchkraft_kn": 120,
+        "price": 236.57
+      },
+      {
+        "sku": "V156-08-0050-SG-EH-10-10",
+        "diameter_mm": 10,
+        "length_m": 10,
+        "bruchkraft_kn": 120,
+        "price": 237.07
+      },
+      {
+        "sku": "V156-08-0050-SG-EH-10-11",
+        "diameter_mm": 10,
+        "length_m": 11,
+        "bruchkraft_kn": 120,
+        "price": 237.57
+      },
+      {
+        "sku": "V156-08-0050-SG-EH-10-12",
+        "diameter_mm": 10,
+        "length_m": 12,
+        "bruchkraft_kn": 120,
+        "price": 238.07
+      },
+      {
+        "sku": "V156-08-0050-SG-EH-10-13",
+        "diameter_mm": 10,
+        "length_m": 13,
+        "bruchkraft_kn": 120,
+        "price": 238.57
+      },
+      {
+        "sku": "V156-08-0050-SG-EH-10-15",
+        "diameter_mm": 10,
+        "length_m": 15,
+        "bruchkraft_kn": 120,
+        "price": 239.57
+      }
+    ],
+    "compatibility": [
+      "Seilgleitbügel",
+      "Kausche"
+    ]
+  },
+  {
+    "id": "14",
+    "name": "Forst-Extrem® V186 Forstwindenseil hochverdichtet",
+    "category": "Hochverdichtete Forstwindenseile",
+    "description": "Forst-Extrem® V186 Forstwindenseil hochverdichtet 6x31 Konstruktion blank Mehrdrahtkonstruktion - dadurch enorm flexibel und weich höchste Biegewechseleigenschaft Datentabelle Nenn-Ømm Gewichtkg/m Mind. Bruchkraft2060 N/mm² Mind. Bruchkraftin Tonnen 10 0,57 104,10 kN 10,62 11 0,67 123,30 kN 12,58 12 0,77 144,20 kN 14,71 13 0,91 164,90 kN 16,82 14 1,04 188,69 kN 19,24 15 1,22 212,90 kN 21,72 16 1,35 240,40 kN 24,52 18 1,61 294,00 kN 29,99 Schlaufenpressungen oder Kauschenpressungen finden Sie unter Zubehör.",
+    "variants": [
+      {
+        "sku": "58930010000-10-4",
+        "diameter_mm": 10,
+        "length_m": 4,
+        "bruchkraft_kn": 120,
+        "price": 21.68
+      },
+      {
+        "sku": "58930010000-10-12",
+        "diameter_mm": 10,
+        "length_m": 12,
+        "bruchkraft_kn": 120,
+        "price": 25.68
+      },
+      {
+        "sku": "58930010000-10-17",
+        "diameter_mm": 10,
+        "length_m": 17,
+        "bruchkraft_kn": 120,
+        "price": 28.18
+      },
+      {
+        "sku": "58930010000-11-4",
+        "diameter_mm": 11,
+        "length_m": 4,
+        "bruchkraft_kn": 132,
+        "price": 23.18
+      },
+      {
+        "sku": "58930010000-11-12",
+        "diameter_mm": 11,
+        "length_m": 12,
+        "bruchkraft_kn": 132,
+        "price": 27.18
+      },
+      {
+        "sku": "58930010000-11-17",
+        "diameter_mm": 11,
+        "length_m": 17,
+        "bruchkraft_kn": 132,
+        "price": 29.68
+      },
+      {
+        "sku": "58930010000-12-4",
+        "diameter_mm": 12,
+        "length_m": 4,
+        "bruchkraft_kn": 144,
+        "price": 24.68
+      },
+      {
+        "sku": "58930010000-12-12",
+        "diameter_mm": 12,
+        "length_m": 12,
+        "bruchkraft_kn": 144,
+        "price": 28.68
+      },
+      {
+        "sku": "58930010000-12-17",
+        "diameter_mm": 12,
+        "length_m": 17,
+        "bruchkraft_kn": 144,
+        "price": 31.18
+      },
+      {
+        "sku": "58930010000-13-4",
+        "diameter_mm": 13,
+        "length_m": 4,
+        "bruchkraft_kn": 156,
+        "price": 26.18
+      },
+      {
+        "sku": "58930010000-13-12",
+        "diameter_mm": 13,
+        "length_m": 12,
+        "bruchkraft_kn": 156,
+        "price": 30.18
+      },
+      {
+        "sku": "58930010000-13-17",
+        "diameter_mm": 13,
+        "length_m": 17,
+        "bruchkraft_kn": 156,
+        "price": 32.68
+      },
+      {
+        "sku": "58930010000-14-4",
+        "diameter_mm": 14,
+        "length_m": 4,
+        "bruchkraft_kn": 168,
+        "price": 27.68
+      },
+      {
+        "sku": "58930010000-14-12",
+        "diameter_mm": 14,
+        "length_m": 12,
+        "bruchkraft_kn": 168,
+        "price": 31.68
+      },
+      {
+        "sku": "58930010000-14-17",
+        "diameter_mm": 14,
+        "length_m": 17,
+        "bruchkraft_kn": 168,
+        "price": 34.18
+      },
+      {
+        "sku": "58930010000-15-4",
+        "diameter_mm": 15,
+        "length_m": 4,
+        "bruchkraft_kn": 180,
+        "price": 29.18
+      },
+      {
+        "sku": "58930010000-15-12",
+        "diameter_mm": 15,
+        "length_m": 12,
+        "bruchkraft_kn": 180,
+        "price": 33.18
+      },
+      {
+        "sku": "58930010000-15-17",
+        "diameter_mm": 15,
+        "length_m": 17,
+        "bruchkraft_kn": 180,
+        "price": 35.68
+      },
+      {
+        "sku": "58930010000-16-4",
+        "diameter_mm": 16,
+        "length_m": 4,
+        "bruchkraft_kn": 192,
+        "price": 30.68
+      },
+      {
+        "sku": "58930010000-16-12",
+        "diameter_mm": 16,
+        "length_m": 12,
+        "bruchkraft_kn": 192,
+        "price": 34.68
+      },
+      {
+        "sku": "58930010000-16-17",
+        "diameter_mm": 16,
+        "length_m": 17,
+        "bruchkraft_kn": 192,
+        "price": 37.18
+      },
+      {
+        "sku": "58930010000-18-4",
+        "diameter_mm": 18,
+        "length_m": 4,
+        "bruchkraft_kn": 216,
+        "price": 33.68
+      },
+      {
+        "sku": "58930010000-18-12",
+        "diameter_mm": 18,
+        "length_m": 12,
+        "bruchkraft_kn": 216,
+        "price": 37.68
+      },
+      {
+        "sku": "58930010000-18-17",
+        "diameter_mm": 18,
+        "length_m": 17,
+        "bruchkraft_kn": 216,
+        "price": 40.18
+      }
+    ],
+    "compatibility": [
+      "Seilgleitbügel",
+      "Kausche"
+    ]
+  },
+  {
+    "id": "15",
+    "name": "Forst-Extrem® V186 Forstwindenseil hochverdichtet",
+    "category": "Forstwindenseile",
+    "description": "Das Forst-Extrem® V186 ist ein hochverdichtetes Forstwindenseil für Anwender, die Wert auf maximale Flexibilität, eine weiche Seilkonstruktion und hervorragende Biegewechseleigenschaften im Forsteinsatz legen. Durch seine hochverdichtete Konstruktion eignet sich das V186 besonders für anspruchsvolle Anwendungen mit häufigen Biegewechseln und hoher mechanischer Beanspruchung.Die 6x31 Mehrdrahtkonstruktion sorgt dafür, dass das Seil trotz seiner hohen Festigkeit enorm flexibel und weich bleibt. Durch die Vielzahl der Einzeldrähte bietet das V186 eine besonders hohe Biegewechselfestigkeit und lässt sich dadurch sehr gut handhaben. Das Seil eignet sich damit besonders für professionelle Forstarbeiten, bei denen ein flexibles und gleichzeitig leistungsfähiges Windenseil gefragt ist.Das Seil wird im gewählten Durchmesser und in der gewünschten Länge fertig abgelängt geliefert. Ein Seilende ist mit einer Schlaufe versehen. Für das andere Seilende kann zur Montage an der Seilwinde zwischen einer glatt abgeschnittenen und einer angespitzten Ausführung gewählt werden. Optional erfolgt die Lieferung auf einer Einweghaspel. Diese erleichtert Transport, Lagerung und kontrolliertes Abrollen bei der Montage.ProdukteigenschaftenHochverdichtetes Forstwindenseil V1866x31 KonstruktionMehrdrahtkonstruktion mit 31 Drähten pro LitzeBlanke AusführungEnorm flexibel und weichBesonders gute HandhabungHöchste BiegewechseleigenschaftFür anspruchsvolle ForstarbeitenSeil wird fertig abgelängt geliefertEin Seilende mit SchlaufeOptional auf Einweghaspel lieferbarAchtung! Es handelt sich um eine kundenindividuelle Anfertigung, welche vom Umtausch ausgeschlossen ist.Datentabelle Nenn-ØmmGewichtkg/mMind. Bruchkraft2060 N/mm²Mind. Bruchkraftin TonnenFTF100,57104,10kN10,6252,05110,67123,30kN12,5861,65120,77144,20kN14,7172,10130,91164,90kN16,8282,45141,04188,69kN19,2494,345151,22212,90kN21,72106,45161,35240,40kN24,52120,20",
+    "variants": [
+      {
+        "sku": "V186-10-0160-SG-B-10-14",
+        "diameter_mm": 10,
+        "length_m": 14,
+        "bruchkraft_kn": 120,
+        "price": 777.67
+      },
+      {
+        "sku": "V186-10-0160-SG-B-10-16",
+        "diameter_mm": 10,
+        "length_m": 16,
+        "bruchkraft_kn": 120,
+        "price": 778.67
+      },
+      {
+        "sku": "V186-10-0160-SG-B-10-10",
+        "diameter_mm": 10,
+        "length_m": 10,
+        "bruchkraft_kn": 120,
+        "price": 775.67
+      },
+      {
+        "sku": "V186-10-0160-SG-B-10-11",
+        "diameter_mm": 10,
+        "length_m": 11,
+        "bruchkraft_kn": 120,
+        "price": 776.17
+      },
+      {
+        "sku": "V186-10-0160-SG-B-10-12",
+        "diameter_mm": 10,
+        "length_m": 12,
+        "bruchkraft_kn": 120,
+        "price": 776.67
+      },
+      {
+        "sku": "V186-10-0160-SG-B-10-13",
+        "diameter_mm": 10,
+        "length_m": 13,
+        "bruchkraft_kn": 120,
+        "price": 777.17
+      },
+      {
+        "sku": "V186-10-0160-SG-B-10-15",
+        "diameter_mm": 10,
+        "length_m": 15,
+        "bruchkraft_kn": 120,
+        "price": 778.17
+      }
+    ],
+    "compatibility": [
+      "Seilgleitbügel",
+      "Kausche"
+    ]
+  },
+  {
+    "id": "16",
+    "name": "Forst-Extrem® V186 Forstwindenseil hochverdichtet",
+    "category": "Forstwindenseile",
+    "description": "Das Forst-Extrem® V186 ist ein hochverdichtetes Forstwindenseil für Anwender, die Wert auf maximale Flexibilität, eine weiche Seilkonstruktion und hervorragende Biegewechseleigenschaften im Forsteinsatz legen. Durch seine hochverdichtete Konstruktion eignet sich das V186 besonders für anspruchsvolle Anwendungen mit häufigen Biegewechseln und hoher mechanischer Beanspruchung.Die 6x31 Mehrdrahtkonstruktion sorgt dafür, dass das Seil trotz seiner hohen Festigkeit enorm flexibel und weich bleibt. Durch die Vielzahl der Einzeldrähte bietet das V186 eine besonders hohe Biegewechselfestigkeit und lässt sich dadurch sehr gut handhaben. Das Seil eignet sich damit besonders für professionelle Forstarbeiten, bei denen ein flexibles und gleichzeitig leistungsfähiges Windenseil gefragt ist.Das Seil wird im gewählten Durchmesser und in der gewünschten Länge fertig abgelängt geliefert. Ein Seilende ist mit einer Schlaufe versehen. Für das andere Seilende kann zur Montage an der Seilwinde zwischen einer glatt abgeschnittenen und einer angespitzten Ausführung gewählt werden. Optional erfolgt die Lieferung auf einer Einweghaspel. Diese erleichtert Transport, Lagerung und kontrolliertes Abrollen bei der Montage.ProdukteigenschaftenHochverdichtetes Forstwindenseil V1866x31 KonstruktionMehrdrahtkonstruktion mit 31 Drähten pro LitzeBlanke AusführungEnorm flexibel und weichBesonders gute HandhabungHöchste BiegewechseleigenschaftFür anspruchsvolle ForstarbeitenSeil wird fertig abgelängt geliefertBeide Seilenden glatt abgeschnittenOptional auf Einweghaspel lieferbarAchtung! Es handelt sich um eine kundenindividuelle Anfertigung, welche vom Umtausch ausgeschlossen ist.Datentabelle Nenn-ØmmGewichtkg/mMind. Bruchkraft2060 N/mm²Mind. Bruchkraftin TonnenFTF100,57104,10kN10,6252,05110,67123,30kN12,5861,65120,77144,20kN14,7172,10130,91164,90kN16,8282,45141,04188,69kN19,2494,345151,22212,90kN21,72106,45161,35240,40kN24,52120,20",
+    "variants": [
+      {
+        "sku": "V186-10-0050-GG-B-10-14",
+        "diameter_mm": 10,
+        "length_m": 14,
+        "bruchkraft_kn": 120,
+        "price": 256.23
+      },
+      {
+        "sku": "V186-10-0050-GG-B-10-16",
+        "diameter_mm": 10,
+        "length_m": 16,
+        "bruchkraft_kn": 120,
+        "price": 257.23
+      },
+      {
+        "sku": "V186-10-0050-GG-B-10-10",
+        "diameter_mm": 10,
+        "length_m": 10,
+        "bruchkraft_kn": 120,
+        "price": 254.23
+      },
+      {
+        "sku": "V186-10-0050-GG-B-10-11",
+        "diameter_mm": 10,
+        "length_m": 11,
+        "bruchkraft_kn": 120,
+        "price": 254.73
+      },
+      {
+        "sku": "V186-10-0050-GG-B-10-12",
+        "diameter_mm": 10,
+        "length_m": 12,
+        "bruchkraft_kn": 120,
+        "price": 255.23
+      },
+      {
+        "sku": "V186-10-0050-GG-B-10-13",
+        "diameter_mm": 10,
+        "length_m": 13,
+        "bruchkraft_kn": 120,
+        "price": 255.73
+      },
+      {
+        "sku": "V186-10-0050-GG-B-10-15",
+        "diameter_mm": 10,
+        "length_m": 15,
+        "bruchkraft_kn": 120,
+        "price": 256.73
+      }
+    ],
+    "compatibility": [
+      "Seilgleitbügel",
+      "Kausche"
+    ]
+  },
+  {
+    "id": "17",
+    "name": "Forst-Extrem® V186 Traktionswindenseil - Ø14mm",
+    "category": "Traktionswindenseile",
+    "description": "Kurzbeschreibung: Forst-Extrem® V186 Traktionswindenseil kreuzschlag rechtsgängig hochverdichtet blank 6x31 Mehrdrahtkonstruktion - dadurch enorm flexibel & biegsam höchste Biegewechseleigenschaft - besonders geeignet für Traktionsseilwinden von Komatsu Forstmaschinen Datentabelle Nenn-Ømm Gewichtkg/m Mind. Bruchkraft2060 N/mm² Mind. Bruchkraftin Tonnen 14 0,99 187,00 kN 19,06 Ausführung: Erhältlich in verschiedenen Längen (siehe Tabelle) - andere Längen auf Anfrage lieferbar Seil wird auf stabiler Holz-Haspel geliefert eine Seite Kauschenpressung innenliegend andere Seite angespitzt Verfügbare Längen Art.Nr. Beschreibung Länge Gewicht 58930014000-280 Forst-Extrem® V186 Traktionswindenseil - Ø14mm 280m 280kg 58930014000-300 Forst-Extrem® V186 Traktionswindenseil - Ø14mm 300m 300kg 58930014000-350 Forst-Extrem® V186 Traktionswindenseil - Ø14mm 350m 350kg 58930014000-400 Forst-Extrem® V186 Traktionswindenseil - Ø14mm 400m 400kg Andere Längen & Ausführungen auf Anfage lieferbar!!!",
+    "variants": [
+      {
+        "sku": "58930014000-280-280-50",
+        "diameter_mm": 280,
+        "length_m": 50,
+        "bruchkraft_kn": 3360,
+        "price": 446.96
+      },
+      {
+        "sku": "58930014000-280-300-50",
+        "diameter_mm": 300,
+        "length_m": 50,
+        "bruchkraft_kn": 3600,
+        "price": 476.96
+      },
+      {
+        "sku": "58930014000-280-350-50",
+        "diameter_mm": 350,
+        "length_m": 50,
+        "bruchkraft_kn": 4200,
+        "price": 551.96
+      },
+      {
+        "sku": "58930014000-280-400-50",
+        "diameter_mm": 400,
+        "length_m": 50,
+        "bruchkraft_kn": 4800,
+        "price": 626.96
+      }
+    ],
+    "compatibility": [
+      "Seilgleitbügel",
+      "Kausche"
+    ]
+  },
+  {
+    "id": "18",
+    "name": "Forst-Extrem® W25-V Forstwindenseil hochverdichtet",
+    "category": "Forstwindenseile",
+    "description": "Das W25-V ist ein hochverdichtetes Forstwindenseil für Anwender, die Wert auf eine solide Konstruktion, zuverlässige Qualität und ein gutes Preis-Leistungs-Verhältnis legen. Durch seine kompakte Oberfläche bietet es ein gutes Spul- und Wickelverhalten auf der Windentrommel und nimmt weniger Schmutz mit in die Winde als ein klassisches Standardseil.Die Konstruktion verfügt über starke Außendrähte und ist dadurch widerstandsfähig gegenüber Abrieb. Das W25-V eignet sich besonders für Hobbyanwender und gelegentliche Forstarbeiten, bei denen keine maximale Flexibilität oder besonders hohe Biegewechselfestigkeit erforderlich ist.Das Seil wird im gewählten Durchmesser und in der gewünschten Länge fertig konfektioniert geliefert. Ein Seilende ist mit einer Schlaufe versehen. Für das andere Seilende kann zur Montage an der Seilwinde zwischen einer glatt abgeschnittenen und einer angespitzten Ausführung gewählt werden. Optional erfolgt die Lieferung auf einer Einweghaspel. Diese erleichtert den Transport, die Lagerung und das kontrollierte Abrollen bei der Montage.Produkteigenschaften Hochverdichtetes Forstwindenseil W25-V Konstruktion: 6x19 Filler (25 Drähte pro Litze) Blanke Ausführung Konstruktion mit starken Außendrähten Gute AbriebsfestigkeitFür gelegentlich Forstarbeiten und HobbyanwenderSeil wird fertig abgelängt geliefertEin Seilende mit SchlaufeZweites Seilende wahlweise glatt abgeschnitten oder angespitztOptional auf Einweghaspel lieferbar Achtung! Es handelt sich um eine kundenindividuelle Anfertigung, welche vom Umtausch ausgeschlossen ist. Nenn-Ømm Gewichtkg/m Mind. Bruchkraft2060 N/mm² Mind. Bruchkraftin Tonnen FTF 10 0,57 103,00 kN 10,50 51,50 kN 11 0,67 121,00 kN 12,33 60,50 kN 12 0,77 142,00 kN 14,48 71,00 kN 13 0,91 164,00 kN 16,7282,00 kN",
+    "variants": [
+      {
+        "sku": "W25V-10-0050-SSP-B-10-10",
+        "diameter_mm": 10,
+        "length_m": 10,
+        "bruchkraft_kn": 120,
+        "price": 245.32
+      },
+      {
+        "sku": "W25V-10-0050-SSP-B-10-11",
+        "diameter_mm": 10,
+        "length_m": 11,
+        "bruchkraft_kn": 120,
+        "price": 245.82
+      },
+      {
+        "sku": "W25V-10-0050-SSP-B-10-12",
+        "diameter_mm": 10,
+        "length_m": 12,
+        "bruchkraft_kn": 120,
+        "price": 246.32
+      },
+      {
+        "sku": "W25V-10-0050-SSP-B-10-13",
+        "diameter_mm": 10,
+        "length_m": 13,
+        "bruchkraft_kn": 120,
+        "price": 246.82
+      }
+    ],
+    "compatibility": [
+      "Seilgleitbügel",
+      "Kausche"
+    ]
+  },
+  {
+    "id": "19",
+    "name": "Forstwindenseil hochverdichtet W25-V",
+    "category": "Hochverdichtete Forstwindenseile",
+    "description": "Forstwindenseil W25-V hochverdichtet 6x25 Konstruktion blank Konstruktion mit starkem Außendraht abriebbeständig Datentabelle Nenn-Ømm Gewichtkg/m Mind. Bruchkraft2060 N/mm² Mind. Bruchkraftin Tonnen 10 0,57 103,00 kN 10,50 11 0,67 121,00 kN 12,33 12 0,77 142,00 kN 14,48 13 0,91 164,00 kN 16,72 Schlaufenpressungen oder Kauschenpressungen finden Sie unter Zubehör.",
+    "variants": [
+      {
+        "sku": "58920010000-10-2",
+        "diameter_mm": 10,
+        "length_m": 2,
+        "bruchkraft_kn": 120,
+        "price": 20.14
+      },
+      {
+        "sku": "58920010000-10-3",
+        "diameter_mm": 10,
+        "length_m": 3,
+        "bruchkraft_kn": 120,
+        "price": 20.64
+      },
+      {
+        "sku": "58920010000-10-4",
+        "diameter_mm": 10,
+        "length_m": 4,
+        "bruchkraft_kn": 120,
+        "price": 21.14
+      },
+      {
+        "sku": "58920010000-10-5",
+        "diameter_mm": 10,
+        "length_m": 5,
+        "bruchkraft_kn": 120,
+        "price": 21.64
+      },
+      {
+        "sku": "58920010000-11-2",
+        "diameter_mm": 11,
+        "length_m": 2,
+        "bruchkraft_kn": 132,
+        "price": 21.64
+      },
+      {
+        "sku": "58920010000-11-3",
+        "diameter_mm": 11,
+        "length_m": 3,
+        "bruchkraft_kn": 132,
+        "price": 22.14
+      },
+      {
+        "sku": "58920010000-11-4",
+        "diameter_mm": 11,
+        "length_m": 4,
+        "bruchkraft_kn": 132,
+        "price": 22.64
+      },
+      {
+        "sku": "58920010000-11-5",
+        "diameter_mm": 11,
+        "length_m": 5,
+        "bruchkraft_kn": 132,
+        "price": 23.14
+      },
+      {
+        "sku": "58920010000-12-2",
+        "diameter_mm": 12,
+        "length_m": 2,
+        "bruchkraft_kn": 144,
+        "price": 23.14
+      },
+      {
+        "sku": "58920010000-12-3",
+        "diameter_mm": 12,
+        "length_m": 3,
+        "bruchkraft_kn": 144,
+        "price": 23.64
+      },
+      {
+        "sku": "58920010000-12-4",
+        "diameter_mm": 12,
+        "length_m": 4,
+        "bruchkraft_kn": 144,
+        "price": 24.14
+      },
+      {
+        "sku": "58920010000-12-5",
+        "diameter_mm": 12,
+        "length_m": 5,
+        "bruchkraft_kn": 144,
+        "price": 24.64
+      },
+      {
+        "sku": "58920010000-13-2",
+        "diameter_mm": 13,
+        "length_m": 2,
+        "bruchkraft_kn": 156,
+        "price": 24.64
+      },
+      {
+        "sku": "58920010000-13-3",
+        "diameter_mm": 13,
+        "length_m": 3,
+        "bruchkraft_kn": 156,
+        "price": 25.14
+      },
+      {
+        "sku": "58920010000-13-4",
+        "diameter_mm": 13,
+        "length_m": 4,
+        "bruchkraft_kn": 156,
+        "price": 25.64
+      },
+      {
+        "sku": "58920010000-13-5",
+        "diameter_mm": 13,
+        "length_m": 5,
+        "bruchkraft_kn": 156,
+        "price": 26.14
+      }
+    ],
+    "compatibility": [
+      "Seilgleitbügel",
+      "Kausche"
+    ]
+  },
+  {
+    "id": "20",
     "name": "Standard Forstwindenseil 6x19 Seale",
     "category": "Standard Forstwindenseile",
-    "description": "Klassisches 6-litziges Stahlseil.",
+    "description": "Standard Forstwindenseil 6x19 Seale nach Norm: EN12385-4:2002 (früher DIN 3058) nicht verdichtet blank Konstruktion mit starkem Außendraht imprägniert wenig biegsam abriebbeständig Datentabelle Nenn-Ømm Gewichtkg/m Mind. Bruchkraft1960 N/mm² Mind. Bruchkraftin Tonnen 9 0,33 56,70 kN 5,78 10 0,41 70,10 kN 7,15 11 0,50 84,80 kN 8,65 12 0,59 101,00 kN 10,30 13 0,69 118,00 kN 12,03 14 0,80 137,00 kN 13,97 Schlaufenpressungen oder Kauschenpressungen finden Sie unter Zubehör.",
     "variants": [
-      { "sku": "STD-619-10-50", "diameter_mm": 10, "length_m": 50, "bruchkraft_kn": 75, "price": 150.00 },
-      { "sku": "STD-619-12-50", "diameter_mm": 12, "length_m": 50, "bruchkraft_kn": 95, "price": 190.00 }
+      {
+        "sku": "575100196000-10-4",
+        "diameter_mm": 10,
+        "length_m": 4,
+        "bruchkraft_kn": 120,
+        "price": 20.09
+      },
+      {
+        "sku": "575100196000-10-12",
+        "diameter_mm": 10,
+        "length_m": 12,
+        "bruchkraft_kn": 120,
+        "price": 24.09
+      },
+      {
+        "sku": "575100196000-10-17",
+        "diameter_mm": 10,
+        "length_m": 17,
+        "bruchkraft_kn": 120,
+        "price": 26.59
+      },
+      {
+        "sku": "575100196000-11-4",
+        "diameter_mm": 11,
+        "length_m": 4,
+        "bruchkraft_kn": 132,
+        "price": 21.59
+      },
+      {
+        "sku": "575100196000-11-12",
+        "diameter_mm": 11,
+        "length_m": 12,
+        "bruchkraft_kn": 132,
+        "price": 25.59
+      },
+      {
+        "sku": "575100196000-11-17",
+        "diameter_mm": 11,
+        "length_m": 17,
+        "bruchkraft_kn": 132,
+        "price": 28.09
+      },
+      {
+        "sku": "575100196000-12-4",
+        "diameter_mm": 12,
+        "length_m": 4,
+        "bruchkraft_kn": 144,
+        "price": 23.09
+      },
+      {
+        "sku": "575100196000-12-12",
+        "diameter_mm": 12,
+        "length_m": 12,
+        "bruchkraft_kn": 144,
+        "price": 27.09
+      },
+      {
+        "sku": "575100196000-12-17",
+        "diameter_mm": 12,
+        "length_m": 17,
+        "bruchkraft_kn": 144,
+        "price": 29.59
+      }
     ],
-    "compatibility": ["Standard Seilrollen"]
+    "compatibility": [
+      "Seilgleitbügel",
+      "Kausche"
+    ]
   },
   {
-    "id": "standard-6x36-warrington",
+    "id": "21",
     "name": "Standard Forstwindenseil 6x36 Warrington-Seale",
     "category": "Standard Forstwindenseile",
-    "description": "Flexibles 6-litziges Stahlseil.",
+    "description": "Standard Forstwindenseil 6x36 Warrington-Seale nach Norm: EN12385-4:2002 (früher DIN 3064) nicht verdichtet blank Mehrdrahtkonstruktion - dadurch sehr flexibel & weich imprägniert extrem biegsam Datentabelle Nenn-Ømm Gewichtkg/m Mind. Bruchkraft1960 N/mm² Mind. Bruchkraftin Tonnen 11 0,51 84,50 kN 8,61 12 0,60 101,00 kN 10,30 13 0,71 118,00 kN 12,03 14 0,82 137,00 kN 13,97 Schlaufenpressungen oder Kauschenpressungen finden Sie unter Zubehör.",
     "variants": [
-      { "sku": "STD-636-12-50", "diameter_mm": 12, "length_m": 50, "bruchkraft_kn": 90, "price": 210.00 },
-      { "sku": "STD-636-14-50", "diameter_mm": 14, "length_m": 50, "bruchkraft_kn": 115, "price": 250.00 }
+      {
+        "sku": "560110196000-11-4",
+        "diameter_mm": 11,
+        "length_m": 4,
+        "bruchkraft_kn": 132,
+        "price": 22.26
+      },
+      {
+        "sku": "560110196000-11-12",
+        "diameter_mm": 11,
+        "length_m": 12,
+        "bruchkraft_kn": 132,
+        "price": 26.26
+      },
+      {
+        "sku": "560110196000-11-17",
+        "diameter_mm": 11,
+        "length_m": 17,
+        "bruchkraft_kn": 132,
+        "price": 28.76
+      },
+      {
+        "sku": "560110196000-12-4",
+        "diameter_mm": 12,
+        "length_m": 4,
+        "bruchkraft_kn": 144,
+        "price": 23.76
+      },
+      {
+        "sku": "560110196000-12-12",
+        "diameter_mm": 12,
+        "length_m": 12,
+        "bruchkraft_kn": 144,
+        "price": 27.76
+      },
+      {
+        "sku": "560110196000-12-17",
+        "diameter_mm": 12,
+        "length_m": 17,
+        "bruchkraft_kn": 144,
+        "price": 30.26
+      },
+      {
+        "sku": "560110196000-13-4",
+        "diameter_mm": 13,
+        "length_m": 4,
+        "bruchkraft_kn": 156,
+        "price": 25.26
+      },
+      {
+        "sku": "560110196000-13-12",
+        "diameter_mm": 13,
+        "length_m": 12,
+        "bruchkraft_kn": 156,
+        "price": 29.26
+      },
+      {
+        "sku": "560110196000-13-17",
+        "diameter_mm": 13,
+        "length_m": 17,
+        "bruchkraft_kn": 156,
+        "price": 31.76
+      },
+      {
+        "sku": "560110196000-14-4",
+        "diameter_mm": 14,
+        "length_m": 4,
+        "bruchkraft_kn": 168,
+        "price": 26.76
+      },
+      {
+        "sku": "560110196000-14-12",
+        "diameter_mm": 14,
+        "length_m": 12,
+        "bruchkraft_kn": 168,
+        "price": 30.76
+      },
+      {
+        "sku": "560110196000-14-17",
+        "diameter_mm": 14,
+        "length_m": 17,
+        "bruchkraft_kn": 168,
+        "price": 33.26
+      }
     ],
-    "compatibility": ["Standard Seilrollen"]
+    "compatibility": [
+      "Seilgleitbügel",
+      "Kausche"
+    ]
   },
   {
-    "id": "standard-8x19-seale",
+    "id": "22",
     "name": "Standard Forstwindenseil 8x19 Seale",
     "category": "Standard Forstwindenseile",
-    "description": "8-litziges Seil mit Stahlkern, sehr flexibel.",
+    "description": "Standard Forstwindenseil 8x19 Seale nach Norm: EN12385-4:2002 (früher DIN 3062) nicht verdichtet verzinkt starker Außendraht - durch 8-litzige Spezialkonstruktion dennoch sehr flexibel imprägniert hohe Biegewechseleigenschaft abriebbeständig Datentabelle Nenn-Ømm Machart Gewichtkg/m Mind. Bruchkraft1960 N/mm² Mind. Bruchkraftin Tonnen 9 verzinkt 0,43 56,60 kN 5,77 10 verzinkt 0,45 66,40 kN 6,77 11 verzinkt 0,51 80,30 kN 8,19 12 verzinkt 0,61 95,60 kN 9,75 Schlaufenpressungen oder Kauschenpressungen finden Sie unter Zubehör.",
     "variants": [
-      { "sku": "STD-819-10-50", "diameter_mm": 10, "length_m": 50, "bruchkraft_kn": 80, "price": 220.00 },
-      { "sku": "STD-819-12-50", "diameter_mm": 12, "length_m": 50, "bruchkraft_kn": 100, "price": 270.00 }
+      {
+        "sku": "550091196000-9-4",
+        "diameter_mm": 9,
+        "length_m": 4,
+        "bruchkraft_kn": 108,
+        "price": 19.14
+      },
+      {
+        "sku": "550091196000-9-12",
+        "diameter_mm": 9,
+        "length_m": 12,
+        "bruchkraft_kn": 108,
+        "price": 23.14
+      },
+      {
+        "sku": "550091196000-9-17",
+        "diameter_mm": 9,
+        "length_m": 17,
+        "bruchkraft_kn": 108,
+        "price": 25.64
+      },
+      {
+        "sku": "550091196000-10-4",
+        "diameter_mm": 10,
+        "length_m": 4,
+        "bruchkraft_kn": 120,
+        "price": 20.64
+      },
+      {
+        "sku": "550091196000-10-12",
+        "diameter_mm": 10,
+        "length_m": 12,
+        "bruchkraft_kn": 120,
+        "price": 24.64
+      },
+      {
+        "sku": "550091196000-10-17",
+        "diameter_mm": 10,
+        "length_m": 17,
+        "bruchkraft_kn": 120,
+        "price": 27.14
+      },
+      {
+        "sku": "550091196000-11-4",
+        "diameter_mm": 11,
+        "length_m": 4,
+        "bruchkraft_kn": 132,
+        "price": 22.14
+      },
+      {
+        "sku": "550091196000-11-12",
+        "diameter_mm": 11,
+        "length_m": 12,
+        "bruchkraft_kn": 132,
+        "price": 26.14
+      },
+      {
+        "sku": "550091196000-11-17",
+        "diameter_mm": 11,
+        "length_m": 17,
+        "bruchkraft_kn": 132,
+        "price": 28.64
+      }
     ],
-    "compatibility": ["Standard Seilrollen"]
+    "compatibility": [
+      "Seilgleitbügel",
+      "Kausche"
+    ]
   }
 ]
