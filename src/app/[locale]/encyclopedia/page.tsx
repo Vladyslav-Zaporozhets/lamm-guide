@@ -119,6 +119,7 @@ export default function EncyclopediaIndex() {
                   if(category.includes('Hochverdichtete')) catDescription = t('catHoch');
                   if(category.includes('Traktions')) catDescription = t('catTraktion');
                   if(category.includes('Standard')) catDescription = t('catStandard');
+                  if(category.includes('Seilklemmen')) catDescription = t('catSeilklemmen');
 
                   return (
                     <div key={category} className="bg-white rounded-3xl p-6 md:p-10 shadow-sm border border-slate-200 mb-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
