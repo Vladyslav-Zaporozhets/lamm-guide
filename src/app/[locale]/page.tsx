@@ -1,11 +1,10 @@
 import {useTranslations} from 'next-intl';
 import {Link} from '@/i18n/routing';
 import productsData from '@/data/products.json';
-import ProductCard from '@/components/ui/ProductCard';
+import CategorySection from '@/components/ui/CategorySection';
  
 export default function HomePage() {
   const t = useTranslations('Index');
-  
   const categories = Array.from(new Set(productsData.map(p => p.category)));
 
   return (
@@ -21,22 +20,10 @@ export default function HomePage() {
         </div>
       </div>
       
-      <div className="space-y-16">
+      <div className="space-y-6">
         {categories.map((category) => {
           const categoryProducts = productsData.filter(p => p.category === category);
-          return (
-            <section key={category}>
-              <h2 className="text-2xl font-bold text-slate-800 mb-6 flex items-center">
-                <span className="bg-orange-500 w-2 h-8 rounded-full mr-3"></span>
-                {category}
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                {categoryProducts.map(product => (
-                  <ProductCard key={product.id} product={product as any} />
-                ))}
-              </div>
-            </section>
-          );
+          return <CategorySection key={category} category={category} products={categoryProducts} />;
         })}
       </div>
     </div>

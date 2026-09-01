@@ -1,6 +1,7 @@
 ﻿"use client";
 import { useState } from "react";
-import { Ruler, Activity, CheckCircle, Tag, Wrench } from "lucide-react";
+import { Ruler, Activity, CheckCircle, Tag, Wrench, ArrowRight, Image as ImageIcon } from "lucide-react";
+import { Link } from "@/i18n/routing";
 
 type Variant = {
   sku: string;
@@ -44,23 +45,30 @@ export default function ProductCard({ product }: { product: Product }) {
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col h-full">
-      <div className="p-5 border-b border-slate-100 bg-slate-50 flex-none">
+    <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col h-full relative group">
+      {/* Placeholder Image Area */}
+      <div className="h-40 bg-slate-100 border-b border-slate-200 flex flex-col items-center justify-center text-slate-400 group-hover:bg-slate-200 transition-colors">
+         <ImageIcon className="w-10 h-10 mb-2 opacity-50" />
+         <span className="text-xs uppercase tracking-widest opacity-60">Kein Bild</span>
+      </div>
+
+      <div className="p-5 bg-white flex-none">
         <span className="text-xs font-semibold text-orange-600 uppercase tracking-wider mb-1 block">
           {product.category}
         </span>
-        <h3 className="text-lg font-bold text-slate-900">{product.name}</h3>
+        <h3 className="text-lg font-bold text-slate-900 leading-tight">{product.name}</h3>
       </div>
       
-      <div className="p-5 space-y-6 flex-grow flex flex-col">
-        <p className="text-slate-600 text-sm flex-none">{product.description}</p>
+      <div className="px-5 pb-5 space-y-5 flex-grow flex flex-col">
+        <p className="text-slate-600 text-sm flex-none line-clamp-2">{product.description}</p>
         
-        <div className="space-y-4 bg-slate-50 p-4 rounded-lg border border-slate-100 flex-none">
-          <div className="grid grid-cols-2 gap-4">
+        {/* Quick Config */}
+        <div className="space-y-3 bg-slate-50 p-3 rounded-lg border border-slate-100 flex-none">
+          <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block text-xs font-medium text-slate-500 mb-1">Durchmesser</label>
+              <label className="block text-[10px] font-bold text-slate-500 mb-1 uppercase">Durchmesser</label>
               <select 
-                className="w-full bg-white border border-slate-300 rounded-md py-2 px-3 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none"
+                className="w-full bg-white border border-slate-300 rounded py-1.5 px-2 text-sm focus:ring-1 focus:ring-orange-500 outline-none"
                 value={selectedDiameter}
                 onChange={(e) => handleDiameterChange(Number(e.target.value))}
               >
@@ -72,9 +80,9 @@ export default function ProductCard({ product }: { product: Product }) {
             
             {hasLengths && uniqueLengths.length > 0 && (
               <div>
-                <label className="block text-xs font-medium text-slate-500 mb-1">Länge</label>
+                <label className="block text-[10px] font-bold text-slate-500 mb-1 uppercase">Länge</label>
                 <select 
-                  className="w-full bg-white border border-slate-300 rounded-md py-2 px-3 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none"
+                  className="w-full bg-white border border-slate-300 rounded py-1.5 px-2 text-sm focus:ring-1 focus:ring-orange-500 outline-none"
                   value={selectedLength || ""}
                   onChange={(e) => setSelectedLength(Number(e.target.value))}
                 >
@@ -88,45 +96,23 @@ export default function ProductCard({ product }: { product: Product }) {
         </div>
 
         {activeVariant && (
-          <div className="grid grid-cols-2 gap-y-3 text-sm border-t border-slate-100 pt-4 flex-none">
-            <div className="flex items-center text-slate-600">
-              <Tag className="w-4 h-4 mr-2 text-slate-400" />
-              <span>SKU:</span>
-            </div>
-            <div className="font-mono font-medium text-right text-slate-900">{activeVariant.sku}</div>
-
-            <div className="flex items-center text-slate-600">
-              <Activity className="w-4 h-4 mr-2 text-slate-400" />
-              <span>Bruchkraft:</span>
-            </div>
-            <div className="font-medium text-right text-slate-900">{activeVariant.bruchkraft_kn} kN</div>
-
-            <div className="flex items-center text-slate-600">
-              <Ruler className="w-4 h-4 mr-2 text-slate-400" />
-              <span>Preis:</span>
-            </div>
-            <div className="font-bold text-right text-orange-600 text-lg">€{activeVariant.price.toFixed(2)}</div>
+          <div className="grid grid-cols-2 gap-y-2 text-sm border-t border-slate-100 pt-3 flex-none">
+            <div className="text-slate-500 text-xs">SKU:</div>
+            <div className="font-mono text-xs text-right text-slate-900">{activeVariant.sku}</div>
+            <div className="text-slate-500 text-xs">Preis:</div>
+            <div className="font-bold text-right text-orange-600">€{activeVariant.price.toFixed(2)}</div>
           </div>
         )}
         
-        <div className="mt-auto"></div>
-
-        {product.compatibility && product.compatibility.length > 0 && (
-          <div className="border-t border-slate-100 pt-4 mt-auto">
-            <div className="flex items-center text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">
-              <Wrench className="w-3 h-3 mr-1" />
-              Zubehör / Kompatibilität
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {product.compatibility.map((comp, idx) => (
-                <span key={idx} className="inline-flex items-center px-2 py-1 rounded bg-green-50 text-green-700 border border-green-200 text-xs font-medium">
-                  <CheckCircle className="w-3 h-3 mr-1" />
-                  {comp}
-                </span>
-              ))}
-            </div>
-          </div>
-        )}
+        <div className="mt-auto pt-4 border-t border-slate-100">
+           <Link 
+             href={/products/} 
+             className="w-full flex items-center justify-center bg-slate-900 hover:bg-orange-600 text-white font-medium py-2.5 rounded-lg transition-colors text-sm"
+           >
+             Vollständige Konfiguration
+             <ArrowRight className="w-4 h-4 ml-2" />
+           </Link>
+        </div>
       </div>
     </div>
   );
