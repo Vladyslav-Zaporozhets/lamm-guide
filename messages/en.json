@@ -1,42 +1,43 @@
 {
   "Index": {
-    "title": "Lamm GmbH Configurator",
-    "description": "Forestry technology & Ropes"
+    "title": "РљР°С‚Р°Р»РѕРі Lamm GmbH",
+    "description": "РџРѕСЃС–Р±РЅРёРє Р· Р»С–СЃРѕРІРѕС— С‚РµС…РЅС–РєРё С‚Р° С‚СЂРѕСЃС–РІ"
   },
   "Categories": {
-    "SEILE": "ROPES",
-    "Forstwindenseile": "Forestry Winch Ropes",
-    "Hochverdichtete": "Compacted Winch Ropes",
-    "Standard": "Standard Winch Ropes",
-    "Dyneema": "Dyneema Winch Ropes",
-    "Traktionswindenseile": "Traction Winch Ropes"
+    "SEILE": "РўСЂРѕСЃРё С‚Р° РєР°РЅР°С‚Рё (SEILE)",
+    "Forstwindenseile": "РўСЂРѕСЃРё РґР»СЏ Р»С–СЃРѕРІРёС… Р»РµР±С–РґРѕРє (Forstwindenseile)",
+    "Hochverdichtete": "Р’РёСЃРѕРєРѕРєРѕРјРїСЂРµСЃРѕРІР°РЅС– С‚СЂРѕСЃРё (Hochverdichtete Forstwindenseile)",
+    "Standard": "РЎС‚Р°РЅРґР°СЂС‚РЅС– С‚СЂРѕСЃРё (Standard Forstwindenseile)",
+    "Dyneema": "РЎРёРЅС‚РµС‚РёС‡РЅС– С‚СЂРѕСЃРё (Dyneema Forstwindenseile)",
+    "Traktionswindenseile": "РўСЏРіРѕРІС– РєР°РЅР°С‚Рё (Traktionswindenseile)"
   },
   "ProductCard": {
-    "productsCount": "Products",
-    "diameter": "Diameter",
-    "length": "Length",
-    "sku": "SKU",
-    "price": "Price",
-    "fullConfig": "Full Configuration",
-    "noImage": "No Image"
+    "diameter": "Р”С–Р°РјРµС‚СЂ (Durchmesser)",
+    "length": "Р”РѕРІР¶РёРЅР° (LГ¤nge)",
+    "price": "Р¦С–РЅР° (Preis)",
+    "sku": "РђСЂС‚РёРєСѓР» (SKU)",
+    "compatibility": "РЎСѓРјС–СЃРЅС–СЃС‚СЊ (KompatibilitГ¤t)",
+    "fullConfig": "РџРѕРІРЅР° РєРѕРЅС„С–РіСѓСЂР°С†С–СЏ в†’",
+    "noImage": "Р‘РµР· С„РѕС‚Рѕ",
+    "productsCount": "С‚РѕРІР°СЂС–РІ"
   },
   "Encyclopedia": {
-    "title": "Lamm Academy",
-    "description": "Your comprehensive knowledge center for forestry tech, wire ropes, and accessories. Discover expert insights, technical data, and application guides.",
-    "searchPlaceholder": "Search for rope types, terms, or products...",
-    "readArticle": "Read Article",
-    "noProducts": "No articles found.",
-    "categoriesTitle": "Categories",
-    "back": "Back to Encyclopedia",
-    "expertTip": "Expert Knowledge",
-    "accessories": "Accessories & Compatibility",
-    "technicalDesc": "Technical Description & Application",
-    "accessoriesDesc": "A forestry winch rope cannot be used without the correct end connections. The following components are mandatory:",
-    "imagePlaceholder": "Technical Image",
-    "catDyneema": "Lightweight, extremely resilient synthetic ropes. Buoyant and ergonomic.",
-    "catHoch": "Smooth surface, high breaking load, ideal for professional continuous use.",
-    "catTraktion": "Special ropes with plastic core for harvesters and steep slope machines.",
-    "catStandard": "Classic, robust steel ropes for standard applications.",
-    "catSeilklemmen": "Accessories for the safe creation of rope end connections such as loops and thimbles."
+    "title": "Академія Lamm",
+    "description": "Ваш вичерпний центр знань з лісотехніки, сталевих канатів та комплектуючих. Відкрийте для себе експертну інформацію, технічні дані та інструкції.",
+    "searchPlaceholder": "Пошук типів тросів, термінів або товарів...",
+    "readArticle": "Читати статтю",
+    "noProducts": "Статей не знайдено.",
+    "categoriesTitle": "Категорії",
+    "back": "Назад до Енциклопедії",
+    "expertTip": "Порада Експерта",
+    "accessories": "Супутні товари та сумісність",
+    "technicalDesc": "Технічний опис та застосування",
+    "accessoriesDesc": "Трос для лісової лебідки неможливо використовувати без правильних кінцевих з'єднань. Наступні компоненти є обов'язковими:",
+    "imagePlaceholder": "Технічне фото",
+    "catDyneema": "Легкі, надміцні синтетичні троси. Плавучі та ергономічні.",
+    "catHoch": "Гладка поверхня, високе розривне зусилля, ідеально для професійного використання.",
+    "catTraktion": "Спеціальні троси з пластиковою прокладкою для харвестерів та крутих схилів.",
+    "catStandard": "Класичні, надійні сталеві троси для стандартних завдань.",
+    "catSeilklemmen": "Комплектуючі для безпечного створення кінцевих з'єднань тросів (петель та коушів)."
   }
 }
