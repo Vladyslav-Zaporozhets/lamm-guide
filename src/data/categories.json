@@ -1,0 +1,46 @@
+﻿[
+  {
+    "id": "seile",
+    "name": "Seile",
+    "level": 1,
+    "children": [
+      {
+        "id": "seilzubehoer",
+        "name": "Seilzubehör",
+        "level": 2,
+        "children": [
+          { "id": "seilklemmen", "name": "Seilklemmen", "level": 3 },
+          { "id": "seilendstuecke", "name": "Seilendstücke", "level": 3 },
+          { "id": "seilgleithaken", "name": "Seilgleithaken", "level": 3 },
+          { "id": "dyneema-zubehoer", "name": "Dyneema Zubehör", "level": 3 },
+          { "id": "seilscheren", "name": "Seilscheren", "level": 3 },
+          { "id": "schaekel", "name": "Schäkel", "level": 3 },
+          { "id": "kauschen", "name": "Kauschen", "level": 3 },
+          { "id": "ringmuttern-spannschloesser", "name": "Ringmuttern & Spannschlösser", "level": 3 },
+          { "id": "karabinerhaken", "name": "Karabinerhaken", "level": 3 }
+        ]
+      },
+      { "id": "spillwindenseile", "name": "Spillwindenseile", "level": 2, "children": [] },
+      {
+        "id": "forstwindenseile",
+        "name": "Forstwindenseile",
+        "level": 2,
+        "children": [
+          { "id": "hochverdichtete-forstwindenseile", "name": "Hochverdichtete Forstwindenseile", "level": 3 },
+          { "id": "standard-forstwindenseile", "name": "Standard Forstwindenseile", "level": 3 },
+          { "id": "dyneema-forstwindenseile", "name": "Dyneema Forstwindenseile", "level": 3 },
+          { "id": "traktionswindenseile", "name": "Traktionswindenseile", "level": 3 }
+        ]
+      },
+      { "id": "greifzugseile", "name": "Greifzugseile", "level": 2, "children": [] },
+      { "id": "chokerseile", "name": "Chokerseile", "level": 2, "children": [] },
+      { "id": "faellhilfeseile", "name": "Fällhilfeseile & Zubehör", "level": 2, "children": [] },
+      { "id": "rundlitzenseile", "name": "Rundlitzenseile", "level": 2, "children": [] },
+      { "id": "hubseile", "name": "Hubseile", "level": 2, "children": [] },
+      { "id": "anschlagseile", "name": "Anschlagseile", "level": 2, "children": [] },
+      { "id": "edelstahlseile", "name": "Edelstahlseile", "level": 2, "children": [] },
+      { "id": "faserseile", "name": "Faserseile", "level": 2, "children": [] },
+      { "id": "presswerkzeuge", "name": "Presswerkzeuge", "level": 2, "children": [] }
+    ]
+  }
+]
