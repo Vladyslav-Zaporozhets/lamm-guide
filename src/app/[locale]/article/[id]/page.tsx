@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
 import { Link, routing } from '@/i18n/routing';
 import productsData from '@/data/products.json';
-import { BookOpen, ImageIcon, Home, ChevronRight, ArrowLeft } from 'lucide-react';
+import { BookOpen, ImageIcon, Home, ChevronRight, ArrowLeft, Clock } from 'lucide-react';
 import Image from 'next/image';
 import { globSync } from 'glob';
 import fs from 'fs';
@@ -12,6 +12,7 @@ import { TableOfContents } from '@/components/ui/TableOfContents';
 import { SmartBreadcrumbs } from '@/components/ui/SmartBreadcrumbs';
 import { ProductCarousel } from '@/components/ui/ProductCarousel';
 import { ProductVideos } from '@/components/ui/ProductVideos';
+import { ArticleActions } from '@/components/ui/ArticleActions';
 
 export function generateStaticParams() {
   const params: { id: string; locale: string }[] = [];
@@ -81,15 +82,31 @@ export default async function ArticlePage({
         {/* Main Content Area */}
         <article className="flex-1 bg-white dark:bg-slate-900 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden w-full lg:max-w-[calc(100%-18rem)]">
           {/* Header / Hero */}
-          <div className="bg-slate-900 px-8 py-12 text-center relative overflow-hidden">
-              <BookOpen className="absolute -right-10 -bottom-10 w-64 h-64 text-slate-800 opacity-50 pointer-events-none" />
-              <div className="relative z-10">
-                <span className="inline-block px-3 py-1 bg-blue-500/20 text-blue-300 font-bold text-xs uppercase tracking-widest rounded-full mb-4">
-                    {product.category}
-                </span>
-                <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-4 leading-tight">
-                    {product.name}
-                </h1>
+          <div className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 px-6 py-10 md:px-12 md:py-14 text-center md:text-left overflow-hidden border-b border-slate-800">
+              {/* Background Decoration */}
+              <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay pointer-events-none"></div>
+              <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+              <BookOpen className="absolute -right-4 -bottom-4 w-48 h-48 md:w-64 md:h-64 text-slate-700/30 rotate-12 pointer-events-none" />
+              
+              <div className="relative z-10 flex flex-col md:flex-row md:items-start justify-between gap-6">
+                <div className="flex-1">
+                  <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 mb-4">
+                    <span className="inline-block px-3 py-1 bg-blue-500/20 border border-blue-500/30 text-blue-300 font-bold text-xs uppercase tracking-widest rounded-full shadow-sm">
+                        {product.category}
+                    </span>
+                    <span className="inline-flex items-center text-slate-400 text-sm font-medium bg-slate-800/50 px-3 py-1 rounded-full border border-slate-700">
+                      <Clock className="w-3.5 h-3.5 mr-1.5" />
+                      ~{Math.max(1, Math.ceil(markdownContent.split(/\s+/).length / 150))} хв читання
+                    </span>
+                  </div>
+                  
+                  <h1 className="text-2xl md:text-4xl font-extrabold text-white leading-tight max-w-4xl tracking-tight">
+                      {product.name}
+                  </h1>
+                </div>
+
+                {/* Quick Actions (Print / Share) */}
+                <ArticleActions title={product.name} />
               </div>
           </div>
 
