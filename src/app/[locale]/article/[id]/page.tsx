@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
 import { Link, routing } from '@/i18n/routing';
 import productsData from '@/data/products.json';
-import { BookOpen, ImageIcon, Home, ChevronRight, ArrowLeft, Clock } from 'lucide-react';
+import { BookOpen, ImageIcon, Home, ChevronRight, ArrowLeft } from 'lucide-react';
 import Image from 'next/image';
 import { globSync } from 'glob';
 import fs from 'fs';
@@ -93,10 +93,6 @@ export default async function ArticlePage({
                   <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 mb-4">
                     <span className="inline-block px-3 py-1 bg-blue-500/20 border border-blue-500/30 text-blue-300 font-bold text-xs uppercase tracking-widest rounded-full shadow-sm">
                         {product.category}
-                    </span>
-                    <span className="inline-flex items-center text-slate-400 text-sm font-medium bg-slate-800/50 px-3 py-1 rounded-full border border-slate-700">
-                      <Clock className="w-3.5 h-3.5 mr-1.5" />
-                      ~{Math.max(1, Math.ceil(markdownContent.split(/\s+/).length / 150))} хв читання
                     </span>
                   </div>
                   
