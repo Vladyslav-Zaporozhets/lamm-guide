@@ -46,6 +46,8 @@ function getSectionIcon(text: string) {
 
 export function TableOfContents({ markdown }: { markdown: string }) {
   const [activeId, setActiveId] = useState<string>("");
+  const isClickScrolling = React.useRef(false);
+  const scrollTimeoutRef = React.useRef<NodeJS.Timeout | null>(null);
 
   const toc = useMemo(() => {
     const headings: TocItem[] = [];
@@ -71,6 +73,8 @@ export function TableOfContents({ markdown }: { markdown: string }) {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
+        if (isClickScrolling.current) return; // Ignore updates while smooth scrolling
+
         let latestVisible: string | null = null;
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
@@ -133,6 +137,15 @@ export function TableOfContents({ markdown }: { markdown: string }) {
                 }`}
                 onClick={(e) => {
                   e.preventDefault();
+                  
+                  // Pause observer and instantly set active
+                  isClickScrolling.current = true;
+                  setActiveId(item.id);
+                  if (scrollTimeoutRef.current) clearTimeout(scrollTimeoutRef.current);
+                  scrollTimeoutRef.current = setTimeout(() => {
+                    isClickScrolling.current = false;
+                  }, 1000);
+
                   const el = document.getElementById(item.id);
                   if (el) {
                     const y = el.getBoundingClientRect().top + window.scrollY - 100;
