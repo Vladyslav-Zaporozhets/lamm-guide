@@ -7,6 +7,7 @@ import '../globals.css';
 import { ThemeProvider } from '@/components/providers/ThemeProvider';
 import { ThemeToggle } from '@/components/ui/ThemeToggle';
 import { CommandPalette } from '@/components/ui/CommandPalette';
+import { ScrollToTop } from '@/components/ui/ScrollToTop';
 
 export const metadata = {
   title: 'Forsttechnik Akademie',
@@ -77,6 +78,8 @@ export default async function LocaleLayout({
                   &copy; {new Date().getFullYear()} Forsttechnik. Всі права захищено. <br className="md:hidden" />Внутрішня база знань.
                </div>
             </footer>
+            
+            <ScrollToTop />
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>
