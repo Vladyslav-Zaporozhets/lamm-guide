@@ -67,7 +67,6 @@ export function TableOfContents({ markdown }: { markdown: string }) {
       const level = match[1].length; 
       const rawText = match[2].trim().replace(/\\/g, '');
       
-      // Remove "РОЗДІЛ X. " or similar prefixes
       const cleanText = rawText.replace(/^РОЗДІЛ\s+\d+\.?\s*/i, "");
 
       headings.push({
@@ -83,7 +82,6 @@ export function TableOfContents({ markdown }: { markdown: string }) {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        // Find the last intersecting entry
         let latestVisible: string | null = null;
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
@@ -91,7 +89,9 @@ export function TableOfContents({ markdown }: { markdown: string }) {
           }
         });
         
-        if (latestVisible) setActiveId(latestVisible);
+        if (latestVisible) {
+          setActiveId(latestVisible);
+        }
       },
       { rootMargin: "-100px 0% -60% 0%" }
     );
@@ -104,47 +104,60 @@ export function TableOfContents({ markdown }: { markdown: string }) {
     return () => observer.disconnect();
   }, [toc]);
 
+  // Auto-scroll TOC when active item changes
+  useEffect(() => {
+    if (!activeId) return;
+    const activeElement = document.getElementById(`toc-${activeId}`);
+    if (activeElement) {
+      activeElement.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest"
+      });
+    }
+  }, [activeId]);
+
   if (toc.length === 0) return null;
 
   return (
-    <nav className="w-full">
+    <nav className="w-full pb-8">
       <h4 className="font-bold text-slate-900 dark:text-white mb-6 uppercase tracking-widest text-xs px-2 flex items-center">
         <span className="w-8 h-px bg-slate-200 dark:bg-slate-700 mr-3"></span>
         Зміст статті
       </h4>
-      <ul className="space-y-1">
+      <ul className="space-y-1.5 flex flex-col w-full">
         {toc.map((item) => {
           const isActive = activeId === item.id;
           
           return (
             <li
               key={item.id}
-              style={{ marginLeft: `${(item.level - 2) * 1}rem` }}
+              id={`toc-${item.id}`}
+              className="w-full flex"
+              style={{ paddingLeft: `${(item.level - 2) * 1}rem` }}
             >
               <a
                 href={`#${item.id}`}
-                className={`flex items-center gap-3 px-4 py-2.5 rounded-full transition-all duration-300 text-sm font-medium ${
+                className={`flex-1 min-w-0 flex items-center gap-3 px-4 py-2.5 rounded-full transition-all duration-300 text-sm font-medium ${
                   isActive
-                    ? "bg-blue-600 text-white shadow-md shadow-blue-500/20 dark:bg-blue-500 scale-[1.02]"
-                    : "text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-slate-200 hover:scale-[1.02]"
+                    ? "bg-blue-600 text-white shadow-md shadow-blue-500/20 dark:bg-blue-500"
+                    : "text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-slate-200"
                 }`}
                 onClick={(e) => {
                   e.preventDefault();
                   const el = document.getElementById(item.id);
                   if (el) {
                     window.scrollTo({
-                      top: el.offsetTop - 100, // Account for fixed header
+                      top: el.offsetTop - 100,
                       behavior: "smooth",
                     });
                   }
                 }}
               >
-                {/* Icon based on section title */}
-                <div className={`flex items-center justify-center transition-colors ${isActive ? "text-white" : "text-slate-400 dark:text-slate-500"}`}>
+                <div className={`flex items-center justify-center transition-colors flex-shrink-0 ${isActive ? "text-white" : "text-slate-400 dark:text-slate-500"}`}>
                   {getSectionIcon(item.originalText)}
                 </div>
                 
-                <span className="leading-snug truncate">
+                <span className="leading-snug truncate block w-full">
                   {item.cleanText}
                 </span>
               </a>
