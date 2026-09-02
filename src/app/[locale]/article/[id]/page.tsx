@@ -75,7 +75,7 @@ export default async function ArticlePage({
 
       <div className="flex flex-col lg:flex-row gap-8 items-start">
         {/* Sidebar Table of Contents */}
-        <aside className="hidden lg:block w-64 flex-shrink-0">
+        <aside className="hidden lg:block w-72 flex-shrink-0 sticky top-32 self-start max-h-[calc(100vh-8rem)] overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-slate-200 dark:scrollbar-thumb-slate-700">
           <TableOfContents markdown={markdownContent} />
         </aside>
 
