@@ -89,6 +89,19 @@ export function MarkdownRenderer({ content }: { content: string }) {
               {children}
             </td>
           ),
+          details: ({ node, children, ref, ...props }) => (
+            <details className="group my-8 border border-slate-200 dark:border-slate-800 rounded-2xl bg-white dark:bg-slate-900 shadow-sm hover:shadow-md transition-shadow" {...props as React.DetailsHTMLAttributes<HTMLDetailsElement>}>
+              {children}
+            </details>
+          ),
+          summary: ({ node, children, ref, ...props }) => (
+            <summary className="font-bold text-lg md:text-xl p-4 md:p-6 cursor-pointer list-none flex items-center justify-between text-slate-900 dark:text-white select-none hover:text-blue-600 dark:hover:text-blue-400 transition-colors bg-slate-50 dark:bg-slate-800/50 group-open:border-b group-open:border-slate-200 dark:group-open:border-slate-800" {...props as React.HTMLAttributes<HTMLElement>}>
+              <span className="flex-1">{children}</span>
+              <span className="ml-4 transition-transform duration-300 group-open:rotate-180 flex-shrink-0 text-slate-400 group-hover:text-blue-500 bg-white dark:bg-slate-900 rounded-full p-1 shadow-sm border border-slate-200 dark:border-slate-700">
+                <svg fill="none" height="24" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+              </span>
+            </summary>
+          ),
         }}
       >
         {content}
