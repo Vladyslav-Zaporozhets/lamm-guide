@@ -10,6 +10,8 @@ import path from 'path';
 import { MarkdownRenderer } from '@/components/ui/MarkdownRenderer';
 import { TableOfContents } from '@/components/ui/TableOfContents';
 import { SmartBreadcrumbs } from '@/components/ui/SmartBreadcrumbs';
+import { ProductCarousel } from '@/components/ui/ProductCarousel';
+import { ProductVideos } from '@/components/ui/ProductVideos';
 
 export function generateStaticParams() {
   const params: { id: string; locale: string }[] = [];
@@ -92,43 +94,10 @@ export default async function ArticlePage({
           </div>
 
           <div className="p-8 md:p-12">
-              {/* Image & Video Gallery */}
-              {((product.images && product.images.length > 0) || (product.videos && product.videos.length > 0)) ? (
-                <div className="mb-12 space-y-6">
-                    {/* Main Images */}
-                    {product.images && product.images.length > 0 && (
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                          {product.images.map((img: string, idx: number) => (
-                            <div key={idx} className="bg-slate-100 dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 aspect-video flex items-center justify-center relative">
-                                <Image src={img} alt={`${product.name} - Image ${idx+1}`} fill priority={idx < 2} className="object-cover" />
-                            </div>
-                          ))}
-                      </div>
-                    )}
-                    {/* Videos */}
-                    {product.videos && product.videos.length > 0 && (
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                          {product.videos.map((vid: string, idx: number) => (
-                            <div key={idx} className="bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 aspect-video relative">
-                                <iframe 
-                                  className="absolute inset-0 w-full h-full"
-                                  src={`https://www.youtube.com/embed/${vid}`}
-                                  title="YouTube video player"
-                                  frameBorder="0"
-                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                  allowFullScreen
-                                ></iframe>
-                            </div>
-                          ))}
-                      </div>
-                    )}
-                </div>
-              ) : (
-                <div className="w-full h-80 bg-slate-100 dark:bg-slate-800 rounded-2xl mb-12 flex flex-col items-center justify-center border-2 border-dashed border-slate-200 text-slate-400">
-                    <ImageIcon className="w-16 h-16 mb-4 opacity-50" />
-                    <p className="font-semibold tracking-widest uppercase">{t('imagePlaceholder')}: {product.name}</p>
-                </div>
-              )}
+              <div className="mb-12">
+                <ProductCarousel images={product.images} productName={product.name} />
+                <ProductVideos videos={product.videos} productName={product.name} />
+              </div>
 
               {/* Rich Markdown Content Area */}
               <MarkdownRenderer content={markdownContent} />
