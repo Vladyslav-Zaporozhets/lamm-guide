@@ -36,7 +36,7 @@ export default async function LocaleLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <NextIntlClientProvider messages={messages}>
             <header className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 sticky top-0 z-50 transition-colors duration-300">
-               <div className="max-w-7xl mx-auto px-4 md:px-8 h-16 flex items-center justify-between">
+               <div className="max-w-[1440px] mx-auto px-4 md:px-8 h-16 flex items-center justify-between">
                   {/* Logo / Brand */}
                   <Link href="/" className="flex items-center group">
                      <div className="bg-orange-500 text-white p-2 rounded-xl mr-3 group-hover:bg-orange-600 transition-colors shadow-sm">
@@ -74,7 +74,7 @@ export default async function LocaleLayout({
             </main>
             
             <footer className="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-8 transition-colors duration-300">
-               <div className="max-w-7xl mx-auto px-4 md:px-8 text-center text-slate-500 dark:text-slate-400 text-sm font-medium">
+               <div className="max-w-[1440px] mx-auto px-4 md:px-8 text-center text-slate-500 dark:text-slate-400 text-sm font-medium">
                   &copy; {new Date().getFullYear()} Forsttechnik. Всі права захищено. <br className="md:hidden" />Внутрішня база знань.
                </div>
             </footer>

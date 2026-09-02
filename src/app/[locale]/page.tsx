@@ -121,7 +121,7 @@ function EncyclopediaContent() {
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-blue-600/20 blur-[120px] rounded-full pointer-events-none"></div>
         <div className="absolute bottom-0 right-0 w-[400px] h-[300px] bg-orange-500/10 blur-[100px] rounded-full pointer-events-none"></div>
 
-        <div className="max-w-7xl mx-auto px-4 md:px-8 pt-20 pb-24 relative z-10 text-center">
+        <div className="max-w-[1440px] mx-auto px-4 md:px-8 pt-20 pb-24 relative z-10 text-center">
           <div className="inline-flex items-center justify-center p-3 bg-white/10 rounded-2xl ring-1 ring-white/20 mb-6 backdrop-blur-md">
              <BookOpen className="w-8 h-8 text-blue-400" />
           </div>
@@ -147,7 +147,7 @@ function EncyclopediaContent() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 md:px-8 -mt-10 relative z-20">
+      <div className="max-w-[1440px] mx-auto px-4 md:px-8 -mt-10 relative z-20">
          
          {!searchQuery ? (
             <div className="bg-white dark:bg-slate-900 rounded-3xl p-6 md:p-10 shadow-xl border border-slate-200 dark:border-slate-800">
