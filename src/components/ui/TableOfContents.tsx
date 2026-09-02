@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import { 
   ChevronRight, 
   Info, 
@@ -56,9 +56,8 @@ function getSectionIcon(text: string) {
 
 export function TableOfContents({ markdown }: { markdown: string }) {
   const [activeId, setActiveId] = useState<string>("");
-  const [toc, setToc] = useState<TocItem[]>([]);
 
-  useEffect(() => {
+  const toc = React.useMemo(() => {
     const headings: TocItem[] = [];
     const regex = /^(##|###)\s+(.+)$/gm;
     let match;
@@ -66,7 +65,6 @@ export function TableOfContents({ markdown }: { markdown: string }) {
     while ((match = regex.exec(markdown)) !== null) {
       const level = match[1].length; 
       const rawText = match[2].trim().replace(/\\/g, '');
-      
       const cleanText = rawText.replace(/^РОЗДІЛ\s+\d+\.?\s*/i, "");
 
       headings.push({
@@ -76,7 +74,7 @@ export function TableOfContents({ markdown }: { markdown: string }) {
         level,
       });
     }
-    setToc(headings);
+    return headings;
   }, [markdown]);
 
   useEffect(() => {
