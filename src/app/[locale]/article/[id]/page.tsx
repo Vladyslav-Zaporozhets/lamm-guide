@@ -72,6 +72,11 @@ export default async function ArticlePage({
       </div>
 
       <div className="flex flex-col lg:flex-row gap-8 items-start">
+        {/* Sidebar Table of Contents */}
+        <aside className="hidden lg:block w-64 flex-shrink-0">
+          <TableOfContents markdown={markdownContent} />
+        </aside>
+
         {/* Main Content Area */}
         <article className="flex-1 bg-white dark:bg-slate-900 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden w-full lg:max-w-[calc(100%-18rem)]">
           {/* Header / Hero */}
@@ -131,10 +136,6 @@ export default async function ArticlePage({
           </div>
         </article>
 
-        {/* Sidebar Table of Contents */}
-        <aside className="hidden lg:block w-64 flex-shrink-0">
-          <TableOfContents markdown={markdownContent} />
-        </aside>
       </div>
     </div>
   );
