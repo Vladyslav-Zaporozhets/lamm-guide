@@ -103,18 +103,18 @@ export function ProductCarousel({ images, productName }: { images?: string[]; pr
 
         {/* Thumbnails (Desktop) */}
         {images.length > 1 && (
-          <div className="hidden md:flex items-center gap-3 overflow-x-auto pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <div className="hidden md:flex items-center gap-3 overflow-x-auto p-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {images.map((img, idx) => (
               <button
                 key={idx}
                 onClick={() => setCurrentIndex(idx)}
-                className={`relative w-24 h-24 flex-shrink-0 bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border-2 transition-all ${
+                className={`relative w-24 h-24 flex-shrink-0 bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border-2 transition-all duration-300 ${
                   idx === currentIndex
-                    ? "border-blue-600 dark:border-blue-500 shadow-md scale-105"
+                    ? "border-blue-600 dark:border-blue-500 shadow-md scale-105 ring-2 ring-blue-600/20 dark:ring-blue-500/20 ring-offset-1 dark:ring-offset-slate-900"
                     : "border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 opacity-70 hover:opacity-100"
                 }`}
               >
-                <Image src={img} alt={`Мініатюра ${idx + 1}`} fill className="object-contain p-1" />
+                <Image src={img} alt={`Мініатюра ${idx + 1}`} fill className="object-contain p-1.5" />
               </button>
             ))}
           </div>
