@@ -5,6 +5,30 @@ import rehypeRaw from 'rehype-raw';
 import rehypeSlug from 'rehype-slug';
 import { Info, AlertTriangle, XCircle, CheckCircle2 } from 'lucide-react';
 
+// Helper to extract plain text from React nodes
+function extractTextFromNode(node: any): string {
+  if (typeof node === 'string') return node;
+  if (typeof node === 'number') return String(node);
+  if (Array.isArray(node)) return node.map(extractTextFromNode).join('');
+  if (React.isValidElement(node)) return extractTextFromNode((node.props as any).children);
+  return '';
+}
+
+// Helper to deeply strip alert markers from React nodes
+function stripAlertMarkers(nodes: any): any {
+  return React.Children.map(nodes, (child) => {
+    if (typeof child === 'string') {
+      return child.replace(/\[!(INFO|NOTE|WARNING|CAUTION|DANGER|ERROR|SUCCESS)\]\s*/g, '');
+    }
+    if (React.isValidElement(child) && child.props && (child.props as any).children) {
+      return React.cloneElement(child, {
+        children: stripAlertMarkers((child.props as any).children)
+      } as any);
+    }
+    return child;
+  });
+}
+
 // Custom renderer to replace markdown elements with beautiful UI components
 export function MarkdownRenderer({ content }: { content: string }) {
   return (
@@ -17,29 +41,14 @@ export function MarkdownRenderer({ content }: { content: string }) {
           blockquote: ({ node, children, ref, ...props }) => {
             // Check if this blockquote is actually an alert
             // e.g. > [!WARNING], > [!INFO]
-            const text = String(children).replace(/\n/g, '');
+            const text = extractTextFromNode(children).replace(/\n/g, '');
             const isInfo = text.includes('[!INFO]') || text.includes('[!NOTE]');
             const isWarning = text.includes('[!WARNING]') || text.includes('[!CAUTION]');
             const isDanger = text.includes('[!DANGER]') || text.includes('[!ERROR]');
             const isSuccess = text.includes('[!SUCCESS]');
 
             if (isInfo || isWarning || isDanger || isSuccess) {
-              const cleanText = React.Children.map(children, (child) => {
-                if (typeof child === 'string') {
-                  return child.replace(/\[!(INFO|NOTE|WARNING|CAUTION|DANGER|ERROR|SUCCESS)\]/g, '');
-                }
-                // Also clean up paragraph children if wrapped
-                if (React.isValidElement(child)) {
-                    const childElement = child as React.ReactElement<any>;
-                    if (childElement.props && childElement.props.children) {
-                      const childStr = String(childElement.props.children);
-                      return React.cloneElement(childElement, {
-                          children: childStr.replace(/\[!(INFO|NOTE|WARNING|CAUTION|DANGER|ERROR|SUCCESS)\]/g, '')
-                      });
-                    }
-                }
-                return child;
-              });
+              const cleanText = stripAlertMarkers(children);
 
               let alertClass = '';
               let Icon = Info;
