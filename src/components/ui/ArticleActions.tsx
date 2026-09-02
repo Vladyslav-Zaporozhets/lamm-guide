@@ -27,17 +27,17 @@ export function ArticleActions({ title }: { title: string }) {
     <div className="flex items-center justify-center md:justify-end gap-3 mt-4 md:mt-0">
       <button 
         onClick={() => window.print()} 
-        className="w-10 h-10 flex items-center justify-center rounded-full bg-slate-800/80 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors border border-slate-700 backdrop-blur shadow-sm" 
+        className="w-10 h-10 flex items-center justify-center rounded-full bg-white/80 dark:bg-slate-800/80 hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-white transition-colors border border-slate-200 dark:border-slate-700 backdrop-blur shadow-sm" 
         title="Роздрукувати статтю"
       >
         <Printer className="w-4 h-4" />
       </button>
       <button 
         onClick={handleShare}
-        className="w-10 h-10 flex items-center justify-center rounded-full bg-slate-800/80 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors border border-slate-700 backdrop-blur shadow-sm relative" 
+        className="w-10 h-10 flex items-center justify-center rounded-full bg-white/80 dark:bg-slate-800/80 hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-white transition-colors border border-slate-200 dark:border-slate-700 backdrop-blur shadow-sm relative" 
         title="Поділитися"
       >
-        {copied ? <Check className="w-4 h-4 text-green-400" /> : <Share2 className="w-4 h-4" />}
+        {copied ? <Check className="w-4 h-4 text-green-500 dark:text-green-400" /> : <Share2 className="w-4 h-4" />}
         {copied && (
           <span className="absolute -top-8 bg-slate-800 text-xs py-1 px-2 rounded text-white shadow-lg whitespace-nowrap">
             Скопійовано!

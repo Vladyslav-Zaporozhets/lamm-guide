@@ -82,21 +82,21 @@ export default async function ArticlePage({
         {/* Main Content Area */}
         <article className="flex-1 bg-white dark:bg-slate-900 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden w-full lg:max-w-[calc(100%-18rem)]">
           {/* Header / Hero */}
-          <div className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 px-6 py-10 md:px-12 md:py-14 text-center md:text-left overflow-hidden border-b border-slate-800">
+          <div className="relative bg-gradient-to-br from-slate-50 via-white to-slate-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 px-6 py-10 md:px-12 md:py-14 text-center md:text-left overflow-hidden border-b border-slate-200 dark:border-slate-800 transition-colors">
               {/* Background Decoration */}
-              <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay pointer-events-none"></div>
+              <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5 dark:opacity-10 mix-blend-overlay pointer-events-none"></div>
               <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-              <BookOpen className="absolute -right-4 -bottom-4 w-48 h-48 md:w-64 md:h-64 text-slate-700/30 rotate-12 pointer-events-none" />
+              <BookOpen className="absolute -right-4 -bottom-4 w-48 h-48 md:w-64 md:h-64 text-slate-200 dark:text-slate-700/30 rotate-12 pointer-events-none transition-colors" />
               
               <div className="relative z-10 flex flex-col md:flex-row md:items-start justify-between gap-6">
                 <div className="flex-1">
                   <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 mb-4">
-                    <span className="inline-block px-3 py-1 bg-blue-500/20 border border-blue-500/30 text-blue-300 font-bold text-xs uppercase tracking-widest rounded-full shadow-sm">
+                    <span className="inline-block px-3 py-1 bg-blue-50 border border-blue-200 text-blue-700 dark:bg-blue-500/20 dark:border-blue-500/30 dark:text-blue-300 font-bold text-xs uppercase tracking-widest rounded-full shadow-sm transition-colors">
                         {product.category}
                     </span>
                   </div>
                   
-                  <h1 className="text-2xl md:text-4xl font-extrabold text-white leading-tight max-w-4xl tracking-tight">
+                  <h1 className="text-2xl md:text-4xl font-extrabold text-slate-900 dark:text-white leading-tight max-w-4xl tracking-tight transition-colors">
                       {product.name}
                   </h1>
                 </div>
