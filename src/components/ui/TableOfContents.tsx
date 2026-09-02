@@ -18,23 +18,13 @@ import {
   FileText
 } from "lucide-react";
 
+import GithubSlugger from 'github-slugger';
+
 interface TocItem {
   id: string;
   originalText: string;
   cleanText: string;
   level: number;
-}
-
-function slugify(text: string) {
-  return text
-    .toString()
-    .toLowerCase()
-    .trim()
-    .replace(/\s+/g, '-')
-    .replace(/[^\w\-а-яіїєґ]+/g, '')
-    .replace(/\-\-+/g, '-')
-    .replace(/^-+/, '')
-    .replace(/-+$/, '');
 }
 
 function getSectionIcon(text: string) {
@@ -51,15 +41,16 @@ function getSectionIcon(text: string) {
   if (lowerText.includes("виробник") || lowerText.includes("бренд")) return <Factory className="w-4 h-4 flex-shrink-0" />;
   if (lowerText.includes("альтернатив") || lowerText.includes("конкурент")) return <ArrowRightLeft className="w-4 h-4 flex-shrink-0" />;
   if (lowerText.includes("додаткова")) return <PlusCircle className="w-4 h-4 flex-shrink-0" />;
-  return <FileText className="w-4 h-4 flex-shrink-0" />; // fallback icon
+  return <FileText className="w-4 h-4 flex-shrink-0" />;
 }
 
 export function TableOfContents({ markdown }: { markdown: string }) {
   const [activeId, setActiveId] = useState<string>("");
 
-  const toc = React.useMemo(() => {
+  const toc = useMemo(() => {
     const headings: TocItem[] = [];
     const regex = /^(##|###)\s+(.+)$/gm;
+    const slugger = new GithubSlugger();
     let match;
 
     while ((match = regex.exec(markdown)) !== null) {
@@ -68,7 +59,7 @@ export function TableOfContents({ markdown }: { markdown: string }) {
       const cleanText = rawText.replace(/^РОЗДІЛ\s+\d+\.?\s*/i, "");
 
       headings.push({
-        id: slugify(rawText),
+        id: slugger.slug(rawText),
         originalText: rawText,
         cleanText: cleanText,
         level,
@@ -135,23 +126,24 @@ export function TableOfContents({ markdown }: { markdown: string }) {
             >
               <a
                 href={`#${item.id}`}
-                className={`flex-1 min-w-0 flex items-center gap-3 px-4 py-2.5 rounded-full transition-all duration-300 text-sm font-medium ${
+                className={`group flex-1 min-w-0 flex items-center gap-3 px-4 py-2.5 rounded-full transition-all duration-300 text-sm font-medium border border-transparent ${
                   isActive
-                    ? "bg-blue-600 text-white shadow-md shadow-blue-500/20 dark:bg-blue-500"
-                    : "text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-slate-200"
+                    ? "bg-blue-600 text-white shadow-md shadow-blue-500/20 dark:bg-blue-500 border-blue-500"
+                    : "text-slate-600 dark:text-slate-400 hover:bg-blue-50 dark:hover:bg-slate-800/80 hover:text-blue-700 dark:hover:text-blue-300 hover:border-blue-100 dark:hover:border-slate-700 hover:shadow-sm"
                 }`}
                 onClick={(e) => {
                   e.preventDefault();
                   const el = document.getElementById(item.id);
                   if (el) {
+                    const y = el.getBoundingClientRect().top + window.scrollY - 100;
                     window.scrollTo({
-                      top: el.offsetTop - 100,
+                      top: y,
                       behavior: "smooth",
                     });
                   }
                 }}
               >
-                <div className={`flex items-center justify-center transition-colors flex-shrink-0 ${isActive ? "text-white" : "text-slate-400 dark:text-slate-500"}`}>
+                <div className={`flex items-center justify-center transition-colors flex-shrink-0 ${isActive ? "text-white" : "text-slate-400 dark:text-slate-500 group-hover:text-blue-600 dark:group-hover:text-blue-400"}`}>
                   {getSectionIcon(item.originalText)}
                 </div>
                 
