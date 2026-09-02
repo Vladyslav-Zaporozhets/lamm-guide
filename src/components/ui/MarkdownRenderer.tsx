@@ -13,6 +13,7 @@ export function MarkdownRenderer({ content }: { content: string }) {
         remarkPlugins={[remarkGfm]}
         rehypePlugins={[rehypeRaw, rehypeSlug]}
         components={{
+          h1: () => null, // Hide h1 from markdown since we render it in the hero block
           blockquote: ({ node, children, ref, ...props }) => {
             // Check if this blockquote is actually an alert
             // e.g. > [!WARNING], > [!INFO]
