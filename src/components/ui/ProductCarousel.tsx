@@ -23,7 +23,7 @@ export function ProductCarousel({ images, productName }: { images?: string[]; pr
   return (
     <div className="w-full space-y-4">
       {/* Main Image View */}
-      <div className="relative w-full aspect-[4/3] md:aspect-video bg-slate-50 dark:bg-slate-900/50 rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-inner group">
+      <div className="relative w-full aspect-[4/3] md:aspect-video bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm group">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentIndex}
@@ -38,7 +38,7 @@ export function ProductCarousel({ images, productName }: { images?: string[]; pr
               alt={`${productName} - фото ${currentIndex + 1}`}
               fill
               priority
-              className="object-contain p-4 md:p-8"
+              className="object-contain"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </motion.div>
@@ -79,13 +79,13 @@ export function ProductCarousel({ images, productName }: { images?: string[]; pr
             <button
               key={idx}
               onClick={() => setCurrentIndex(idx)}
-              className={`relative w-24 h-24 flex-shrink-0 rounded-2xl overflow-hidden border-2 transition-all ${
+              className={`relative w-24 h-24 flex-shrink-0 bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border-2 transition-all ${
                 idx === currentIndex
                   ? "border-blue-600 dark:border-blue-500 shadow-md scale-105"
                   : "border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 opacity-70 hover:opacity-100"
               }`}
             >
-              <Image src={img} alt={`Мініатюра ${idx + 1}`} fill className="object-cover" />
+              <Image src={img} alt={`Мініатюра ${idx + 1}`} fill className="object-contain p-1" />
             </button>
           ))}
         </div>

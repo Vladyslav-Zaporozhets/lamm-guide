@@ -12,11 +12,11 @@ export function ProductVideos({ videos, productName }: { videos?: string[]; prod
         Відеоогляди та інструкції
       </h3>
       
-      <div className={`grid gap-6 ${videos.length === 1 ? 'grid-cols-1 max-w-3xl mx-auto' : 'grid-cols-1 md:grid-cols-2'}`}>
+      <div className={`flex ${videos.length === 1 ? 'justify-center' : 'overflow-x-auto gap-6 pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden snap-x snap-mandatory'}`}>
         {videos.map((vid, idx) => (
           <div 
             key={idx} 
-            className="group relative bg-slate-900 rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-md aspect-video hover:shadow-xl transition-all"
+            className={`group relative bg-slate-900 rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-md aspect-video hover:shadow-xl transition-all snap-center shrink-0 ${videos.length === 1 ? 'w-full max-w-3xl' : 'w-[85vw] md:w-[calc(50%-12px)]'}`}
           >
             <div className="absolute inset-0 bg-slate-800 animate-pulse -z-10" />
             <iframe 
