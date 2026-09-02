@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
 import { Link, routing } from '@/i18n/routing';
 import productsData from '@/data/products.json';
-import { BookOpen, ImageIcon, Home, ChevronRight } from 'lucide-react';
+import { BookOpen, ImageIcon, Home, ChevronRight, ArrowLeft } from 'lucide-react';
 import Image from 'next/image';
 import { globSync } from 'glob';
 import fs from 'fs';
@@ -63,21 +63,41 @@ export default async function ArticlePage({
 
   return (
     <div className="max-w-7xl mx-auto p-4 md:p-8">
-      {/* Breadcrumbs */}
-      <nav className="mb-8 flex items-center space-x-2 text-sm font-medium text-slate-500 dark:text-slate-400 overflow-x-auto whitespace-nowrap pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-        <Link href="/" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center">
+      {/* Back Button */}
+      <div className="mb-6">
+        <Link href={fromCat ? `/?cat=${fromCat}` : "/"} className="inline-flex items-center px-4 py-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg text-sm font-bold text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-blue-600 transition-colors shadow-sm">
+          <ArrowLeft className="w-4 h-4 mr-2" />
+          {t('back')}
+        </Link>
+      </div>
+
+      {/* Styled Breadcrumbs Navigation (Pill-style like Home Page) */}
+      <div className="mb-8 flex flex-wrap items-center text-sm font-bold bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-2 px-4 shadow-sm">
+        <Link 
+          href="/"
+          className="px-3 py-2 text-slate-500 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-lg transition-colors flex items-center"
+        >
           <Home className="w-4 h-4 mr-1.5" />
           {t('title')}
         </Link>
-        <ChevronRight className="w-4 h-4 flex-shrink-0" />
-        <Link href={`/?cat=${encodeURIComponent(product.category)}`} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-          {product.category}
-        </Link>
-        <ChevronRight className="w-4 h-4 flex-shrink-0" />
-        <span className="text-slate-900 dark:text-slate-200" aria-current="page">
-          {product.name}
-        </span>
-      </nav>
+        
+        <div className="flex items-center">
+          <ChevronRight className="w-4 h-4 text-slate-300 dark:text-slate-600 mx-1 flex-shrink-0" />
+          <Link 
+            href={`/?cat=${encodeURIComponent(product.category)}`}
+            className="px-3 py-2 rounded-lg transition-colors text-slate-600 hover:text-blue-600 hover:bg-slate-50 dark:text-slate-300 dark:hover:bg-slate-800"
+          >
+            {product.category}
+          </Link>
+        </div>
+
+        <div className="flex items-center">
+          <ChevronRight className="w-4 h-4 text-slate-300 dark:text-slate-600 mx-1 flex-shrink-0" />
+          <div className="px-3 py-2 rounded-lg transition-colors text-blue-700 bg-blue-50 dark:text-blue-300 dark:bg-blue-900/30">
+            {product.name}
+          </div>
+        </div>
+      </div>
 
       <div className="flex flex-col lg:flex-row gap-8 items-start">
         {/* Sidebar Table of Contents */}
