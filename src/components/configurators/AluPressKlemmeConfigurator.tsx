@@ -39,11 +39,20 @@ export function AluPressKlemmeConfigurator() {
 
   return (
     <div className="not-prose my-10 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl overflow-hidden shadow-sm">
-      <div className="bg-blue-600 dark:bg-blue-700 p-6 text-white flex items-center gap-3">
-        <Settings2 className="w-8 h-8" />
+      <div className="bg-blue-600 dark:bg-blue-700 p-6 text-white flex items-center gap-4 md:gap-5">
+        <div className="bg-white p-1.5 rounded-xl flex-shrink-0 shadow-sm overflow-hidden hidden sm:block">
+          <img 
+            src="https://www.lamm-seile.de/thumbnail/69/3c/28/1732231337/alu_seilpressklemme_600x600.jpg?ts=1732231356" 
+            alt="Alu-Seilpressklemme" 
+            className="w-14 h-14 object-contain rounded-lg"
+          />
+        </div>
         <div>
-          <h3 className="text-xl font-bold m-0">Конфігуратор опресувальної клеми</h3>
-          <p className="text-blue-100 text-sm mt-1 m-0">Індивідуальний підбір за стандартом DIN EN 13411-3</p>
+          <h3 className="text-xl md:text-2xl font-bold m-0 flex items-center gap-2">
+            <Settings2 className="w-6 h-6 opacity-80" />
+            Конфігуратор опресувальної клеми
+          </h3>
+          <p className="text-blue-100 text-sm md:text-base mt-1.5 m-0">Індивідуальний підбір за стандартом DIN EN 13411-3</p>
         </div>
       </div>
       
