@@ -114,7 +114,12 @@ export function MarkdownRenderer({ content }: { content: string }) {
             </summary>
           ),
           // @ts-ignore
-          'alu-configurator': AluPressKlemmeConfigurator,
+          div: ({ node, children, className, ...props }) => {
+            if ((props as any)['data-configurator'] === 'alu') {
+              return <AluPressKlemmeConfigurator />;
+            }
+            return <div className={className} {...props}>{children}</div>;
+          },
         }}
       >
         {content}
