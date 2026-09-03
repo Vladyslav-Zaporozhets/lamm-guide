@@ -4,6 +4,7 @@ import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
 import rehypeSlug from 'rehype-slug';
 import { Info, AlertTriangle, XCircle, CheckCircle2 } from 'lucide-react';
+import { AluPressKlemmeConfigurator } from '@/components/configurators/AluPressKlemmeConfigurator';
 
 // Helper to extract plain text from React nodes
 function extractTextFromNode(node: any): string {
@@ -112,6 +113,8 @@ export function MarkdownRenderer({ content }: { content: string }) {
               </span>
             </summary>
           ),
+          // @ts-ignore
+          'alu-configurator': AluPressKlemmeConfigurator,
         }}
       >
         {content}
